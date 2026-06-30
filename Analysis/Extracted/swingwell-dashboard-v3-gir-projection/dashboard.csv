@@ -1,0 +1,19 @@
+SWINGWELL Dashboard — GIR or Nothing,,,,,,,,,
+Debrief-only view: use this after rounds/practice to identify the next best training lever — not as pre-round pressure.,,,,,,,,,
+,,,,,,,,,
+Round,Date,Course,Holes,Score vs Par,Score vs Par / 9,Fairways %,GIR %,Target GIR %,Putts/Hole
+1,2026-01-09,Indian Wells (18h),18,25,"=IF(OR(D5="""",E5=""""),"""",E5/D5*9)",0.31,0.17,0.35,2.06
+2,2026-01-22,Indian Wells (9h),9,,"=IF(OR(D6="""",E6=""""),"""",E6/D6*9)",,,0.35,
+3,2026-02-05,Indian Wells Players (9h),9,10,"=IF(OR(D7="""",E7=""""),"""",E7/D7*9)",0.83,0.33,0.35,2.33
+4,2026-03-11,Golf Center (9h),9,,"=IF(OR(D8="""",E8=""""),"""",E8/D8*9)",0.75,0.22,0.35,2.33
+5,2026-03-15,Golf Center par-3 (9h),9,2,"=IF(OR(D9="""",E9=""""),"""",E9/D9*9)",,0.44,0.35,1.67
+6,2026-04-11,Indian Springs (18h),18,20,"=IF(OR(D10="""",E10=""""),"""",E10/D10*9)",0.57,0.17,0.35,1.94
+7,2026-04-16,Indian Wells Celebrity (9h),9,8,"=IF(OR(D11="""",E11=""""),"""",E11/D11*9)",0.75,0.11,0.35,1.89
+Targets,,13.0 HCP goal,,,"=IF(OR(D12="""",E12=""""),"""",E12/D12*9)",0.6,0.38,0.35,1.8
+,,,,,,,,,
+,,,,,,,,,
+Current Baselines,,,,,,,,,
+Avg GIR (scored rounds),"=AVERAGEIF(H5:H15,"">0"")",,,,,,,,
+Avg Score vs Par / 9,"=AVERAGEIF(F5:F15,"">0"")",,,,,,,,
+Avg Putts/Hole,"=AVERAGEIF(J5:J15,"">0"")",,,,,,,,
+Target GIR,0.35,,,,,,,,

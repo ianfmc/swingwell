@@ -1,0 +1,73 @@
+{
+  "source": "Analysis/SWINGWELL Dashboard v3 - GIR Projection.xlsx",
+  "rounds": [
+    {
+      "date": "2026-01-09",
+      "course": "Indian Wells Golf Resort",
+      "holes": 18,
+      "penalties": 4.0
+    },
+    {
+      "date": "2026-01-22",
+      "course": "Indian Wells Golf Resort",
+      "holes": 9,
+      "penalties": 2.0
+    },
+    {
+      "date": "2026-02-05",
+      "course": "Indian Wells Golf Resort (Players)",
+      "holes": 9,
+      "penalties": 2.0
+    },
+    {
+      "date": "2026-03-11",
+      "course": "The Golf Center at Palm Desert",
+      "holes": 9,
+      "penalties": 0.0
+    },
+    {
+      "date": "2026-03-15",
+      "course": "Golf Center Palm Desert (par-3 course)",
+      "holes": 9,
+      "penalties": 0.0
+    },
+    {
+      "date": "2026-04-11",
+      "course": "Indian Springs G&CC (Blue tees)",
+      "holes": 18,
+      "penalties": 0.0
+    },
+    {
+      "date": "2026-04-16",
+      "course": "Indian Wells Celebrity Course (Yellow)",
+      "holes": 9,
+      "penalties": 0.0
+    },
+    {
+      "date": "2026-06-21",
+      "course": "Shadow Mountain Golf Course",
+      "holes": 18,
+      "score": 83,
+      "par": 70,
+      "front_score": 39,
+      "front_par": 35,
+      "back_score": 44,
+      "back_par": 35,
+      "fairways_hit": 12,
+      "fairway_opportunities": 14,
+      "gir": 6,
+      "putts": 34,
+      "three_putts": 2,
+      "penalties": 1.0,
+      "handicap_index": 19.2,
+      "index_movement": -0.7
+    }
+  ],
+  "penalties": {
+    "goal_per_round": 0.0,
+    "recent_per_round": 0.2,
+    "all_per_round": 1.125,
+    "recent_round_count": 5,
+    "round_count": 8
+  }
+}

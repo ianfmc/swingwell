@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWINGWELL Diary</title>
+  <link rel="stylesheet" href="assets/swingwell.css">
+</head>
+<body>
+  <header>
+    <div><p class="eyebrow">Canonical archive</p><h1>SWINGWELL Diary</h1><p>Search and filter every migrated diary entry.</p></div>
+  </header>
+  <main>
+    <nav><a href="index.html">Dashboard</a><a class="active" href="diary.html">Diary Entries</a></nav>
+    <div>
+      <section>
+        <div class="section-heading"><div><p class="eyebrow">Session log</p><h2>Diary entries</h2></div><span class="count" id="entry-count">Loading…</span></div>
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="Search date, location, or session…">
+          <select id="type-filter"><option value="">All session types</option></select>
+          <select id="state-filter"><option value="">All mental states</option><option>GREEN</option><option>YELLOW</option><option>RED</option></select>
+        </div>
+        <div class="table-wrap">
+          <table><thead><tr><th>Date</th><th>Type</th><th>Location</th><th>State</th></tr></thead><tbody id="diary-body"></tbody></table>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    let entries = [];
+    const body = document.querySelector('#diary-body');
+    const search = document.querySelector('#search');
+    const typeFilter = document.querySelector('#type-filter');
+    const stateFilter = document.querySelector('#state-filter');
+
+    function render() {
+      const query = search.value.trim().toLowerCase();
+      const filtered = entries.filter((entry) => {
+        const haystack = `${entry.date} ${entry.title} ${entry.location} ${entry.session_type}`.toLowerCase();
+        return (!query || haystack.includes(query)) && (!typeFilter.value || entry.session_type === typeFilter.value) && (!stateFilter.value || entry.mental_state === stateFilter.value);
+      });
+      document.querySelector('#entry-count').textContent = `${filtered.length} entries`;
+      body.innerHTML = filtered.map((entry) => `<tr>
+        <td><a class="text-link" href="../${encodeURI(entry.path)}">${entry.date}</a></td>
+        <td>${entry.session_type || '—'}</td><td>${entry.location || '—'}</td><td>${entry.mental_state ? `<span class="state state-${entry.mental_state.toLowerCase()}">${entry.mental_state}</span>` : '—'}</td>
+      </tr>`).join('');
+    }
+
+    fetch('data/diary-index.json').then((response) => response.json()).then((payload) => {
+      entries = payload.sort((a, b) => b.date.localeCompare(a.date));
+      [...new Set(entries.map((entry) => entry.session_type).filter(Boolean))].sort().forEach((type) => typeFilter.add(new Option(type, type)));
+      render();
+    }).catch(() => { body.innerHTML = '<tr><td colspan="4">Diary index unavailable.</td></tr>'; });
+    [search, typeFilter, stateFilter].forEach((control) => control.addEventListener('input', render));
+  </script>
+</body>
+</html>

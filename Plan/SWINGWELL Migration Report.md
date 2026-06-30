@@ -1,0 +1,105 @@
+# SWINGWELL Migration Report
+
+- Archive exists: Archive Originals/Monthly Summaries/SWINGWELL Golf Diary - April 2026.rtf
+- Archive exists: Archive Originals/Monthly Summaries/SWINGWELL Golf Diary - February 2026.rtf
+- Archive exists: Archive Originals/Monthly Summaries/SWINGWELL Golf Diary - January 2026.rtf
+- Archive exists: Archive Originals/Monthly Summaries/SWINGWELL Golf Diary - March 2026.rtf
+- Archive exists: Archive Originals/Analysis/SWINGWELL  - Data - 202601-04.xlsx
+- Archive exists: Archive Originals/Analysis/SWINGWELL - Analysis - 202601-202604.docx
+- Archive exists: Archive Originals/Analysis/SWINGWELL Dashboard v2.xlsx
+- Archive exists: Archive Originals/Analysis/SWINGWELL Dashboard v3 - GIR Projection.xlsx
+- Archive exists: Archive Originals/Plan/SWINGWELL Master Reference.docx
+- Archive exists: Archive Originals/Plan/SWINGWELL Quick Reference.docx
+- Archive exists: Archive Originals/Pending Diary Entries/SWINGWELL 20260425.txt
+- Archive exists: Archive Originals/Pending Diary Entries/SWINGWELL_Golf_Diary_2026-06-03.md
+- Wrote template: Templates/SWINGWELL Golf Diary Template.md
+- Wrote agent prompt: Agents/migration-agent.md
+- Wrote agent prompt: Agents/diary-entry-agent.md
+- Wrote agent prompt: Agents/monthly-summary-agent.md
+- Wrote agent prompt: Agents/analysis-update-agent.md
+- Wrote agent prompt: Agents/practice-prescription-agent.md
+- Converted document: Plan/SWINGWELL Master Reference.md
+- Converted document: Plan/SWINGWELL Quick Reference.md
+- Converted document: Analysis/SWINGWELL Performance Analysis - 202601-202604.md
+- Converted monthly summary: Monthly Summaries/SWINGWELL Golf Diary - April 2026.md
+- Converted monthly summary: Monthly Summaries/SWINGWELL Golf Diary - February 2026.md
+- Converted monthly summary: Monthly Summaries/SWINGWELL Golf Diary - January 2026.md
+- Converted monthly summary: Monthly Summaries/SWINGWELL Golf Diary - March 2026.md
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20230923 - golf-notes.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20251231 - swingwell-on-course-card.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260109.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260111.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260112.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260117.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260118.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260119.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260122.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260123.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260127.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260128.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260130.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260131.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260202.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260207.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260208.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260212.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry-20260215.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260110 - swingwell-golf-diary-entry.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260206 - swingwell-golf-diary-entry-20260205.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260207 - 20260207-swingwell-practice.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260208 - 20260207-swingwell-practice.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260302 - swingwell-golf-diary-entry-20260227.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260302 - swingwell-golf-diary-entry-20260228.html
+- Skipped non-diary Apple Note export: Inbox/Apple Notes Exports/20260419 - practice-for-20-april.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260419 - practice-for-21-april.html
+- Skipped pre-May Apple Note export: Inbox/Apple Notes Exports/20260419 - prompt-for-swingwell-recording.html
+- Skipped non-diary Apple Note export: Inbox/Apple Notes Exports/20260615 - prompt-for-swingwell-analysis-agent.html
+- Wrote diary entry: Diary Entries/2026/2026-04/20260402 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260418 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260412 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260416 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260411 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260420 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260421 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260422 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260425 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260205 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260208 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260207 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260212 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260215 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260227 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260228 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260131 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-02/20260202 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260127 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260123 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260122 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260119 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260118 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260117 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260112 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260111 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-01/20260109 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260307 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260308 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260310 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260313 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260322 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260325 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260329 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260316 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-03/20260315 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-04/20260425 - SWINGWELL Golf Diary Entry - duplicate-2.md
+- Wrote diary entry: Diary Entries/2026/2026-06/20260603 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-05/20260524 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-05/20260527 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-05/20260503 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-06/20260611 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-06/20260613 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-06/20260614 - SWINGWELL Golf Diary Entry.md
+- Wrote diary entry: Diary Entries/2026/2026-06/20260606 - SWINGWELL Golf Diary Entry.md
+- Extracted workbook sheets: Analysis/SWINGWELL  - Data - 202601-04.xlsx
+- Extracted workbook sheets: Analysis/SWINGWELL Dashboard v2.xlsx
+- Extracted workbook sheets: Analysis/SWINGWELL Dashboard v3 - GIR Projection.xlsx
+- Wrote dashboard data and preserved static pages: Dashboard/index.html, Dashboard/diary.html

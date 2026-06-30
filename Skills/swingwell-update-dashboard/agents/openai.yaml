@@ -1,0 +1,4 @@
+interface:
+  display_name: "SWINGWELL Update Dashboard"
+  short_description: "Refresh SWINGWELL dashboard data and cards."
+  default_prompt: "Update the SWINGWELL dashboard using the latest canonical diary entries."

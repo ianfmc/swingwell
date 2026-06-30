@@ -1,0 +1,4 @@
+interface:
+  display_name: "SWINGWELL Note to Canonical"
+  short_description: "Convert SWINGWELL Apple Notes into canonical diary entries."
+  default_prompt: "Convert the specified SWINGWELL Apple Note into a canonical diary entry."

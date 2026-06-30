@@ -1,0 +1,4 @@
+interface:
+  display_name: "SWINGWELL Publish Dashboard to S3"
+  short_description: "Publish SWINGWELL dashboard to AWS S3."
+  default_prompt: "Publish the SWINGWELL dashboard to the configured S3 bucket."

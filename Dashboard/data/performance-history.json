@@ -1,0 +1,13 @@
+{
+  "source": "Canonical round data, 2026-06-21 diary correction, and 2026-06-27 scorecard/manual GIR note",
+  "series": [
+    { "date": "2026-01-09", "label": "01/09", "course": "Indian Wells", "fairways_pct": 31, "gir_pct": 17 },
+    { "date": "2026-02-05", "label": "02/05", "course": "Indian Wells Players", "fairways_pct": 83, "gir_pct": 33 },
+    { "date": "2026-03-11", "label": "03/11", "course": "Golf Center Palm Desert", "fairways_pct": 75, "gir_pct": 22 },
+    { "date": "2026-03-15", "label": "03/15", "course": "Golf Center par-3", "fairways_pct": null, "gir_pct": 44 },
+    { "date": "2026-04-11", "label": "04/11", "course": "Indian Springs", "fairways_pct": 57, "gir_pct": 17 },
+    { "date": "2026-04-16", "label": "04/16", "course": "Indian Wells Celebrity", "fairways_pct": 75, "gir_pct": 11 },
+    { "date": "2026-06-21", "label": "06/21", "course": "Shadow Mountain", "fairways_pct": 86, "gir_pct": 33 },
+    { "date": "2026-06-27", "label": "06/27", "course": "Indian Wells", "fairways_pct": 100, "gir_pct": 11 }
+  ]
+}

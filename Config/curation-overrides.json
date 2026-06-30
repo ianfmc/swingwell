@@ -1,0 +1,118 @@
+{
+  "diary_entries": {
+    "2026-05-03": {
+      "location": "PGA Tour Superstore",
+      "mental_state": "YELLOW",
+      "session_type": "Practice"
+    },
+    "2026-05-24": {
+      "location": "Indoor range + Foresight simulator",
+      "mental_state": "GREEN",
+      "session_type": "Practice Plan / Draft Diary",
+      "review_status": "raw_plan_needs_confirmation"
+    },
+    "2026-05-27": {
+      "session_type": "Practice - Short Game Calibration"
+    },
+    "2026-06-06": {
+      "location": "PGA Tour Superstore",
+      "mental_state": "GREEN",
+      "session_type": "Practice",
+      "curated_summary": "Key outcome: Gap wedge, pitching wedge, and 9-iron warmup had loose dispersion; 130-yard par-3 work was mostly short/on approach; 91-yard par-3 work was all on green except one."
+    },
+    "2026-06-11": {
+      "location": "Back Nine Indoor Range",
+      "mental_state": "GREEN",
+      "session_type": "Practice",
+      "curated_summary": "Simulated Hilltop result of 31 (+4); keep as practice data, not a posted round."
+    },
+    "2026-06-13": {
+      "location": "Back Nine Indoor Range",
+      "mental_state": "GREEN",
+      "session_type": "Practice",
+      "curated_summary": "Simulated The Hay 26 (-1) and Hilltop 44 (+4); keep as practice data, not posted rounds."
+    },
+    "2026-06-14": {
+      "location": "Back Nine Indoor Range",
+      "mental_state": "GREEN",
+      "session_type": "Practice",
+      "curated_summary": "Breakthrough practice applying Taylor Nevin's coaching cues across approach wedge, 7-iron, and 4-hybrid; the key point is that the lesson work is transferring into more consistent ball striking."
+    },
+    "2026-06-15": {
+      "location": "Indoor Range / Simulator",
+      "mental_state": "GREEN",
+      "session_type": "Practice",
+      "curated_summary": "Pitching-wedge distance-window practice: a couple of full shots jumped while several well-struck easy swings finished short."
+    },
+    "2026-06-20": {
+      "location": "Indoor Range / Simulator",
+      "mental_state": "GREEN",
+      "session_type": "Practice",
+      "curated_summary": "Easy-swing driver and pitching-wedge practice produced a reliable in-to-out path, tighter pitching-wedge dispersion, and a small distance tradeoff."
+    },
+    "2026-06-21": {
+      "location": "Shadow Mountain Golf Course",
+      "mental_state": "GREEN",
+      "session_type": "Round",
+      "curated_summary": "Shot 83 (+13), split 39 (+4) on the front and 44 (+9) on the back, with 33% GIR, 12/14 corrected fairways, 34 putts, and one penalty; the round lowered the handicap index by 0.7 strokes to 19.2."
+    }
+  },
+  "index_history": [
+    {
+      "date": "2026-01-09",
+      "label": "01/09",
+      "index": 19.9
+    },
+    {
+      "date": "2026-01-11",
+      "label": "01/11",
+      "index": 19.9
+    },
+    {
+      "date": "2026-01-23",
+      "label": "01/23",
+      "index": 19.9
+    },
+    {
+      "date": "2026-01-29",
+      "label": "01/29",
+      "index": 19.9
+    },
+    {
+      "date": "2026-02-06",
+      "label": "02/06",
+      "index": 19.9
+    },
+    {
+      "date": "2026-03-12",
+      "label": "03/12",
+      "index": 20.4
+    },
+    {
+      "date": "2026-03-16",
+      "label": "03/16",
+      "index": 19.8
+    },
+    {
+      "date": "2026-04-12",
+      "label": "04/12",
+      "index": 19.7
+    },
+    {
+      "date": "2026-04-17",
+      "label": "04/17",
+      "index": 19.5
+    },
+    {
+      "date": "2026-06-21",
+      "label": "06/21",
+      "index": 19.2
+    },
+    {
+      "date": "2026-12-31",
+      "label": "Goal",
+      "index": 13.0,
+      "target": true
+    }
+  ]
+}

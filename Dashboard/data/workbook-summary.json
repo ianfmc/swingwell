@@ -1,0 +1,99 @@
+{
+  "SWINGWELL  - Data - 202601-04.xlsx": {
+    "sheets": [
+      {
+        "name": "Rounds",
+        "rows": 11,
+        "columns": 12
+      },
+      {
+        "name": "Practice Log",
+        "rows": 21,
+        "columns": 10
+      },
+      {
+        "name": "KPI Summary",
+        "rows": 11,
+        "columns": 8
+      },
+      {
+        "name": "Handicap Tracker",
+        "rows": 8,
+        "columns": 4
+      }
+    ]
+  },
+  "SWINGWELL Dashboard v2.xlsx": {
+    "sheets": [
+      {
+        "name": "Rounds",
+        "rows": 11,
+        "columns": 12
+      },
+      {
+        "name": "Practice Log",
+        "rows": 21,
+        "columns": 10
+      },
+      {
+        "name": "KPI Summary",
+        "rows": 11,
+        "columns": 8
+      },
+      {
+        "name": "Handicap Tracker",
+        "rows": 8,
+        "columns": 4
+      },
+      {
+        "name": "Dashboard",
+        "rows": 6,
+        "columns": 5
+      },
+      {
+        "name": "May Plan",
+        "rows": 32,
+        "columns": 3
+      }
+    ]
+  },
+  "SWINGWELL Dashboard v3 - GIR Projection.xlsx": {
+    "sheets": [
+      {
+        "name": "Dashboard",
+        "rows": 19,
+        "columns": 10
+      },
+      {
+        "name": "GIR Projection",
+        "rows": 34,
+        "columns": 8
+      },
+      {
+        "name": "May Plan",
+        "rows": 32,
+        "columns": 9
+      },
+      {
+        "name": "Rounds",
+        "rows": 11,
+        "columns": 12
+      },
+      {
+        "name": "Practice Log",
+        "rows": 21,
+        "columns": 10
+      },
+      {
+        "name": "KPI Summary",
+        "rows": 11,
+        "columns": 8
+      },
+      {
+        "name": "Handicap Tracker",
+        "rows": 8,
+        "columns": 4
+      }
+    ]
+  }
+}
