@@ -61,7 +61,7 @@
         </div>
 
         <div class="signal-strip">
-          <div><strong>19.2</strong><span>Current index · down 0.7</span></div>
+          <div><strong>19.5</strong><span>Current index · Jun 27</span></div>
           <div><strong id="practice-round-ratio">4.0</strong><span>Practices per round · target 3.0</span></div>
           <div><strong id="penalty-rate">0.2</strong><span>Recent penalties / round</span></div>
           <div><strong>+4 vs +9</strong><span>Front vs back · stamina remains visible</span></div>
@@ -208,14 +208,14 @@
             <h2>Index over time</h2>
           </div>
           <div class="index-summary">
-            <strong id="current-index">19.2</strong>
+            <strong id="current-index">19.5</strong>
             <span id="current-index-detail">Current · Jun 27</span>
           </div>
         </div>
         <div class="mermaid-chart" id="index-chart" aria-label="Handicap index trend">
           <p class="count">Loading index history…</p>
         </div>
-        <p class="data-note">The June 21 round moved the index from 19.9 immediately before posting to 19.2, a 0.7-stroke drop. The chart also preserves the earlier recorded checkpoints.</p>
+        <p class="data-note">The June 21 round moved the index from 19.9 immediately before posting to 19.2; the latest June 27 update is 19.5. The chart also preserves the earlier recorded checkpoints.</p>
       </section>
 
       <section id="combined-trend" class="comparison-section">
@@ -257,7 +257,7 @@
   </main>
 
   <script>
-    fetch('data/round-metrics.json?v=20260627')
+    fetch('data/round-metrics.json?v=20260629')
       .then((response) => response.json())
       .then((metrics) => {
         if (metrics?.penalties) {
@@ -265,7 +265,7 @@
         }
       });
 
-    fetch('data/practice-round-metrics.json?v=20260627')
+    fetch('data/practice-round-metrics.json?v=20260629')
       .then((response) => response.json())
       .then((metrics) => {
         document.querySelector('#practice-round-ratio').textContent = metrics.ratio.toFixed(1);
@@ -390,7 +390,7 @@
       </svg>`;
     }
 
-    fetch('data/index-history.json?v=20260627')
+    fetch('data/index-history.json?v=20260629')
       .then((response) => response.json())
       .then((payload) => {
         renderIndexChart(payload);
@@ -404,8 +404,8 @@
       });
 
     Promise.all([
-      fetch('data/index-history.json?v=20260627').then((response) => response.json()),
-      fetch('data/performance-history.json?v=20260627').then((response) => response.json())
+      fetch('data/index-history.json?v=20260629').then((response) => response.json()),
+      fetch('data/performance-history.json?v=20260629').then((response) => response.json())
     ])
       .then(([indexPayload, performancePayload]) => renderCombinedChart(indexPayload, performancePayload))
       .catch(() => {
