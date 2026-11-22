@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "matrix_version": "prototype-1",
+  "status": "illustrative",
+  "week_start": "2026-11-23",
+  "week_end": "2026-11-29",
+  "timezone": "America/Los_Angeles",
+  "updated": "2026-11-22",
+  "sessions": [
+    {
+      "id": "session-1",
+      "title": "Approach calibration",
+      "duration_minutes": 40,
+      "purpose": "Demonstrate carry-window evidence linked to a Harada commitment.",
+      "commitment_ids": [
+        "approach-play-c1"
+      ],
+      "blocks": [
+        {
+          "title": "Warm-up",
+          "minutes": 5,
+          "instructions": "Make easy wedge swings, then a few relaxed 9i shots. Set one target before the measured block."
+        },
+        {
+          "title": "Calibration",
+          "minutes": 15,
+          "instructions": "Hit eight 5i shots to the same target. Record carry for each shot and mark clean or mishit contact. Step away between shots; do not chase a longer shot."
+        },
+        {
+          "title": "Transfer",
+          "minutes": 15,
+          "instructions": "Alternate 9i and 5i for eight shots. Use the full pre-shot routine and record the intended target and miss direction."
+        },
+        {
+          "title": "Close",
+          "minutes": 5,
+          "instructions": "Review the carry window and write one observation for the diary. Stop at the planned time."
+        }
+      ],
+      "success_criteria": [
+        "Record all eight carries and contact notes.",
+        "Complete the full routine on every measured shot."
+      ],
+      "process_commitment": "One target, one tempo.",
+      "stop_rule": "Stop at 40 minutes. If time is short, reduce repetitions while keeping the routine; do not rush to finish."
+    },
+    {
+      "id": "session-2",
+      "title": "Contact and transfer",
+      "duration_minutes": 40,
+      "purpose": "Demonstrate transfer from a familiar drill into normal shots.",
+      "commitment_ids": [
+        "ball-striking-c1"
+      ],
+      "blocks": [
+        {
+          "title": "Warm-up",
+          "minutes": 5,
+          "instructions": "Use easy wedge swings to find balance and contact."
+        },
+        {
+          "title": "One drill",
+          "minutes": 10,
+          "instructions": "Use the familiar 9-to-3 drill with 9i for 12 balls at comfortable effort. Keep one cue for the block."
+        },
+        {
+          "title": "Transfer",
+          "minutes": 20,
+          "instructions": "Hit 15 normal 9i shots to one target. Count solid strikes and note short, long, left or right misses. Reset the routine between shots."
+        },
+        {
+          "title": "Close",
+          "minutes": 5,
+          "instructions": "Write the solid-contact count and one observation. Finish at the time limit, regardless of the last shot."
+        }
+      ],
+      "success_criteria": [
+        "Record solid contact out of 15 transfer shots."
+      ],
+      "process_commitment": "Finish balanced.",
+      "stop_rule": "Stop at 40 minutes. If time is short, reduce repetitions while keeping the routine; do not rush to finish."
+    },
+    {
+      "id": "session-3",
+      "title": "Short-game calibration",
+      "duration_minutes": 40,
+      "purpose": "Demonstrate a simple landing-window and recovery session.",
+      "commitment_ids": [
+        "short-game-c1"
+      ],
+      "blocks": [
+        {
+          "title": "Warm-up",
+          "minutes": 5,
+          "instructions": "Hit five easy chips to a broad landing area."
+        },
+        {
+          "title": "Landing window",
+          "minutes": 15,
+          "instructions": "Play 10 pitches from one comfortable distance. Pick a landing area before each ball. Count landings in that area; observe rollout."
+        },
+        {
+          "title": "Up-and-down practice",
+          "minutes": 15,
+          "instructions": "Play six separate chip-and-putt attempts with a full routine. Record attempts completed and outcomes without restarting."
+        },
+        {
+          "title": "Close",
+          "minutes": 5,
+          "instructions": "Record the landing-window count and one takeaway. Leave any unfinished reps for another session."
+        }
+      ],
+      "success_criteria": [
+        "Record landing-window hits out of 10 and six recovery attempts."
+      ],
+      "process_commitment": "Commit to the landing spot.",
+      "stop_rule": "Stop at 40 minutes. If time is short, reduce repetitions while keeping the routine; do not rush to finish."
+    },
+    {
+      "id": "session-4",
+      "title": "Putting and pressure",
+      "duration_minutes": 40,
+      "purpose": "Demonstrate start-line and pace practice.",
+      "commitment_ids": [
+        "putting-c1"
+      ],
+      "blocks": [
+        {
+          "title": "Warm-up",
+          "minutes": 5,
+          "instructions": "Roll six putts from a comfortable short distance to settle pace and start line."
+        },
+        {
+          "title": "Short putting",
+          "minutes": 15,
+          "instructions": "Hit 20 putts from 4 feet, in groups of five. Use the full routine. Count makes; do not restart a group after a miss."
+        },
+        {
+          "title": "Lag putting",
+          "minutes": 15,
+          "instructions": "Hit 15 putts from 24 feet. Count finishes within 3 feet. Reset between balls and note long or short bias."
+        },
+        {
+          "title": "Close",
+          "minutes": 5,
+          "instructions": "Play five putts from 5 feet as single attempts, then stop. Record makes, lag proximity and one observation."
+        }
+      ],
+      "success_criteria": [
+        "Record short-putt makes out of 20 and lag successes out of 15."
+      ],
+      "process_commitment": "Complete the routine, accept the result.",
+      "stop_rule": "Stop at 40 minutes. If time is short, reduce repetitions while keeping the routine; do not rush to finish."
+    }
+  ],
+  "prepared_on": "2026-11-22",
+  "review_ref": null
+}

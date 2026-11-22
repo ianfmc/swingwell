@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "version": "prototype-1",
+  "status": "illustrative",
+  "updated": "2026-11-22",
+  "review_cadence": "Monthly Matrix Update \u2014 Align; change only when evidence justifies a strategic adjustment",
+  "objective": {
+    "index": 13.0,
+    "deadline": "2027-06-30",
+    "starting_index": 19.9,
+    "status": "confirmed"
+  },
+  "pillars": [
+    {
+      "id": "ball-striking",
+      "title": "Ball striking",
+      "position": 0,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "ball-striking-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "ball-striking-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "approach-play",
+      "title": "Approach play",
+      "position": 1,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "approach-play-c1",
+          "title": "5i Calibration",
+          "position": 0,
+          "priority": "active",
+          "status": "illustrative",
+          "description": "Illustrative calibration example; not an approved commitment."
+        },
+        {
+          "id": "approach-play-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "approach-play-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "approach-play-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "approach-play-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "approach-play-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "approach-play-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "approach-play-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "driving",
+      "title": "Driving",
+      "position": 2,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "driving-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "driving-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "short-game",
+      "title": "Short game",
+      "position": 3,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "short-game-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "short-game-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "putting",
+      "title": "Putting",
+      "position": 5,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "putting-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "putting-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "course-management",
+      "title": "Course management",
+      "position": 6,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "course-management-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "course-management-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "mental-game",
+      "title": "Mental game",
+      "position": 7,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "mental-game-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "mental-game-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    },
+    {
+      "id": "practice-discipline",
+      "title": "Practice discipline",
+      "position": 8,
+      "status": "illustrative",
+      "commitments": [
+        {
+          "id": "practice-discipline-c1",
+          "title": "Commitment 1",
+          "position": 0,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c2",
+          "title": "Commitment 2",
+          "position": 1,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c3",
+          "title": "Commitment 3",
+          "position": 2,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c4",
+          "title": "Commitment 4",
+          "position": 3,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c5",
+          "title": "Commitment 5",
+          "position": 5,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c6",
+          "title": "Commitment 6",
+          "position": 6,
+          "priority": "maintenance",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c7",
+          "title": "Commitment 7",
+          "position": 7,
+          "priority": "active",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        },
+        {
+          "id": "practice-discipline-c8",
+          "title": "Commitment 8",
+          "position": 8,
+          "priority": "development",
+          "status": "unconfirmed",
+          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+        }
+      ]
+    }
+  ],
+  "review_ref": null
+}
