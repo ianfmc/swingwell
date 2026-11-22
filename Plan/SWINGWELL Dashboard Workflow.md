@@ -94,9 +94,13 @@ No historical data cleanup was performed. Known items for targeted review if the
 - Originals mentioned in the migration report and July–November records are absent from the inspected GitHub branch; local-only completeness is unverified.
 - Existing combined-chart points snap to index checkpoints. This behavior is preserved, with its existing explanatory label.
 
-## Publishing boundary
+## GitHub Pages publishing
 
-GitHub Pages is the intended host. No Pages settings, workflow, public site or merge is created by this implementation. After explicit review and publishing approval, configure a deployment that preserves the repository-relative layout: serve the repository with the application at `Dashboard/index.html` (or an equivalent staged artifact preserving `Dashboard/`, `Diary Entries/` and `Media/`). Do not publish only the contents of Dashboard: its existing `../Diary Entries/...` links need the sibling directories. Review the deployment file selection and visibility first. Existing S3 publishing is not invoked.
+Publication was approved on November 22, 2026. Use GitHub Settings → Pages → Deploy from a branch → `main` → `/ (root)`. The root `index.html` opens `Dashboard/`, whose default view is Harada. The `.nojekyll` marker serves the existing static files directly, including Markdown diaries, without a Jekyll build or custom workflow. Keep the repository-relative layout: `Dashboard/`, `Diary Entries/` and `Media/` stay siblings. Existing S3 publishing is not invoked.
+
+Once enabled, approved changes merged into `main` automatically trigger GitHub's built-in Pages deployment. Weekly updates change `Dashboard/data/weekly-plan.json`; evidence and diary updates use their existing files. Review on a feature branch, validate data and links, then merge the approved update. No HTML editing, custom build, scheduling framework or manual re-upload is needed. Publishing a provisional plan does not confirm it; its status remains provisional until Ian confirms it.
+
+The repository and Pages site are public. Diary links expose the committed records; do not add sensitive identifiers or private material to a branch under the assumption that an unmerged branch is private. The approved November 22 diary and evidence are included. The local Mac folder is not automatically synchronized by this workflow.
 
 ## Validation — approved v1.0
 
