@@ -19,6 +19,7 @@
     if (!response.ok) throw new Error(`Unable to load ${path}`);
     return response.json();
   };
+  const diaryLink = path => path.startsWith('../Diary Entries/') ? `diary.html?entry=${encodeURIComponent(path.slice(3))}` : path;
   function button(text, action, cls) {
     const b = el('button', text, cls); b.type = 'button'; b.addEventListener('click', action); return b;
   }
@@ -74,7 +75,7 @@
     const o = matrix.objective, box = $('#goal-summary'); box.replaceChildren();
     const goal = el('div', undefined, 'goal-main');
     goal.append(el('span', 'HANDICAP INDEX', 'eyebrow'), el('strong', o.index.toFixed(1), 'goal-number'), el('span', `by ${dateLabel(o.deadline)}`));
-    const record = Number.isFinite(o.latest_verified_index) ? {index: o.latest_verified_index, date: o.latest_verified_date, verified: true} : history?.current;
+    const record = SwingwellPerformance.indexHistory(history || {}, o).current;
     const detail = el('div', undefined, 'goal-progress');
     detail.append(el('p', `Starting index ${o.starting_index.toFixed(1)} · Goal ${o.index.toFixed(1)}`));
     if (record && Number.isFinite(record.index)) {
@@ -86,9 +87,9 @@
       detail.append(progress, el('p', `${Math.round(value)}% toward goal · recorded ${dateLabel(record.date)}`, 'helper'));
     } else detail.append(el('p', 'No handicap observation available. Goal remains confirmed.', 'helper'));
     box.append(goal, detail);
-    if (record?.verified) {
-      detail.append(el('p', o.latest_verified_source, 'helper'));
-      $('#verified-performance').replaceChildren(el('strong', `Latest verified handicap index: ${record.index.toFixed(1)} · ${dateLabel(record.date)}`), el('p', `${o.latest_verified_source}. Starting index ${o.starting_index.toFixed(1)}; goal ${o.index.toFixed(1)} by ${dateLabel(o.deadline)}. Historical charts below retain their original observations.`));
+    if (record) {
+      if (record.source) detail.append(el('p', record.source, 'helper'));
+      $('#verified-performance').replaceChildren(el('strong', `${record.verified ? 'Latest verified' : 'Last recorded'} handicap index: ${record.index.toFixed(1)} · ${dateLabel(record.date)}`), el('p', `${record.source || 'Dated repository observation; verification pending'}. Starting index ${o.starting_index.toFixed(1)}; goal ${o.index.toFixed(1)} by ${dateLabel(o.deadline)}. The index charts include this observation; round statistics retain their recorded dates.`));
     }
   }
   function pillarButton(pillar, cls = '') {
@@ -174,7 +175,7 @@
         pane.append(el('h4', 'Source diary and historical references'));
         d.references.forEach(ref => {
           if (typeof ref.path !== 'string' || !/^\.\.\/(Diary Entries|Monthly Summaries|Plan|Analysis)\//.test(ref.path) || ref.path.includes('/../')) return;
-          const a = el('a', ref.label || ref.path, 'archive-link'); a.href = ref.path; pane.append(a);
+          const a = el('a', ref.label || ref.path, 'archive-link'); a.href = diaryLink(ref.path); pane.append(a);
         });
       }
     }
@@ -205,7 +206,7 @@
     box.replaceChildren(el('h3', `Latest recorded practice · ${dateLabel(session.date)}`), el('h4', session.title), el('p', session.summary));
     (session.commitment_ids || []).filter(id=>commitments.has(id)).forEach(id => box.append(button(`${id} · View evidence`, () => { location.hash='harada'; showView('harada'); selectCommitment(id); }, 'session-link')));
     const ref=session.reference;
-    if (ref?.path?.startsWith('../Diary Entries/') && !ref.path.includes('/../')) { const a=el('a', 'Read the complete diary', 'archive-link'); a.href=ref.path; box.append(a); }
+    if (ref?.path?.startsWith('../Diary Entries/') && !ref.path.includes('/../')) { const a=el('a', 'Read the complete diary', 'archive-link'); a.href=diaryLink(ref.path); box.append(a); }
   }
   function renderShots(pane, shots) {
     const values = shots.carry.filter(Number.isFinite); if (!values.length) return;
