@@ -1,592 +1,367 @@
 {
-  "schema_version": 1,
-  "version": "prototype-1",
-  "status": "illustrative",
-  "updated": "2026-11-22",
-  "review_cadence": "Monthly Matrix Update \u2014 Align; change only when evidence justifies a strategic adjustment",
+  "schema_version": "1.0",
+  "matrix_version": "1.0",
+  "status": "approved",
+  "approved_on": "2026-11-22",
   "objective": {
-    "index": 13.0,
-    "deadline": "2027-06-30",
-    "starting_index": 19.9,
-    "status": "confirmed"
+    "handicap_index_target": 13.0,
+    "target_date": "2027-06-30",
+    "baseline_index": 19.9,
+    "latest_verified_index": 17.9,
+    "latest_verified_date": "2026-11-01",
+    "latest_verified_source": "GHIN screenshot supplied by user",
+    "principles": [
+      "SWINGWELL must not consume time that could otherwise be spent playing or practicing golf.",
+      "The purpose of SWINGWELL is to become a better golfer without sacrificing the joy of playing golf.",
+      "Raise the floor, preserve the ceiling."
+    ]
   },
   "pillars": [
     {
-      "id": "ball-striking",
-      "title": "Ball striking",
-      "position": 0,
-      "status": "illustrative",
+      "id": "BS",
+      "name": "Ball Striking",
+      "outcome": "Predictable low point and centered contact across the bag.",
       "commitments": [
         {
-          "id": "ball-striking-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-01",
+          "text": "Consistently control the low point ahead of the ball."
         },
         {
-          "id": "ball-striking-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-02",
+          "text": "Produce centered clubface contact across the irons."
         },
         {
-          "id": "ball-striking-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-03",
+          "text": "Maintain effective pressure transfer through impact."
         },
         {
-          "id": "ball-striking-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-04",
+          "text": "Establish a repeatable setup and ball position for each club."
         },
         {
-          "id": "ball-striking-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-05",
+          "text": "Maintain consistent contact quality across successive shots."
         },
         {
-          "id": "ball-striking-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-06",
+          "text": "Transfer reliable contact from partial swings to full swings."
         },
         {
-          "id": "ball-striking-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-07",
+          "text": "Preserve contact quality when changing clubs and targets."
         },
         {
-          "id": "ball-striking-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "BS-08",
+          "text": "Reduce costly thin, fat and other contact errors during rounds."
         }
-      ]
+      ],
+      "performance_guidance": "Initial practice benchmark: at least 8 of 10 acceptable contacts in a randomized iron set; define acceptable contact before testing."
     },
     {
-      "id": "approach-play",
-      "title": "Approach play",
-      "position": 1,
-      "status": "illustrative",
+      "id": "AP",
+      "name": "Approach Play",
+      "outcome": "Predictable approach shots that increase GIR, especially from 150–180 yards.",
       "commitments": [
         {
-          "id": "approach-play-c1",
-          "title": "5i Calibration",
-          "position": 0,
-          "priority": "active",
-          "status": "illustrative",
-          "description": "Illustrative calibration example; not an approved commitment."
+          "id": "AP-01",
+          "text": "Establish reliable carry-distance windows for short and mid irons."
         },
         {
-          "id": "approach-play-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-02",
+          "text": "Establish reliable carry and dispersion windows for long-approach clubs, including hybrids and fairway woods."
         },
         {
-          "id": "approach-play-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-03",
+          "text": "Control distance dispersion to reduce approaches finishing significantly short or long."
         },
         {
-          "id": "approach-play-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-04",
+          "text": "Control lateral dispersion to keep intended greens within a realistic shot pattern."
         },
         {
-          "id": "approach-play-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-05",
+          "text": "Maintain accurate, evidence-based carry distances for all approach clubs."
         },
         {
-          "id": "approach-play-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-06",
+          "text": "Select clubs and targets using actual carry distances and expected dispersion."
         },
         {
-          "id": "approach-play-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-07",
+          "text": "Maintain approach accuracy when switching clubs, distances and targets."
         },
         {
-          "id": "approach-play-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "AP-08",
+          "text": "Improve on-course greens in regulation, particularly from 150–180 yards."
         }
-      ]
+      ],
+      "performance_guidance": "Initial GIR benchmark: 3 per 9 holes. Long-approach calibration: 7 of 10 within agreed carry and lateral windows; define windows by distance/club. Track 5i, 6i, 7i, 8i, 4H, 3W and future fairway woods as supporting evidence, not separate commitments."
     },
     {
-      "id": "driving",
-      "title": "Driving",
-      "position": 2,
-      "status": "illustrative",
+      "id": "DR",
+      "name": "Driving",
+      "outcome": "Reliable, efficient driver distance while minimizing costly misses.",
       "commitments": [
         {
-          "id": "driving-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-01",
+          "text": "Establish a repeatable driver setup and alignment."
         },
         {
-          "id": "driving-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-02",
+          "text": "Develop a predictable driver starting direction and shot pattern."
         },
         {
-          "id": "driving-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-03",
+          "text": "Control clubface delivery to reduce significant left/right misses."
         },
         {
-          "id": "driving-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-04",
+          "text": "Maintain centered contact and efficient energy transfer."
         },
         {
-          "id": "driving-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-05",
+          "text": "Develop sustainable clubhead speed without sacrificing control."
         },
         {
-          "id": "driving-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-06",
+          "text": "Increase useful driving distance while maintaining playable dispersion."
         },
         {
-          "id": "driving-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-07",
+          "text": "Transfer driver reliability from practice to actual course conditions."
         },
         {
-          "id": "driving-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "DR-08",
+          "text": "Reduce penalties, recovery shots and costly execution errors from driver tee shots."
         }
-      ]
+      ],
+      "performance_guidance": "Development goals: 240–250 yards total, 95+ mph controlled speed; at least 80% playable driver tee shots; zero driver penalties per nine holes. Do not impose driver usage quota. Alternative tee-club selection belongs in Course Management."
     },
     {
-      "id": "short-game",
-      "title": "Short game",
-      "position": 3,
-      "status": "illustrative",
+      "id": "SG",
+      "name": "Short Game",
+      "outcome": "Turn missed greens into manageable bogeys and realistic par opportunities.",
       "commitments": [
         {
-          "id": "short-game-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-01",
+          "text": "Produce consistent contact and predictable rollout on basic chips."
         },
         {
-          "id": "short-game-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-02",
+          "text": "Control carry distance and trajectory on pitch shots."
         },
         {
-          "id": "short-game-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-03",
+          "text": "Develop reliable greenside bunker escapes, with predictable distance and enough control to create putting opportunities."
         },
         {
-          "id": "short-game-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-04",
+          "text": "Select appropriate short-game shots based on lie, landing area and available green."
         },
         {
-          "id": "short-game-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-05",
+          "text": "Control landing spots and rollout across different clubs and trajectories."
         },
         {
-          "id": "short-game-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-06",
+          "text": "Maintain effective short-game execution from rough, tight lies, uneven ground and other challenging conditions outside bunkers."
         },
         {
-          "id": "short-game-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-07",
+          "text": "Transfer short-game skills from controlled practice to randomized, on-course situations."
         },
         {
-          "id": "short-game-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "SG-08",
+          "text": "Improve scrambling performance and eliminate costly short-game execution errors."
         }
-      ]
+      ],
+      "performance_guidance": "Initial development benchmarks: scrambling at least 30%; 7 of 10 basic chips inside 6 feet from a defined lie; 9 of 10 bunker escapes safely onto green; at most one costly short-game mishit per nine holes. Bunker and non-bunker difficult lies are distinct."
     },
     {
-      "id": "putting",
-      "title": "Putting",
-      "position": 5,
-      "status": "illustrative",
+      "id": "PU",
+      "name": "Putting",
+      "outcome": "Measurable, repeatable putting across distances, slopes and playing conditions, minimizing avoidable strokes.",
       "commitments": [
         {
-          "id": "putting-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-01",
+          "text": "Establish a repeatable setup and starting line."
         },
         {
-          "id": "putting-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-02",
+          "text": "Develop consistent pace control across putting distances."
         },
         {
-          "id": "putting-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-03",
+          "text": "Maintain reliable conversion inside five feet."
         },
         {
-          "id": "putting-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-04",
+          "text": "Improve conversion consistency from five to ten feet."
         },
         {
-          "id": "putting-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-05",
+          "text": "Establish conversion and distance-control performance from ten to fifteen feet."
         },
         {
-          "id": "putting-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-06",
+          "text": "Develop reliable lag putting from longer distances."
         },
         {
-          "id": "putting-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-07",
+          "text": "Read and execute putts across slopes, breaks and changing speeds."
         },
         {
-          "id": "putting-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PU-08",
+          "text": "Transfer putting performance to the course and minimize three-putts."
         }
-      ]
+      ],
+      "performance_guidance": "Baseline first, no premature conversion percentages. Use established clock routine, long-lag test and sloped shelf. Aim for zero three-putts per nine; record first-putt leave and second-putt conversion. Flat green for calibration; slopes and random holes for transfer."
     },
     {
-      "id": "course-management",
-      "title": "Course management",
-      "position": 6,
-      "status": "illustrative",
+      "id": "CM",
+      "name": "Course Management",
+      "outcome": "Choose shots that reduce avoidable strokes and keep difficult holes manageable.",
       "commitments": [
         {
-          "id": "course-management-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-01",
+          "text": "Select tee clubs based on landing-area width, hazards and expected dispersion."
         },
         {
-          "id": "course-management-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-02",
+          "text": "Choose approach targets that account for shot patterns and trouble around the green."
         },
         {
-          "id": "course-management-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-03",
+          "text": "Make club selections using reliable carry distances rather than maximum distances."
         },
         {
-          "id": "course-management-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-04",
+          "text": "Evaluate risk and reward before attempting aggressive or low-percentage shots."
         },
         {
-          "id": "course-management-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-05",
+          "text": "Choose recovery shots that restore a playable position without compounding errors."
         },
         {
-          "id": "course-management-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-06",
+          "text": "Adapt shot selection to wind, elevation, lie and course conditions."
         },
         {
-          "id": "course-management-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-07",
+          "text": "Maintain a consistent pre-shot decision process and commit to the selected shot."
         },
         {
-          "id": "course-management-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "CM-08",
+          "text": "Review costly scoring errors to distinguish poor decisions from poor execution."
         }
-      ]
+      ],
+      "performance_guidance": "Initial goals: zero penalty strokes per nine; at most one costly execution error per nine across all clubs; zero compounded errors. Baseline decision quality separately from execution. Decision evaluation uses information available before shot. Mental commitment mechanics belong to P7."
     },
     {
-      "id": "mental-game",
-      "title": "Mental game",
-      "position": 7,
-      "status": "illustrative",
+      "id": "MG",
+      "name": "Mental Game",
+      "outcome": "Play with freedom, curiosity, gratitude and commitment; preserve enjoyment regardless of score.",
       "commitments": [
         {
-          "id": "mental-game-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-01",
+          "text": "Recognize my mental state (GREEN / YELLOW / RED) without judgment or attachment."
         },
         {
-          "id": "mental-game-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-02",
+          "text": "Maintain a regular mindfulness practice that develops awareness, perspective and emotional flexibility."
         },
         {
-          "id": "mental-game-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-03",
+          "text": "Execute a consistent pre-shot mental routine and commit fully to the selected shot."
         },
         {
-          "id": "mental-game-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-04",
+          "text": "Trust my swing without introducing last-second mechanical corrections."
         },
         {
-          "id": "mental-game-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-05",
+          "text": "Respond to poor shots with curiosity and problem-solving rather than frustration."
         },
         {
-          "id": "mental-game-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-06",
+          "text": "Maintain perspective and composure under pressure, uncertainty or unexpected outcomes."
         },
         {
-          "id": "mental-game-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-07",
+          "text": "Appreciate the opportunity to play, the course and the company regardless of score."
         },
         {
-          "id": "mental-game-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "MG-08",
+          "text": "Reflect on each round with curiosity and gratitude, identifying lessons without self-criticism."
         }
-      ]
+      ],
+      "performance_guidance": "Mindfulness/meditation (Calm or other approach) as regular practice, not a fifth range session. Post-round gratitude → curiosity → learning. Do not demand perfect happiness or suppress normal emotions; practice responding constructively."
     },
     {
-      "id": "practice-discipline",
-      "title": "Practice discipline",
-      "position": 8,
-      "status": "illustrative",
+      "id": "PD",
+      "name": "Practice Discipline",
+      "outcome": "Practice deliberately, measure honestly, and improve without making golf another job.",
       "commitments": [
         {
-          "id": "practice-discipline-c1",
-          "title": "Commitment 1",
-          "position": 0,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-01",
+          "text": "Maintain a realistic four-session weekly Flight Plan, adapting to available time and conditions."
         },
         {
-          "id": "practice-discipline-c2",
-          "title": "Commitment 2",
-          "position": 1,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-02",
+          "text": "Begin each practice session with a clear purpose and process-based intention."
         },
         {
-          "id": "practice-discipline-c3",
-          "title": "Commitment 3",
-          "position": 2,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-03",
+          "text": "Use measurable success criteria to distinguish improvement from repetition."
         },
         {
-          "id": "practice-discipline-c4",
-          "title": "Commitment 4",
-          "position": 3,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-04",
+          "text": "Balance technical development, randomized practice and on-course transfer."
         },
         {
-          "id": "practice-discipline-c5",
-          "title": "Commitment 5",
-          "position": 5,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-05",
+          "text": "Record every completed practice session and round in the SWINGWELL diary, with detail proportional to the evidence and learning value."
         },
         {
-          "id": "practice-discipline-c6",
-          "title": "Commitment 6",
-          "position": 6,
-          "priority": "maintenance",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-06",
+          "text": "Complete the Saturday Review to identify progress, inconsistencies and emerging priorities."
         },
         {
-          "id": "practice-discipline-c7",
-          "title": "Commitment 7",
-          "position": 7,
-          "priority": "active",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-07",
+          "text": "Complete the Sunday Plan to translate findings into the next four-session Flight Plan."
         },
         {
-          "id": "practice-discipline-c8",
-          "title": "Commitment 8",
-          "position": 8,
-          "priority": "development",
-          "status": "unconfirmed",
-          "description": "Awaiting the canonical commitment from the SWINGWELL conversation."
+          "id": "PD-08",
+          "text": "Complete the Monthly Matrix Update to keep commitments and priorities aligned with the handicap objective."
         }
-      ]
+      ],
+      "performance_guidance": "Four sessions are a planning baseline, not a quota. Record every completed practice and round, in brief when appropriate; no backlog or guilt. Saturday learn, Sunday prepare, monthly align."
     }
   ],
-  "review_ref": null
+  "ceremonies": {
+    "saturday_review": {
+      "purpose": "Learn",
+      "outputs": [
+        "Persisted weekly review",
+        "Evidence updates when warranted",
+        "Practice priorities for next week"
+      ]
+    },
+    "sunday_plan": {
+      "purpose": "Prepare",
+      "outputs": [
+        "Updated weekly-plan.json",
+        "Four Apple Notes-ready sessions",
+        "Published Flight Plan"
+      ]
+    },
+    "monthly_matrix_update": {
+      "purpose": "Align",
+      "outputs": [
+        "Versioned matrix if evidence justifies change",
+        "Updated priorities and objectives",
+        "Brief decision record"
+      ]
+    }
+  }
 }

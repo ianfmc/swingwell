@@ -2,13 +2,15 @@
 
 Goal: handicap index 13.0 by June 30, 2027, starting from 19.9. Success is strokes saved. Routine planning should take place in ChatGPT; the dashboard only displays the result.
 
-## Prototype boundary
+## Approved strategy and provisional execution
 
-This feature branch is a working interaction prototype, not a canonical coaching plan. The objective is confirmed. The eight pillar labels are drawn from the supplied conceptual design context, but their arrangement and all priority assignments are illustrative. There are 64 stable commitment slots: 5i Calibration demonstrates the requested interaction; the other 63 await canonical wording. Do not reconstruct these from old coaching documents.
+The supplied Harada v1.0 handoff is authoritative: `Dashboard/data/harada.json` and `Plan/SWINGWELL-Harada-v1.0.md` are preserved byte-for-byte. All eight pillars, 64 commitment IDs and exact commitment wording are retained. The UI maps the supplied array order to row-major positions 0–8, excluding center 4; it does not alter canonical data. Optional explicit `position` values can override presentation order in a future approved version.
 
-The 5i shot history is a synthetic UI fixture: eight carries, mean 161.1 yd and range 38 yd. It is explicitly labeled illustrative in JSON and the UI. The linked June 23 diary is contextual approach practice involving other clubs, not evidence for the synthetic 5i data. Four complete 40-minute sessions demonstrate the copy workflow; they are not approved prescriptions.
+The latest verified handicap is 17.9 on November 1, 2026, sourced to the user-supplied GHIN screenshot as recorded in the approved handoff. Harada progress is 2.0 of the required 6.9 index points (29%). Performance displays the same verified observation separately from the unchanged historical charts and 19.5 June 27 observation. No membership number or screenshot is added.
 
-The latest repository index is 19.5, observed June 27, 2026. It is displayed as last recorded, with verification pending. It is not represented as a current verified handicap. The progress bar uses that dated observation and does not predict a trajectory.
+`weekly-plan.json` is also preserved byte-for-byte from the handoff: November 23–29, four sessions of 55, 50, 55 and 50 minutes. Its status remains `proposed_pending_sunday_review`; the view and every copied session say provisional. This is not evidence that either review ceremony has occurred. Four sessions are a flexible planning baseline; a round can replace a session.
+
+No commitment priorities or commitment-specific measured evidence were supplied. Priorities display “Not assigned”; active/development/maintenance styles are supported without inventing classifications. Synthetic prototype measurements and hypotheses have been removed. Empty commitments display “Baseline needed,” the approved pillar guidance, and linked provisional practice actions when available. Benchmarks remain goals rather than measured results.
 
 ## Three views
 
@@ -20,17 +22,17 @@ The latest repository index is 19.5, observed June 27, 2026. It is displayed as 
 
 | File | Update when | Contents |
 | --- | --- | --- |
-| `Dashboard/data/harada.json` | Monthly Matrix Update — Align; only if evidence warrants a change | Objective, matrix version, updated date, pillars and commitments with stable IDs, positions, priorities and status |
+| `Dashboard/data/harada.json` | Monthly Matrix Update — Align; only if evidence warrants a change | Approved objective and verification, matrix_version, approved_on, pillars, outcomes, performance_guidance, exact commitments and IDs; optional positions/priorities |
 | `Dashboard/data/commitment-evidence.json` | Meaningful new evidence is recorded | Matrix version; commitment-keyed facts, metrics, objectives, hypotheses, actions, dates, shots and references |
-| `Dashboard/data/weekly-plan.json` | Sunday Plan — Prepare | Week start/end, timezone, matrix version and exactly four complete practice sessions |
+| `Dashboard/data/weekly-plan.json` | Sunday Plan — Prepare | Week start/end, provisional or confirmed status, note, matrix version and four complete sessions; optional timezone (defaults to America/Los_Angeles) |
 
 Keep IDs stable when editing wording. If the meaning of a commitment changes, assign a new ID; do not attach the old commitment's evidence to a different concept. On a matrix version change, explicitly review and align evidence and plan versions. Git history preserves prior versions.
 
-Priorities are `active`, `development` or `maintenance`. The prototype's rotating priority colors demonstrate the interface, not a strategic decision. Change top-level `status` from `illustrative` only after confirming that file's contents. Replace each commitment's `unconfirmed` or `illustrative` status with `confirmed` after approval. The header's prototype label is data-driven.
+Optional commitment `priority` values are `active`, `development` or `maintenance`; absence means unassigned, not poor performance. Assign priorities only through a confirmed strategic decision. Approved matrix fields use `matrix_version`, `approved_on`, pillar `name`, commitment `text` and stable `id`; the renderer adapts these fields without rewriting their source. Keep the human-readable companion aligned when approved strategy changes.
 
 Evidence fields are optional. Use `facts` as dated objects with `text` and `date`; `hypotheses` as separate dated objects; `metrics` as `{label, value, unit, date}`; `shots` as `{status, unit, carry: [numbers]}`; `performance_objectives` as text strings; `next_action` as text; and `references` as `{label, path}`. Link source diaries using paths relative to Dashboard, e.g. `../Diary Entries/...`. Reuse the existing performance JSON for aggregate history; avoid copying those series into commitment evidence. Carry range is max minus min, not lateral dispersion or standard deviation. Empty evidence displays an honest empty state.
 
-Each weekly session contains `id`, `title`, `duration_minutes`, `purpose`, `commitment_ids`, `blocks` (`title`, `minutes`, `instructions`), `success_criteria`, and optional `process_commitment` and `stop_rule`. Block minutes must total the session duration. Four sessions are required. Invalid references or a mismatched matrix version prevent an apparently valid plan from displaying.
+Each weekly session contains `id`, `title`, `duration_minutes`, `purpose`, `commitment_ids`, `blocks` (`name`, `minutes`, `instructions`), `success_criteria`, and optional `process_commitment` and `stop_rule`. Block minutes must total the session duration. Four sessions are required. Invalid references or a mismatched matrix version prevent an apparently valid plan from displaying.
 
 ## Operating ceremonies
 
@@ -57,19 +59,19 @@ This is additive; older monthly compilations stay untouched. Do not create backd
 
 - `weekly-plan.json`: `prepared_on` dates the Sunday preparation; optional `review_ref` links to its Saturday review. Week dates identify execution, not the review date. In the UI a supplied review link appears within Flight Plan.
 - `commitment-evidence.json`: optional `review_ref` identifies the review associated with an evidence update. Individual observations retain their actual observation dates and diary references; review date does not replace observation date.
-- `harada.json`: `review_cadence` identifies the monthly strategic review; optional `review_ref` points to the latest strategic decision record. Keep stable IDs and increment `version` for substantive matrix changes. A no-change review can update the review metadata without changing matrix version.
-- Review paths are relative to Dashboard, e.g. `../Monthly Summaries/YYYY-MM-DD - SWINGWELL Weekly Review.md`. Null means no record has been supplied. The prototype contains no fabricated review records.
+- `harada.json`: `review_cadence` identifies the monthly strategic review; optional `review_ref` points to the latest strategic decision record. Keep stable IDs and increment `matrix_version` for substantive matrix changes. A no-change review can update the review metadata without changing matrix version.
+- Review paths are relative to Dashboard, e.g. `../Monthly Summaries/YYYY-MM-DD - SWINGWELL Weekly Review.md`. Null means no record has been supplied. No fabricated review records have been added.
 
 ### Low-effort maintenance
 
 1. Saturday: ask ChatGPT to review the week's existing evidence and prepare the dated review, evidence updates and recommendations together.
-2. Sunday: use that review to prepare four sessions. Routine plan updates change only `weekly-plan.json`; complete Apple Notes text is rendered from it automatically.
+2. Sunday: use that review to prepare four sessions. Keep `status` as `proposed_pending_sunday_review` until Ian confirms the plan; then set it to `confirmed` and optionally record `confirmed_on`. Routine plan updates change only `weekly-plan.json`; complete Apple Notes text is rendered from it automatically.
 3. Monthly: review the matrix and record the decision. Change strategy only when evidence justifies it; reconcile the evidence and plan version references when it changes.
 4. Check dates, commitment links and timings; commit the small set of changed data/review files to GitHub. After initial publication is approved and Pages configured, use the approved publishing path to make Sunday's Flight Plan available. Until then, review it on the feature branch; do not merge or publish without approval.
 
 There is no completion checklist or browser storage. Completed work remains in the existing Markdown diaries. Plans show upcoming, current or past status using the configured timezone (`America/Los_Angeles`). The page does not automatically generate a new plan.
 
-Copy to Clipboard writes all session instructions as plain text: dates, duration, purpose, linked commitments, every block, success criteria, process commitment, stop rule and diary reminder. On denied or unavailable clipboard access, a labeled read-only text area exposes and selects the complete text for manual copying. No Apple Notes account connection is required.
+Copy to Clipboard writes all session instructions as plain text: provisional/confirmed status, expired-plan warning when applicable, plan note, dates, duration, purpose, linked commitment IDs and exact text, every block, success criteria, process commitment, stop rule and diary reminder. On denied or unavailable clipboard access, a labeled read-only text area exposes and selects the complete text for manual copying. No Apple Notes account connection is required.
 
 ## Validation and review
 
@@ -77,7 +79,7 @@ Copy to Clipboard writes all session instructions as plain text: dates, duration
 - Check every session's clipboard text against its full practice instructions, plus the fallback with clipboard permission denied.
 - Check an expired plan and invalid commitment reference; neither should silently display as a valid current plan.
 - Check both existing SVG charts, the diary search and a diary link.
-- Confirm canonical matrix, evidence and first approved week before deployment.
+- Confirm the provisional week, any desired priority assignments, and publication visibility before deployment. The canonical matrix is already approved; unavailable evidence stays empty.
 
 ## Deferred discrepancies
 
@@ -94,8 +96,18 @@ No historical data cleanup was performed. Known items for targeted review if the
 
 ## Publishing boundary
 
-GitHub Pages is the intended host. No Pages settings, workflow, public site or merge is created by this prototype. After explicit review and publishing approval, configure a deployment that preserves the repository-relative layout: serve the repository with the application at `Dashboard/index.html` (or an equivalent staged artifact preserving `Dashboard/`, `Diary Entries/` and `Media/`). Do not publish only the contents of Dashboard: its existing `../Diary Entries/...` links need the sibling directories. Review the deployment file selection and visibility first. Existing S3 publishing is not invoked.
+GitHub Pages is the intended host. No Pages settings, workflow, public site or merge is created by this implementation. After explicit review and publishing approval, configure a deployment that preserves the repository-relative layout: serve the repository with the application at `Dashboard/index.html` (or an equivalent staged artifact preserving `Dashboard/`, `Diary Entries/` and `Media/`). Do not publish only the contents of Dashboard: its existing `../Diary Entries/...` links need the sibling directories. Review the deployment file selection and visibility first. Existing S3 publishing is not invoked.
 
-## Prototype verification — November 22, 2026
+## Validation — approved v1.0
 
-Passed Chrome desktop and 390/320 CSS-pixel phone-width checks: exactly three top-level views, 81 accessible matrix cells, keyboard commitment activation, illustrative 5i metrics/chart, empty evidence state, four full clipboard copies (1,153–1,278 characters), denied-clipboard selectable-text fallback, expired-plan notice, rejection of an invalid commitment link, both preserved historical SVG charts and diary search (51 records; date filtering works). Data checks passed for unique IDs, matrix positions, version links, four sessions and timing totals. Existing historical files and performance JSON are unchanged. Phone-width checks use responsive viewports, not physical iPhone/Safari or a live Apple Notes app; actual Notes paste remains a user acceptance check. No deployment performed.
+Check the approved JSON and Markdown against the supplied handoff byte-for-byte; verify 64 unique commitment IDs, eight pillars with eight commitments each, all session references and timing totals. Check all 81 rendered cells and exact commitment wording, the verified handicap date and 29% progress, provisional status in the view and all four complete clipboard outputs, denied-clipboard manual selection, expired plans, missing evidence, keyboard navigation, phone widths, historical charts and searchable diary access.
+
+Browser checks use Chrome at phone CSS widths, not a physical iPhone/Safari or the Apple Notes app. Actual device paste remains a user acceptance check. GitHub Pages is intended but has not been configured or published; merge and publication require approval.
+
+### Verified November 22, 2026
+
+Passed source byte comparisons, 8×8 unique IDs, session links and timing totals, JavaScript syntax and whitespace checks. Browser validation passed three-view navigation, 81 cells, keyboard commitment activation, verified 17.9 / November 1 / 29% display, empty and unavailable evidence handling, four complete plain-text clipboard copies (2,041 / 2,035 / 2,129 / 2,447 characters), provisional labels, denied-clipboard selection fallback, expired-plan display and copied warning, and invalid commitment-link rejection. No application console errors were observed; the browser extension emitted unrelated metadata errors.
+
+Responsive checks passed 390px and 320px iframe widths (375px and 305px content widths with the browser scrollbar), including expanded matrix containment and keyboard access to the last commitment. Both historical SVG charts rendered; the archive displayed 51 records and filtered by date. All 51 archive file targets exist locally. The cloud browser blocked the Markdown download action, so an actual diary download was not verified there. Physical iPhone/Safari and Apple Notes paste remain user acceptance checks.
+
+Visibility review: the existing GitHub repository is public. This change adds approved strategy, the provisional plan and the human-readable matrix; it adds no GHIN membership number, screenshot or new historical diary. Public Pages publication and its file selection still require Ian's approval. The current branch is for review; no merge or deployment is authorized by this validation.

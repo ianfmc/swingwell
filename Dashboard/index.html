@@ -14,7 +14,7 @@
       <h1>SWINGWELL Dashboard</h1>
       <p>What matters. Why. What comes next.</p>
     </div>
-    <div class="updated">Prototype · canonical matrix pending</div>
+    <div class="updated">Harada · loading approved strategy</div>
   </header>
 
   <main>
@@ -36,7 +36,8 @@
             <div class="section-heading"><h3>Your Harada matrix</h3><button id="expand-matrix" type="button" aria-expanded="false" aria-controls="full-matrix-panel">Full 81-cell matrix</button></div>
             <p class="helper">Choose a pillar, then a commitment.</p>
             <div id="harada-overview" class="harada-overview" aria-label="Nine-cell Harada overview"></div>
-            <div class="priority-legend" aria-label="Commitment priority legend"><span class="priority active">Active focus</span><span class="priority development">Development</span><span class="priority maintenance">Maintenance</span></div>
+            <p class="helper">Priority labels are shown when assigned during a strategic review. The approved v1.0 handoff does not assign priorities.</p>
+            <div class="priority-legend" aria-label="Commitment priority legend"><span class="priority active">Active focus</span><span class="priority development">Development</span><span class="priority maintenance">Maintenance</span><span class="priority unassigned">Not assigned</span></div>
             <div id="full-matrix-panel" hidden>
               <p class="helper">Scroll across on smaller screens. Every cell is keyboard accessible.</p>
               <div class="matrix-scroll" tabindex="0" role="region" aria-label="Complete 81-cell Harada matrix"><div id="full-matrix" class="full-matrix"></div></div>
@@ -50,7 +51,7 @@
         <section><p class="eyebrow">Take it to the range</p><h2 id="flight-title" tabindex="-1">Weekly flight plan</h2><div id="plan-heading"></div><div id="session-list" class="session-grid"></div></section>
       </div>
       <div id="performance" class="app-view" aria-labelledby="performance-title" hidden>
-        <section><p class="eyebrow">Evidence, over time</p><h2 id="performance-title" tabindex="-1">Performance</h2><p class="historical-notice">Historical record through June 27, 2026. These observations and earlier coaching targets are not a current assessment.</p><a class="archive-link" href="diary.html">Search the diary archive</a></section>
+        <section><p class="eyebrow">Evidence, over time</p><h2 id="performance-title" tabindex="-1">Performance</h2><div id="verified-performance" class="verified-performance"></div><p class="historical-notice">Historical record through June 27, 2026. These observations and earlier coaching targets are not a current assessment.</p><a class="archive-link" href="diary.html">Search the diary archive</a></section>
       <section id="overview" class="hero-section">
         <div class="section-heading">
           <div>
@@ -84,7 +85,7 @@
         </div>
 
         <div class="signal-strip">
-          <div><strong>19.5</strong><span>Last recorded index · Jun 27, 2026</span></div>
+          <div><strong>19.5</strong><span>Historical index · Jun 27, 2026</span></div>
           <div><strong id="practice-round-ratio">4.0</strong><span>Historical practice ratio · count review pending</span></div>
           <div><strong id="penalty-rate">0.2</strong><span>Historical penalty rate · incomplete series</span></div>
           <div><strong>+4 vs +9</strong><span>Front vs back · stamina remains visible</span></div>
@@ -238,7 +239,7 @@
         <div class="mermaid-chart" id="index-chart" aria-label="Handicap index trend">
           <p class="count">Loading index history…</p>
         </div>
-        <p class="data-note">The June 21 round moved the index from 19.9 immediately before posting to 19.2; the latest June 27 update is 19.5. The chart also preserves the earlier recorded checkpoints.</p>
+        <p class="data-note">The June 21 round moved the index from 19.9 immediately before posting to 19.2; the June 27 historical update is 19.5. The chart also preserves the earlier recorded checkpoints.</p>
       </section>
 
       <section id="combined-trend" class="comparison-section">

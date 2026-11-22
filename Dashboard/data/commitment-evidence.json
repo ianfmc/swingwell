@@ -1,45 +1,7 @@
 {
-  "schema_version": 1,
-  "matrix_version": "prototype-1",
-  "status": "illustrative",
+  "schema_version": "1.0",
+  "matrix_version": "1.0",
   "updated": "2026-11-22",
-  "commitments": {
-    "approach-play-c1": {
-      "status": "illustrative",
-      "observation_date": "2026-11-22",
-      "facts": [],
-      "performance_objectives": [
-        "Establish a repeatable carry window before choosing a distance target. Illustrative objective only."
-      ],
-      "hypotheses": [
-        {
-          "text": "Strike variation may explain the carry spread; the sample does not establish a cause.",
-          "date": "2026-11-22",
-          "status": "illustrative"
-        }
-      ],
-      "next_action": "Illustrative: record eight 5i carries to one target using the same tempo. Mark clean and mishit strikes separately; review after the block.",
-      "references": [
-        {
-          "path": "../Diary Entries/2026/2026-06/20260623 - SWINGWELL Golf Diary Entry.md",
-          "label": "Context only: June 23 approach practice (9i / 7i / 4h; not evidence for this illustrative 5i sample)"
-        }
-      ],
-      "shots": {
-        "status": "illustrative",
-        "unit": "yd",
-        "carry": [
-          142,
-          151,
-          156,
-          160,
-          165,
-          166,
-          169,
-          180
-        ]
-      }
-    }
-  },
-  "review_ref": null
+  "note": "No commitment-specific measured evidence was supplied in the approved handoff. Baselines pending; no synthetic observations retained.",
+  "commitments": {}
 }

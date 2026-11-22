@@ -786,3 +786,11 @@ progress { width: 100%; height: 12px; accent-color: var(--accent); }
  .goal-main .eyebrow { display: none; }
  .goal-progress .helper { font-size: 13px; }
 }
+
+/* Approved commitments retain their complete wording, including in the expanded matrix. */
+.priority.unassigned { color: #4c5560; background: #edf0f2; }
+.swingwell-app .matrix-cell { font-size: 14px; line-height: 1.4; }
+.full-matrix { min-width: 1380px; }
+.priority { font-size: 14px; }
+.verified-performance { padding: 16px; background: var(--accent-soft); border-left: 3px solid var(--accent); }
+.verified-performance p { margin-bottom: 0; }

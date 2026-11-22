@@ -3,7 +3,7 @@
   'use strict';
   const $ = (selector) => document.querySelector(selector);
   const positions = [0, 1, 2, 3, 5, 6, 7, 8];
-  const priorities = { active: 'Active focus', development: 'Development', maintenance: 'Maintenance' };
+  const priorities = { unassigned: 'Not assigned', active: 'Active focus', development: 'Development', maintenance: 'Maintenance' };
   let matrix, evidence, plan;
   const commitments = new Map();
   const el = (tag, text, cls) => {
@@ -44,16 +44,28 @@
   window.addEventListener('hashchange', () => route(true));
   route();
 
+  // Adapt the approved handoff schema for rendering without rewriting its data or IDs.
+  function normalizeMatrix(data) {
+    const o = data.objective || {};
+    return { ...data, version: data.matrix_version, updated: data.approved_on,
+      objective: { ...o, index: o.handicap_index_target, deadline: o.target_date, starting_index: o.baseline_index },
+      pillars: (data.pillars || []).map((p, i) => ({ ...p, title: p.name, position: p.position ?? positions[i],
+        commitments: (p.commitments || []).map((c, j) => ({ ...c, title: c.text, position: c.position ?? positions[j], priority: c.priority ?? 'unassigned' })) })) };
+  }
+  function normalizePlan(data) {
+    return { ...data, timezone: data.timezone || 'America/Los_Angeles',
+      sessions: (data.sessions || []).map(s => ({ ...s, blocks: (s.blocks || []).map(b => ({ ...b, title: b.name })) })) };
+  }
   function validateMatrix(data) {
     if (!data.version || !data.objective || !Number.isFinite(data.objective.index) || !Number.isFinite(data.objective.starting_index) || !/^\d{4}-\d{2}-\d{2}$/.test(data.objective.deadline)) throw new Error('Objective incomplete');
     if (data.pillars?.length !== 8) throw new Error('Eight pillars required');
     const ids = new Set(), used = new Set();
     for (const pillar of data.pillars) {
-      if (!pillar.id || ids.has(pillar.id) || !positions.includes(pillar.position) || used.has(pillar.position) || pillar.commitments?.length !== 8) throw new Error('Invalid pillar structure');
+      if (!pillar.id || !pillar.title || ids.has(pillar.id) || !positions.includes(pillar.position) || used.has(pillar.position) || pillar.commitments?.length !== 8) throw new Error('Invalid pillar structure');
       ids.add(pillar.id); used.add(pillar.position);
       const cells = new Set();
       for (const c of pillar.commitments) {
-        if (!c.id || ids.has(c.id) || !positions.includes(c.position) || cells.has(c.position) || !priorities[c.priority]) throw new Error('Invalid commitment structure');
+        if (!c.id || !c.title || ids.has(c.id) || !positions.includes(c.position) || cells.has(c.position) || !priorities[c.priority]) throw new Error('Invalid commitment structure');
         ids.add(c.id); cells.add(c.position);
       }
     }
@@ -62,7 +74,7 @@
     const o = matrix.objective, box = $('#goal-summary'); box.replaceChildren();
     const goal = el('div', undefined, 'goal-main');
     goal.append(el('span', 'HANDICAP INDEX', 'eyebrow'), el('strong', o.index.toFixed(1), 'goal-number'), el('span', `by ${dateLabel(o.deadline)}`));
-    const record = history?.current;
+    const record = Number.isFinite(o.latest_verified_index) ? {index: o.latest_verified_index, date: o.latest_verified_date, verified: true} : history?.current;
     const detail = el('div', undefined, 'goal-progress');
     detail.append(el('p', `Starting index ${o.starting_index.toFixed(1)} · Goal ${o.index.toFixed(1)}`));
     if (record && Number.isFinite(record.index)) {
@@ -70,10 +82,14 @@
       if (record.verified !== true) detail.append(el('p', 'Verification pending · dated repository observation.', 'helper'));
       const span = o.starting_index - o.index;
       const value = span > 0 ? Math.max(0, Math.min(100, (o.starting_index - record.index) / span * 100)) : 0;
-      const progress = el('progress'); progress.max = 100; progress.value = value; progress.setAttribute('aria-label', 'Progress based on last recorded handicap');
+      const progress = el('progress'); progress.max = 100; progress.value = value; progress.setAttribute('aria-label', 'Progress based on dated handicap observation');
       detail.append(progress, el('p', `${Math.round(value)}% toward goal · recorded ${dateLabel(record.date)}`, 'helper'));
     } else detail.append(el('p', 'No handicap observation available. Goal remains confirmed.', 'helper'));
     box.append(goal, detail);
+    if (record?.verified) {
+      detail.append(el('p', o.latest_verified_source, 'helper'));
+      $('#verified-performance').replaceChildren(el('strong', `Latest verified handicap index: ${record.index.toFixed(1)} · ${dateLabel(record.date)}`), el('p', `${o.latest_verified_source}. Starting index ${o.starting_index.toFixed(1)}; goal ${o.index.toFixed(1)} by ${dateLabel(o.deadline)}. Historical charts below retain their original observations.`));
+    }
   }
   function pillarButton(pillar, cls = '') {
     const b = button(pillar.title, () => selectPillar(pillar.id, true), `pillar-cell ${cls}`);
@@ -97,7 +113,7 @@
         else if (cell === 4) b = pillarButton(pillar);
         else {
           const c = pillar.commitments.find(x => x.position === cell);
-          b = button(c.title, () => selectCommitment(c.id), `commitment-cell ${c.priority}`);
+          b = button(`${c.id} · ${c.title}`, () => selectCommitment(c.id), `commitment-cell ${c.priority}`);
           b.setAttribute('aria-label', `${pillar.title}: ${c.title}, ${priorities[c.priority]}${c.status === 'unconfirmed' ? ', awaiting confirmation' : ''}`);
         }
         b.classList.add('matrix-cell'); group.append(b);
@@ -111,13 +127,14 @@
     const pane = $('#pillar-detail'); pane.replaceChildren();
     pane.append(el('p', matrix.status === 'illustrative' ? 'Illustrative pillar · wording to confirm' : 'Strategic pillar', 'eyebrow'));
     const h = el('h3', pillar.title); h.tabIndex = -1; pane.append(h);
-    const objectives = pillar.performance_objectives || [];
-    if (objectives.length) pane.append(list(objectives));
+    pane.append(el('p', pillar.outcome));
+    const objectives = pillar.performance_guidance ? [pillar.performance_guidance] : [];
+    if (objectives.length) pane.append(el('h4', 'Performance guidance · goals, not measured results'), list(objectives));
     else pane.append(el('p', 'Performance objectives will appear when confirmed.', 'helper'));
     const group = el('div', undefined, 'commitment-list');
     pillar.commitments.slice().sort((a,b) => a.position-b.position).forEach(c => {
       const b = button('', () => selectCommitment(c.id), 'commitment-choice'); b.dataset.commitment = c.id;
-      const text = el('span'); text.append(el('strong', c.title), el('small', c.status === 'unconfirmed' ? 'Awaiting canonical wording' : 'Open evidence and next action'));
+      const text = el('span'); text.append(el('strong', `${c.id} · ${c.title}`), el('small', c.status === 'unconfirmed' ? 'Awaiting canonical wording' : 'Open evidence and next action'));
       b.append(text, badge(c.priority)); group.append(b);
     });
     pane.append(group); $('#commitment-detail').hidden = true;
@@ -134,9 +151,9 @@
     const pane = $('#commitment-detail'); pane.replaceChildren(); pane.hidden = false;
     pane.append(button('Back to commitments', () => { pane.hidden = true; $(`[data-commitment="${id}"]`).focus(); }, 'text-button'));
     pane.append(el('p', entry.pillar.title, 'eyebrow'));
-    const title = el('h3', c.title); title.tabIndex = -1; pane.append(title, badge(c.priority), el('p', c.description || ''));
+    const title = el('h3', `${c.id} · ${c.title}`); title.tabIndex = -1; pane.append(title, badge(c.priority), el('p', c.description || ''));
     if (matrix.status === 'illustrative' || d?.status === 'illustrative') pane.append(el('p', 'Illustrative example. Sample measurements and actions are not verified personal evidence.', 'prototype-notice'));
-    if (!d) pane.append(el('p', 'No evidence or next action recorded for this commitment yet. Nothing has been inferred from older diaries.', 'empty-state'));
+    if (!d) pane.append(el('p', 'Baseline needed. No commitment-specific evidence or measured results supplied yet. No coaching hypothesis or next action has been inferred from older diaries.', 'empty-state'));
     else {
       if (d.observation_date) pane.append(el('p', `Observation: ${dateLabel(d.observation_date)}`, 'helper'));
       evidenceSection(pane, 'Recorded facts', d.facts?.map(x => typeof x === 'string' ? x : `${x.date ? dateLabel(x.date) + ': ' : ''}${x.text}`));
@@ -156,9 +173,10 @@
         });
       }
     }
+    evidenceSection(pane, 'Pillar performance guidance · not measured evidence', [entry.pillar.performance_guidance]);
     const linked = plan?.sessions?.filter(s => s.commitment_ids.includes(id)) || [];
     if (linked.length) {
-      pane.append(el('h4', 'In the flight plan'));
+      pane.append(el('h4', plan.status === 'confirmed' ? 'Next practice · confirmed flight plan' : 'Proposed next practice · provisional flight plan'));
       linked.forEach(s => pane.append(button(s.title, () => { showView('flight-plan'); location.hash = 'flight-plan'; requestAnimationFrame(() => { const card = document.getElementById(s.id); card.scrollIntoView({ block: 'start' }); card.focus({ preventScroll: true }); }); }, 'session-link')));
     }
     pane.scrollIntoView({ block: 'start' }); title.focus({ preventScroll: true });
@@ -181,13 +199,13 @@
     localDate(data.timezone);
     const ids=new Set();
     data.sessions.forEach(s => {
-      if (!/^[a-z0-9-]+$/.test(s.id) || ids.has(s.id) || !s.title || !s.purpose || !s.blocks?.length || !s.success_criteria?.length || !s.commitment_ids?.length || s.commitment_ids.some(id => !commitments.has(id)) || s.blocks.some(b => !b.title || !b.instructions || !Number.isFinite(b.minutes) || b.minutes <= 0) || s.blocks.reduce((a,b)=>a+b.minutes,0) !== s.duration_minutes) throw new Error('Incomplete session or invalid commitment link');
+      if (!/^[A-Za-z0-9-]+$/.test(s.id) || ids.has(s.id) || !s.title || !s.purpose || !s.blocks?.length || !s.success_criteria?.length || !s.commitment_ids?.length || s.commitment_ids.some(id => !commitments.has(id)) || s.blocks.some(b => !b.title || !b.instructions || !Number.isFinite(b.minutes) || b.minutes <= 0) || s.blocks.reduce((a,b)=>a+b.minutes,0) !== s.duration_minutes) throw new Error('Incomplete session or invalid commitment link');
       ids.add(s.id);
     });
   }
   function sessionText(session) {
-    const names = session.commitment_ids.map(id => { const c=commitments.get(id); return `${c.pillar.title} / ${c.commitment.title}`; });
-    return [ 'SWINGWELL — ' + session.title, ...(plan.status === 'illustrative' ? ['ILLUSTRATIVE PROTOTYPE — not an approved practice prescription'] : []), `Week: ${dateLabel(plan.week_start)} – ${dateLabel(plan.week_end)}`, `Duration: approximately ${session.duration_minutes} minutes`, '', 'PURPOSE', session.purpose, '', 'HARADA COMMITMENTS', ...names, '', 'PRACTICE BLOCKS', ...session.blocks.flatMap((b,i) => [`${i+1}. ${b.title} — approximately ${b.minutes} min`, b.instructions, '']), 'SUCCESS CRITERIA', ...session.success_criteria.map(x => '• ' + x), '', ...(session.process_commitment ? ['PROCESS COMMITMENT', session.process_commitment, ''] : []), ...(session.stop_rule ? ['STOP RULE',session.stop_rule,''] : []), 'AFTER PRACTICE', 'Record completed work and observations in your existing SWINGWELL Markdown diary.' ].join('\n');
+    const names = session.commitment_ids.map(id => { const c=commitments.get(id); return `${id} — ${c.pillar.title}: ${c.commitment.title}`; });
+    return [ 'SWINGWELL — ' + session.title, ...(plan.status !== 'confirmed' ? ['PROVISIONAL — awaiting Sunday Plan confirmation'] : ['CONFIRMED FLIGHT PLAN']), ...(localDate(plan.timezone) > plan.week_end ? ['PAST PLAN — not the current week'] : []), ...(plan.note ? [plan.note] : []), `Week: ${dateLabel(plan.week_start)} – ${dateLabel(plan.week_end)}`, `Duration: approximately ${session.duration_minutes} minutes`, '', 'PURPOSE', session.purpose, '', 'HARADA COMMITMENTS', ...names, '', 'PRACTICE BLOCKS', ...session.blocks.flatMap((b,i) => [`${i+1}. ${b.title} — approximately ${b.minutes} min`, b.instructions, '']), 'SUCCESS CRITERIA', ...session.success_criteria.map(x => '• ' + x), '', ...(session.process_commitment ? ['PROCESS COMMITMENT', session.process_commitment, ''] : []), ...(session.stop_rule ? ['STOP RULE',session.stop_rule,''] : []), 'AFTER PRACTICE', 'Record completed work and observations in your existing SWINGWELL Markdown diary.' ].join('\n');
   }
   async function copySession(session, status, fallback, copyButton) {
     const text = sessionText(session);
@@ -206,7 +224,8 @@
     const heading = $('#plan-heading'); heading.replaceChildren();
     const today = localDate(plan.timezone), state = today < plan.week_start ? 'Upcoming week' : today > plan.week_end ? 'Past plan — awaiting the Sunday Plan' : 'Current week';
     heading.append(el('p', `${state} · ${dateLabel(plan.week_start)} – ${dateLabel(plan.week_end)}`, 'plan-date'));
-    if (plan.status === 'illustrative') heading.append(el('p', 'Four illustrative practice sessions for interaction review. Dates, priorities and prescriptions await confirmation.', 'prototype-notice'));
+    if (plan.status !== 'confirmed') heading.append(el('p', 'Provisional — awaiting Sunday Plan confirmation. No review or approval is implied.', 'prototype-notice'));
+    if (plan.note) heading.append(el('p', plan.note));
     heading.append(el('p', 'Saturday: learn. Sunday: prepare. Monthly: align. Copy a session into Apple Notes; record completed work in your existing diary.', 'helper'));
     if (plan.prepared_on) heading.append(el('p', `Prepared ${dateLabel(plan.prepared_on)}`, 'helper'));
     if (typeof plan.review_ref === 'string' && /^\.\.\/Monthly Summaries\//.test(plan.review_ref) && !plan.review_ref.includes('/../')) {
@@ -217,7 +236,7 @@
       const card = el('article',undefined,'session-card flight-card'); card.id=s.id; card.tabIndex=-1;
       card.append(el('p', `Session ${i+1} · approximately ${s.duration_minutes} min`, 'eyebrow'),el('h3',s.title),el('p',s.purpose));
       const links=el('div',undefined,'commitment-links');
-      s.commitment_ids.forEach(id => { const item=commitments.get(id); links.append(button(`${item.pillar.title} / ${item.commitment.title}`,()=>{ location.hash='harada'; showView('harada'); selectCommitment(id); },'text-button')); }); card.append(links);
+      s.commitment_ids.forEach(id => { const item=commitments.get(id); links.append(button(`${id} · ${item.commitment.title}`,()=>{ location.hash='harada'; showView('harada'); selectCommitment(id); },'text-button')); }); card.append(links);
       s.blocks.forEach(b => { const block=el('div',undefined,'practice-block'); block.append(el('h4',`${b.title} · ${b.minutes} min`),el('p',b.instructions)); card.append(block); });
       card.append(el('h4','Success criteria'),list(s.success_criteria));
       if(s.process_commitment) card.append(el('h4','Process commitment'),el('p',s.process_commitment,'next-action'));
@@ -239,19 +258,19 @@
   });
   async function init() {
     try {
-      matrix=await read('data/harada.json');validateMatrix(matrix);
+      matrix=normalizeMatrix(await read('data/harada.json'));validateMatrix(matrix);
       matrix.pillars.forEach(p => p.commitments.forEach(c => commitments.set(c.id,{pillar:p,commitment:c})));
-      $('#prototype-notice').textContent=matrix.status==='illustrative'?'Illustrative matrix and priorities. Goal confirmed; canonical commitments pending.':`Matrix ${matrix.version} · Reviewed ${dateLabel(matrix.updated)}`;
+      $('#prototype-notice').textContent=matrix.status==='illustrative'?'Illustrative matrix and priorities. Goal confirmed; canonical commitments pending.':`Approved matrix ${matrix.version} · ${dateLabel(matrix.updated)} · Raise the floor, preserve the ceiling.`;
       $('.updated').textContent = matrix.status === 'illustrative' ? 'Prototype · canonical matrix pending' : `Matrix ${matrix.version}`;
       renderMatrix(); renderGoal(null);
       read('data/index-history.json').then(renderGoal).catch(()=>renderGoal(null));
-      selectPillar(matrix.pillars.find(p=>p.id==='approach-play')?.id || matrix.pillars[0].id);
+      selectPillar(matrix.pillars.find(p=>p.id==='AP')?.id || matrix.pillars[0].id);
       const results=await Promise.allSettled([read('data/commitment-evidence.json'),read('data/weekly-plan.json')]);
       if(results[0].status==='fulfilled' && results[0].value.matrix_version===matrix.version) evidence=results[0].value;
       else $('#pillar-detail').append(el('p','Commitment evidence is unavailable or uses a different matrix version.','helper'));
       try {
         if(results[1].status!=='fulfilled') throw new Error('Plan unavailable');
-        validatePlan(results[1].value);plan=results[1].value;renderPlan();
+        const candidate=normalizePlan(results[1].value);validatePlan(candidate);plan=candidate;renderPlan();
       } catch { $('#plan-heading').replaceChildren(el('p','No valid four-session plan is available for this matrix version. Awaiting the Sunday Plan.','empty-state')); }
     } catch {
       $('#prototype-notice').textContent='The Harada data is unavailable or incomplete. Performance and the diary archive remain accessible.';
