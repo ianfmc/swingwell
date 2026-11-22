@@ -794,3 +794,9 @@ progress { width: 100%; height: 12px; accent-color: var(--accent); }
 .priority { font-size: 14px; }
 .verified-performance { padding: 16px; background: var(--accent-soft); border-left: 3px solid var(--accent); }
 .verified-performance p { margin-bottom: 0; }
+
+.evidence-observation { padding: 16px 0; border-top: 1px solid var(--line); margin-top: 24px; }
+.evidence-table { width: 100%; max-width: 660px; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+.evidence-table caption { text-align: left; font-weight: 600; margin-bottom: 8px; }
+.evidence-table th, .evidence-table td { padding: 8px; border-bottom: 1px solid var(--line); text-align: left; white-space: normal; }
+.latest-evidence { border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-top: 18px; }

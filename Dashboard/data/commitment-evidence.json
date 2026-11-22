@@ -2,6 +2,515 @@
   "schema_version": "1.0",
   "matrix_version": "1.0",
   "updated": "2026-11-22",
-  "note": "No commitment-specific measured evidence was supplied in the approved handoff. Baselines pending; no synthetic observations retained.",
-  "commitments": {}
+  "note": "Evidence transcribed from the November 22 diary. Full Swing only. No missing shots, counts, lateral deviations or causal findings have been invented. Simulator results are not outdoor round statistics.",
+  "observations": {
+    "2026-11-22-full-swing-6i": {
+      "title": "6i calibration",
+      "date": "2026-11-22",
+      "source": "Full Swing · shot-history averages transcribed in the diary",
+      "sample_note": "8 confirmed; 7 fully readable. The eighth carry is estimated in the diary from rounded averages and is excluded from the measured-shot chart.",
+      "summary_note": "Simulator averages include off-screen shots; the chart and table contain only seven fully readable carries in displayed order, not chronological order. No exact lateral deviations captured.",
+      "metrics": [
+        {
+          "label": "Simulator mean carry",
+          "value": 151.2,
+          "unit": "yd"
+        },
+        {
+          "label": "Simulator mean total distance",
+          "value": 161.5,
+          "unit": "yd"
+        },
+        {
+          "label": "Ball speed",
+          "value": 107.4,
+          "unit": "mph"
+        },
+        {
+          "label": "Club speed",
+          "value": 77.9,
+          "unit": "mph"
+        },
+        {
+          "label": "Smash factor",
+          "value": 1.38,
+          "unit": ""
+        },
+        {
+          "label": "Apex",
+          "value": 84.4,
+          "unit": "ft"
+        },
+        {
+          "label": "Spin rate",
+          "value": 6441,
+          "unit": "rpm"
+        },
+        {
+          "label": "Proximity (not lateral deviation)",
+          "value": 34.3,
+          "unit": "ft"
+        }
+      ],
+      "shots": {
+        "unit": "yd",
+        "carry": [
+          168.4,
+          149.7,
+          143.9,
+          143.7,
+          159.9,
+          150.0,
+          156.6
+        ],
+        "coverage": "partial",
+        "label": "6i — readable carry subset",
+        "order": "Displayed order; not chronological"
+      }
+    },
+    "2026-11-22-full-swing-4H": {
+      "title": "4H calibration",
+      "date": "2026-11-22",
+      "source": "Full Swing · shot-history averages transcribed in the diary",
+      "sample_note": "Total shot count unconfirmed; 7 fully readable. The separate dispersion-screen summary is not combined with shot history.",
+      "summary_note": "Simulator averages include off-screen shots; the chart and table contain only seven fully readable carries in displayed order, not chronological order. No exact lateral deviations captured.",
+      "metrics": [
+        {
+          "label": "Simulator mean carry",
+          "value": 160.8,
+          "unit": "yd"
+        },
+        {
+          "label": "Simulator mean total distance",
+          "value": 183.7,
+          "unit": "yd"
+        },
+        {
+          "label": "Ball speed",
+          "value": 112.6,
+          "unit": "mph"
+        },
+        {
+          "label": "Club speed",
+          "value": 79.6,
+          "unit": "mph"
+        },
+        {
+          "label": "Smash factor",
+          "value": 1.41,
+          "unit": ""
+        },
+        {
+          "label": "Apex",
+          "value": 56.7,
+          "unit": "ft"
+        },
+        {
+          "label": "Spin rate",
+          "value": 3127,
+          "unit": "rpm"
+        },
+        {
+          "label": "Proximity (not lateral deviation)",
+          "value": 68.8,
+          "unit": "ft"
+        }
+      ],
+      "shots": {
+        "unit": "yd",
+        "carry": [
+          163.8,
+          166.9,
+          172.7,
+          130.6,
+          135.6,
+          170.5,
+          182.7
+        ],
+        "coverage": "partial",
+        "label": "4H — readable carry subset",
+        "order": "Displayed order; not chronological"
+      }
+    },
+    "2026-11-22-full-swing-3W": {
+      "title": "3W calibration",
+      "date": "2026-11-22",
+      "source": "Full Swing · shot-history averages transcribed in the diary",
+      "sample_note": "Total shot count unconfirmed; 7 fully readable. The separately selected 188.0-yard shot is already in this list and is not added again.",
+      "summary_note": "Simulator averages include off-screen shots; the chart and table contain only seven fully readable carries in displayed order, not chronological order. No exact lateral deviations captured.",
+      "metrics": [
+        {
+          "label": "Simulator mean carry",
+          "value": 167.2,
+          "unit": "yd"
+        },
+        {
+          "label": "Simulator mean total distance",
+          "value": 195.3,
+          "unit": "yd"
+        },
+        {
+          "label": "Ball speed",
+          "value": 117.3,
+          "unit": "mph"
+        },
+        {
+          "label": "Club speed",
+          "value": 82.9,
+          "unit": "mph"
+        },
+        {
+          "label": "Smash factor",
+          "value": 1.42,
+          "unit": ""
+        },
+        {
+          "label": "Apex",
+          "value": 51.7,
+          "unit": "ft"
+        },
+        {
+          "label": "Spin rate",
+          "value": 2678,
+          "unit": "rpm"
+        },
+        {
+          "label": "Proximity (not lateral deviation)",
+          "value": 68.4,
+          "unit": "ft"
+        }
+      ],
+      "shots": {
+        "unit": "yd",
+        "carry": [
+          165.3,
+          188.0,
+          177.7,
+          148.0,
+          153.9,
+          188.0,
+          179.7
+        ],
+        "coverage": "partial",
+        "label": "3W — readable carry subset",
+        "order": "Displayed order; not chronological"
+      }
+    }
+  },
+  "commitments": {
+    "AP-01": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "6i shot-history mean carry was 151.2 yd at the chosen manageable pace. Eight shots confirmed; seven carries fully readable. This session does not establish a durable carry window."
+        }
+      ],
+      "observation_ids": [
+        "2026-11-22-full-swing-6i"
+      ],
+      "hypotheses": [],
+      "next_action": "Proposed: repeat the 6i sample on Full Swing at a committed pace, retaining all shots and recording the actual count.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "AP-02": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "4H mean carry 160.8 yd; 3W mean carry 167.2 yd. Per-club counts unconfirmed."
+        },
+        {
+          "date": "2026-11-22",
+          "text": "3W added 6.4 yd mean carry and 11.6 yd mean total distance over 4H. Overlapping observed carries did not establish a reliably separate 3W carry window."
+        }
+      ],
+      "observation_ids": [
+        "2026-11-22-full-swing-4H",
+        "2026-11-22-full-swing-3W"
+      ],
+      "hypotheses": [],
+      "next_action": "Proposed: repeat 4H and 3W from comparable lies on Full Swing; record every carry, lateral deviation and actual sample count.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "AP-05": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Today’s simulator averages describe this session, not maximum-distance capability. Historical 165 / 190 / 200 yd references have no established comparable measurement conditions."
+        }
+      ],
+      "observation_ids": [
+        "2026-11-22-full-swing-6i",
+        "2026-11-22-full-swing-4H",
+        "2026-11-22-full-swing-3W"
+      ],
+      "hypotheses": [],
+      "next_action": "Use this dated Full Swing evidence as a session baseline; confirm repeatability before replacing established club guidance.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "AP-03": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Seven readable carries per club are preserved, including shorter outcomes. They are incomplete subsets and do not provide full-sample dispersion."
+        }
+      ],
+      "observation_ids": [
+        "2026-11-22-full-swing-6i",
+        "2026-11-22-full-swing-4H",
+        "2026-11-22-full-swing-3W"
+      ],
+      "hypotheses": [],
+      "next_action": "Proposed: capture the entire shot history and shot count so carry dispersion can be calculated without reconstruction.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "AP-04": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Exact lateral deviations were not captured. The diary describes a relatively narrow 6i pattern and broader 4H / two-sided 3W patterns qualitatively. Proximity is not lateral deviation."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Proposed: record signed left/right landing distances alongside carry; do not substitute proximity or spin axis.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "AP-07": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Two simulated approaches used 4H and 6i; both missed the green. First approach: 4H carry 153 yd, finishing rough. Second: 6i carry 139 yd, finishing fairway. No randomized calibration success rate was recorded."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Proposed: use club, target and acceptable miss before the next transfer sample; capture each approach result separately from calibration.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "AP-08": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Reconstructed simulator GIR was 0/2 across two played holes. This is not an outdoor round or a confirmed 150–180 yd GIR baseline."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Keep simulator transfer results separate from outdoor GIR; record approach starting distances in future samples.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "BS-01": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Low-point work was planned, but warm-up completion and thin/fat contact counts were not recorded. Low-point control was not measured directly."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Proposed: define acceptable contact and count it during the next randomized iron sample.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "BS-02": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Simulator average smash: 6i 1.38, 4H 1.41, 3W 1.42. These are indirect contact indicators; no impact-location measurements were captured."
+        },
+        {
+          "date": "2026-11-22",
+          "text": "The second-hole 6i smash was 1.30 versus 1.38 during calibration. Centered strike cannot be established from that comparison alone."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Proposed: add a simple contact-quality observation to the next sample; avoid assuming face-contact location from smash alone.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "CM-02": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Two simulated holes were documented, not the planned three. Both approaches missed; both following recovery shots reached green or gimme range."
+        },
+        {
+          "date": "2026-11-22",
+          "text": "The diary does not record pre-shot target choices or acceptable misses, so decision quality cannot be scored from outcomes alone."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Proposed: record club, target and acceptable miss before consequential shots, then distinguish the decision from execution.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "MG-01": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Self-reported starting state GREEN; shifted to YELLOW when distance fell short of expectations. A return to GREEN was not confirmed."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Continue noting mental state without treating it as a score or demanding a particular emotion.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "MG-03": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Self-reported: the same pre-strike routine helped restore attention to the next swing during frustration, often followed by a better shot. No shot-by-shot count was recorded."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Keep the same pre-strike routine after every outcome; choose the shot and give the next swing full attention.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "MG-04": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Self-reported: directed the second-hole 6i and felt distance was lost. Carry was 139 yd, 12.2 yd below that session’s mean."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [
+        {
+          "date": "2026-11-22",
+          "text": "Steering may have contributed to the shorter second-hole approach; the measurements do not independently establish that cause."
+        }
+      ],
+      "next_action": "Use the diary takeaway: choose the shot and manageable pace, then swing without directing the club through impact.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "MG-05": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "Self-reported: frustration occurred, but the golfer could put the previous shot behind him and focus on the next swing. Improvement after mishits was noticed but not counted."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Preserve the constructive response described in the diary; review the response separately from shot outcome.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "PD-05": {
+      "observation_date": "2026-11-22",
+      "facts": [
+        {
+          "date": "2026-11-22",
+          "text": "A completed diary records calibration, two simulated holes, plan-versus-actual differences and reflection. Screenshot capture was limited by the seven-row display."
+        }
+      ],
+      "observation_ids": [],
+      "hypotheses": [],
+      "next_action": "Use the diary’s capture improvement: briefly record club, starting distance, result and score; keep detail proportional to learning value.",
+      "references": [
+        {
+          "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+          "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    }
+  },
+  "latest_session": {
+    "date": "2026-11-22",
+    "title": "Full Swing calibration and two simulated holes",
+    "summary": "6i, 4H and 3W calibration at a manageable pace. Two simulated holes were reconstructed as bogey and par (+1), including simulator gimmes; keep these separate from outdoor round statistics. Started GREEN, shifted to YELLOW, and used the same pre-strike routine to refocus.",
+    "commitment_ids": [
+      "AP-01",
+      "AP-02",
+      "MG-03"
+    ],
+    "reference": {
+      "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
+      "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+    }
+  }
 }

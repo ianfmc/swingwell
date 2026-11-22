@@ -161,12 +161,17 @@
         const metrics = el('dl', undefined, 'stat-grid');
         d.metrics.forEach(m => { const item = el('div'); item.append(el('dt', m.label), el('dd', `${m.value ?? 'Not recorded'} ${m.unit || ''}`), el('small', m.date ? dateLabel(m.date) : 'Date not recorded')); metrics.append(item); }); pane.append(metrics);
       }
+      (d.observation_ids || []).forEach(key => {
+        const observation = evidence.observations?.[key];
+        if (observation) renderObservation(pane, observation);
+        else pane.append(el('p', 'Linked observation unavailable.', 'helper'));
+      });
       if (d.shots?.carry?.length) renderShots(pane, d.shots);
       evidenceSection(pane, 'Performance objectives', d.performance_objectives);
       evidenceSection(pane, 'Coaching hypotheses · not established facts', d.hypotheses?.map(x => `${x.date ? dateLabel(x.date) + ': ' : ''}${x.text}`));
       pane.append(el('h4', 'Next action'), el('p', d.next_action || 'No next action recorded.', 'next-action'));
       if (d.references?.length) {
-        pane.append(el('h4', 'Historical references'));
+        pane.append(el('h4', 'Source diary and historical references'));
         d.references.forEach(ref => {
           if (typeof ref.path !== 'string' || !/^\.\.\/(Diary Entries|Monthly Summaries|Plan|Analysis)\//.test(ref.path) || ref.path.includes('/../')) return;
           const a = el('a', ref.label || ref.path, 'archive-link'); a.href = ref.path; pane.append(a);
@@ -181,15 +186,43 @@
     }
     pane.scrollIntoView({ block: 'start' }); title.focus({ preventScroll: true });
   }
+  function renderObservation(pane, observation) {
+    const section = el('section', undefined, 'evidence-observation');
+    section.append(el('h4', observation.title), el('p', `${dateLabel(observation.date)} · ${observation.source}`, 'helper'), el('p', observation.sample_note), el('p', observation.summary_note, 'helper'));
+    const table = el('table', undefined, 'evidence-table');
+    table.append(el('caption', 'Simulator shot-history averages · not recalculated from the readable subset'));
+    const head = el('thead'), row = el('tr');
+    ['Metric', 'Reported average'].forEach(label => { const th=el('th', label); th.scope='col'; row.append(th); }); head.append(row); table.append(head);
+    const body = el('tbody');
+    (observation.metrics || []).forEach(m => { const tr=el('tr'), th=el('th', m.label); th.scope='row'; tr.append(th,el('td', `${m.value ?? 'Not recorded'} ${m.unit || ''}`)); body.append(tr); }); table.append(body); section.append(table);
+    if (observation.shots) renderShots(section, observation.shots);
+    pane.append(section);
+  }
+  function renderLatestEvidence() {
+    const box = $('#latest-evidence'), session = evidence?.latest_session;
+    if (!session) return;
+    box.hidden = false;
+    box.replaceChildren(el('h3', `Latest recorded practice · ${dateLabel(session.date)}`), el('h4', session.title), el('p', session.summary));
+    (session.commitment_ids || []).filter(id=>commitments.has(id)).forEach(id => box.append(button(`${id} · View evidence`, () => { location.hash='harada'; showView('harada'); selectCommitment(id); }, 'session-link')));
+    const ref=session.reference;
+    if (ref?.path?.startsWith('../Diary Entries/') && !ref.path.includes('/../')) { const a=el('a', 'Read the complete diary', 'archive-link'); a.href=ref.path; box.append(a); }
+  }
   function renderShots(pane, shots) {
     const values = shots.carry.filter(Number.isFinite); if (!values.length) return;
     const mean = values.reduce((a,b) => a+b,0) / values.length, min = Math.min(...values), max = Math.max(...values);
-    const label = shots.status === 'illustrative' ? 'Illustrative shot history' : 'Recorded shot history';
+    const partial = shots.coverage === 'partial';
+    const label = shots.label || (shots.status === 'illustrative' ? 'Illustrative shot history' : 'Recorded shot history');
     pane.append(el('h4', label));
     const metrics = el('dl', undefined, 'stat-grid');
-    [['Mean carry', `${mean.toFixed(1)} ${shots.unit}`], ['Carry range', `${(max-min).toFixed(1)} ${shots.unit}`], ['Shots', values.length]].forEach(([k,v]) => { const item = el('div'); item.append(el('dt',k),el('dd',v)); metrics.append(item); }); pane.append(metrics);
+    [...(partial ? [] : [['Mean carry', `${mean.toFixed(1)} ${shots.unit}`]]), [partial ? 'Readable subset range' : 'Carry range', `${(max-min).toFixed(1)} ${shots.unit}`], [partial ? 'Readable shots' : 'Shots', values.length]].forEach(([k,v]) => { const item = el('div'); item.append(el('dt',k),el('dd',v)); metrics.append(item); }); pane.append(metrics);
     const ns = 'http://www.w3.org/2000/svg', svg = document.createElementNS(ns,'svg'); svg.setAttribute('viewBox','0 0 600 160'); svg.setAttribute('role','img'); svg.setAttribute('aria-label',`${label}: ${values.join(', ')} ${shots.unit}`); svg.classList.add('shot-chart');
     values.forEach((v,i) => { const x=35+i*(530/Math.max(1,values.length-1)), y=125-(v-min)/Math.max(1,max-min)*90; const circle=document.createElementNS(ns,'circle'); circle.setAttribute('cx',x); circle.setAttribute('cy',y); circle.setAttribute('r',5); svg.append(circle); const text=document.createElementNS(ns,'text'); text.setAttribute('x',x); text.setAttribute('y',y-12); text.setAttribute('text-anchor','middle'); text.textContent=v; svg.append(text); }); pane.append(svg);
+    if (partial) {
+      pane.append(el('p', shots.order || 'Readable subset only', 'helper'));
+      const table=el('table',undefined,'evidence-table'); table.append(el('caption','Readable carries · all visible outcomes retained'));
+      const head=el('thead'), row=el('tr'); ['Displayed row',`Carry (${shots.unit})`].forEach(label=>{const th=el('th',label);th.scope='col';row.append(th);});head.append(row);table.append(head);
+      const body=el('tbody'); values.forEach((v,i)=>{const row=el('tr');row.append(el('td',i+1),el('td',v.toFixed(1)));body.append(row);});table.append(body);pane.append(table);
+    }
     pane.append(el('p', `Carry by shot (${shots.unit}): ${values.join(', ')}. Range is maximum minus minimum; it is not lateral dispersion.`, 'helper'));
   }
   function validatePlan(data) {
@@ -266,7 +299,7 @@
       read('data/index-history.json').then(renderGoal).catch(()=>renderGoal(null));
       selectPillar(matrix.pillars.find(p=>p.id==='AP')?.id || matrix.pillars[0].id);
       const results=await Promise.allSettled([read('data/commitment-evidence.json'),read('data/weekly-plan.json')]);
-      if(results[0].status==='fulfilled' && results[0].value.matrix_version===matrix.version) evidence=results[0].value;
+      if(results[0].status==='fulfilled' && results[0].value.matrix_version===matrix.version) { evidence=results[0].value; renderLatestEvidence(); }
       else $('#pillar-detail').append(el('p','Commitment evidence is unavailable or uses a different matrix version.','helper'));
       try {
         if(results[1].status!=='fulfilled') throw new Error('Plan unavailable');
