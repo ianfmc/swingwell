@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "matrix_version": "1.0",
+  "matrix_version": "1.1",
   "status": "approved",
   "approved_on": "2026-11-22",
   "objective": {
@@ -24,7 +24,8 @@
       "commitments": [
         {
           "id": "BS-01",
-          "text": "Consistently control the low point ahead of the ball."
+          "text": "Consistently control the low point ahead of the ball.",
+          "priority": "active"
         },
         {
           "id": "BS-02",
@@ -64,19 +65,23 @@
       "commitments": [
         {
           "id": "AP-01",
-          "text": "Establish reliable carry-distance windows for short and mid irons."
+          "text": "Establish reliable carry-distance windows for short and mid irons.",
+          "priority": "active"
         },
         {
           "id": "AP-02",
-          "text": "Establish reliable carry and dispersion windows for long-approach clubs, including hybrids and fairway woods."
+          "text": "Establish reliable carry and dispersion windows for long-approach clubs, including hybrids and fairway woods.",
+          "priority": "active"
         },
         {
           "id": "AP-03",
-          "text": "Control distance dispersion to reduce approaches finishing significantly short or long."
+          "text": "Control distance dispersion to reduce approaches finishing significantly short or long.",
+          "priority": "development"
         },
         {
           "id": "AP-04",
-          "text": "Control lateral dispersion to keep intended greens within a realistic shot pattern."
+          "text": "Control lateral dispersion to keep intended greens within a realistic shot pattern.",
+          "priority": "development"
         },
         {
           "id": "AP-05",
@@ -88,7 +93,8 @@
         },
         {
           "id": "AP-07",
-          "text": "Maintain approach accuracy when switching clubs, distances and targets."
+          "text": "Maintain approach accuracy when switching clubs, distances and targets.",
+          "priority": "development"
         },
         {
           "id": "AP-08",
@@ -192,7 +198,8 @@
         },
         {
           "id": "PU-03",
-          "text": "Maintain reliable conversion inside five feet."
+          "text": "Maintain reliable conversion inside five feet.",
+          "priority": "maintenance"
         },
         {
           "id": "PU-04",
@@ -204,7 +211,8 @@
         },
         {
           "id": "PU-06",
-          "text": "Develop reliable lag putting from longer distances."
+          "text": "Develop reliable lag putting from longer distances.",
+          "priority": "maintenance"
         },
         {
           "id": "PU-07",
@@ -228,11 +236,13 @@
         },
         {
           "id": "CM-02",
-          "text": "Choose approach targets that account for shot patterns and trouble around the green."
+          "text": "Choose approach targets that account for shot patterns and trouble around the green.",
+          "priority": "development"
         },
         {
           "id": "CM-03",
-          "text": "Make club selections using reliable carry distances rather than maximum distances."
+          "text": "Make club selections using reliable carry distances rather than maximum distances.",
+          "priority": "development"
         },
         {
           "id": "CM-04",
@@ -264,7 +274,8 @@
       "commitments": [
         {
           "id": "MG-01",
-          "text": "Recognize my mental state (GREEN / YELLOW / RED) without judgment or attachment."
+          "text": "Recognize my mental state (GREEN / YELLOW / RED) without judgment or attachment.",
+          "priority": "maintenance"
         },
         {
           "id": "MG-02",
@@ -272,7 +283,8 @@
         },
         {
           "id": "MG-03",
-          "text": "Execute a consistent pre-shot mental routine and commit fully to the selected shot."
+          "text": "Execute a consistent pre-shot mental routine and commit fully to the selected shot.",
+          "priority": "active"
         },
         {
           "id": "MG-04",
@@ -280,7 +292,8 @@
         },
         {
           "id": "MG-05",
-          "text": "Respond to poor shots with curiosity and problem-solving rather than frustration."
+          "text": "Respond to poor shots with curiosity and problem-solving rather than frustration.",
+          "priority": "maintenance"
         },
         {
           "id": "MG-06",
@@ -288,7 +301,8 @@
         },
         {
           "id": "MG-07",
-          "text": "Appreciate the opportunity to play, the course and the company regardless of score."
+          "text": "Appreciate the opportunity to play, the course and the company regardless of score.",
+          "priority": "maintenance"
         },
         {
           "id": "MG-08",
@@ -363,5 +377,14 @@
         "Brief decision record"
       ]
     }
+  },
+  "review_ref": "../Plan/SWINGWELL-Harada-v1.1.md",
+  "priority_review": {
+    "approved_on": "2026-11-22",
+    "focus_week_start": "2026-11-23",
+    "focus_week_end": "2026-11-29",
+    "review_on": "2026-11-28",
+    "theme": "Reliable approaches with a committed swing.",
+    "note": "Initial priorities approved by Ian. Review at the next Saturday Review; colors do not automatically expire or grade performance. The practice and review ceremonies remain standing operating commitments."
   }
 }
