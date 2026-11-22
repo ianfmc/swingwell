@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "week_start": "2026-11-23",
+  "week_end": "2026-11-29",
+  "status": "proposed_pending_sunday_review",
+  "matrix_version": "1.0",
+  "note": "Four flexible practice sessions; reschedule or replace with a round as needed. This is a provisional plan until Saturday review evidence and availability are confirmed.",
+  "sessions": [
+    {
+      "id": "2026-W48-S1",
+      "title": "Contact and long-approach calibration",
+      "duration_minutes": 55,
+      "purpose": "Establish repeatable contact and current 150–180 yard evidence",
+      "commitment_ids": [
+        "BS-01",
+        "BS-02",
+        "BS-07",
+        "AP-02",
+        "AP-03",
+        "AP-04"
+      ],
+      "blocks": [
+        {
+          "minutes": 5,
+          "name": "Warm-up",
+          "instructions": "Easy wedges and 8i; find balanced rhythm."
+        },
+        {
+          "minutes": 10,
+          "name": "Low point",
+          "instructions": "Slapshot rehearsals then 9-to-3 8i; progress to full swings. Define acceptable contact."
+        },
+        {
+          "minutes": 25,
+          "name": "Long-approach sample",
+          "instructions": "Randomize 5i, 6i and 4H (as appropriate to target distance). Use natural committed swings. Record carry, lateral deviation and club; do not chase maximum distance."
+        },
+        {
+          "minutes": 10,
+          "name": "Transfer",
+          "instructions": "Three simulated par-3s at varied distances; one ball per hole, no mulligans."
+        },
+        {
+          "minutes": 5,
+          "name": "Diary",
+          "instructions": "Record contact success, sample sizes, misses, and one takeaway."
+        }
+      ],
+      "success_criteria": [
+        "Record at least 10 long-approach shots with carry and lateral deviation",
+        "Log contact quality for a 10-shot randomized iron sample",
+        "Record GIR and decision/execution notes for three simulated holes"
+      ],
+      "process_commitment": "Choose the target, commit, and swing without steering."
+    },
+    {
+      "id": "2026-W48-S2",
+      "title": "Putting baseline: clock, shelf and lag",
+      "duration_minutes": 50,
+      "purpose": "Measure putting across flat, sloped and long distances",
+      "commitment_ids": [
+        "PU-02",
+        "PU-03",
+        "PU-04",
+        "PU-05",
+        "PU-06",
+        "PU-07",
+        "PU-08"
+      ],
+      "blocks": [
+        {
+          "minutes": 5,
+          "name": "Warm-up",
+          "instructions": "Roll easy putts to establish green speed."
+        },
+        {
+          "minutes": 15,
+          "name": "Clock baseline",
+          "instructions": "Use your established clock routine at familiar distances inside 15 ft; note distances, positions, attempts and makes. Keep the routine unchanged."
+        },
+        {
+          "minutes": 12,
+          "name": "Shelf challenge",
+          "instructions": "Choose uphill, downhill and cross-slope putts; record starting distance, finish distance and read versus pace error."
+        },
+        {
+          "minutes": 13,
+          "name": "Nine-hole putting course",
+          "instructions": "Nine varied first putts, including at least three involving the shelf; hole out each, no do-overs; record 3-putts."
+        },
+        {
+          "minutes": 5,
+          "name": "Diary",
+          "instructions": "Capture make rates by distance, lag leave distance, 3-putts and one observation."
+        }
+      ],
+      "success_criteria": [
+        "Record make/attempt counts by tested distance",
+        "Complete nine-hole putting course and count three-putts",
+        "Record at least three shelf putts with leave distances"
+      ],
+      "process_commitment": "Treat every putt as information; finish each hole."
+    },
+    {
+      "id": "2026-W48-S3",
+      "title": "Driver reliability and course decisions",
+      "duration_minutes": 55,
+      "purpose": "Build playable driver pattern and separate decisions from execution",
+      "commitment_ids": [
+        "DR-02",
+        "DR-03",
+        "DR-04",
+        "DR-07",
+        "CM-01",
+        "CM-04",
+        "CM-08",
+        "MG-03"
+      ],
+      "blocks": [
+        {
+          "minutes": 7,
+          "name": "Warm-up",
+          "instructions": "Wedges and mid irons, then a few relaxed driver swings."
+        },
+        {
+          "minutes": 18,
+          "name": "Driver corridor",
+          "instructions": "Hit 12 drivers to a realistic landing corridor. Record playable/not, carry/total if available, starting direction and major miss."
+        },
+        {
+          "minutes": 25,
+          "name": "Simulator decision challenge",
+          "instructions": "Play 4–5 holes. Before each consequential shot choose club, target and safe miss. No mulligans. Record decision quality separately from execution."
+        },
+        {
+          "minutes": 5,
+          "name": "Diary",
+          "instructions": "Record playable-drive rate, penalties, decision notes and next priority."
+        }
+      ],
+      "success_criteria": [
+        "Record 12 driver outcomes and playable corridor definition",
+        "Evaluate at least five consequential decisions before judging outcomes",
+        "Separate decision errors from execution errors"
+      ],
+      "process_commitment": "Decide first, then trust the swing."
+    },
+    {
+      "id": "2026-W48-S4",
+      "title": "Short game, recovery and pressure transfer",
+      "duration_minutes": 50,
+      "purpose": "Improve missed-green recovery and test course-like variability",
+      "commitment_ids": [
+        "SG-01",
+        "SG-02",
+        "SG-03",
+        "SG-06",
+        "SG-07",
+        "MG-05",
+        "MG-07",
+        "PD-05"
+      ],
+      "blocks": [
+        {
+          "minutes": 5,
+          "name": "Warm-up",
+          "instructions": "Easy chips to establish contact and landing spots."
+        },
+        {
+          "minutes": 12,
+          "name": "Chip and pitch variability",
+          "instructions": "Alternate landing areas and trajectories. Record 10 chip proximity outcomes from a defined lie."
+        },
+        {
+          "minutes": 10,
+          "name": "Bunker / difficult lie",
+          "instructions": "If bunker available, attempt 10 greenside escapes; otherwise use rough/tight/uneven lies and mark bunker baseline pending."
+        },
+        {
+          "minutes": 18,
+          "name": "Nine-ball up-and-down challenge",
+          "instructions": "Play nine varied recovery positions, one ball each, hole out; count pars saved and costly mishits."
+        },
+        {
+          "minutes": 5,
+          "name": "Diary and gratitude",
+          "instructions": "Record proximity, escapes, up-and-downs, one lesson and one thing appreciated."
+        }
+      ],
+      "success_criteria": [
+        "Record 10 chip outcomes with a defined starting lie",
+        "Record bunker or difficult-lie results without conflating them",
+        "Complete nine up-and-down attempts and count successes"
+      ],
+      "process_commitment": "A miss is a new problem to solve, not a reason to be frustrated."
+    }
+  ]
+}

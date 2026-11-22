@@ -674,3 +674,129 @@ th {
     border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 }
+
+/* Harada extension: three views, existing performance content preserved. */
+[hidden] { display: none !important; }
+.swingwell-app { font-size: 16px; }
+.swingwell-app main { display: block; max-width: 1440px; margin: auto; min-width: 0; }
+.swingwell-app header { max-width: 1440px; margin: auto; }
+.view-nav { display: flex; gap: 8px; position: sticky; top: 0; z-index: 5; border-right: 0; border-bottom: 1px solid var(--line); background: #fff; padding: 12px 32px; }
+.view-nav a { flex: 1; max-width: 220px; text-align: center; font-weight: 650; min-height: 44px; }
+.view-nav a[aria-current="page"] { color: white; background: var(--dark); }
+.swingwell-app button { font: inherit; cursor: pointer; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); padding: 10px 14px; min-height: 44px; }
+.swingwell-app button:hover { border-color: var(--accent); background: var(--accent-soft); }
+:focus-visible { outline: 3px solid #97670e; outline-offset: 3px; }
+.skip-link { position: absolute; left: 12px; top: -100px; z-index: 20; padding: 12px; background: white; }
+.skip-link:focus { top: 12px; }
+.strategy-intro h2 { font-size: clamp(26px, 4vw, 38px); letter-spacing: -.03em; }
+.prototype-notice, .historical-notice { background: var(--amber-soft); border-left: 3px solid var(--gold); padding: 12px 16px; font-size: 14px; line-height: 1.5; }
+.goal-summary { display: grid; grid-template-columns: 220px 1fr; gap: 28px; align-items: center; margin-top: 24px; }
+.goal-main { display: flex; flex-direction: column; color: var(--dark); }
+.goal-number { font-size: 64px; line-height: 1.1; letter-spacing: -.06em; }
+.goal-progress { max-width: 620px; }
+.goal-progress p { margin: 6px 0; }
+.recorded-index { font-weight: 650; }
+progress { width: 100%; height: 12px; accent-color: var(--accent); }
+.helper { color: #566171; font-size: 14px; line-height: 1.5; }
+.strategy-workspace { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.strategy-workspace .section-heading { align-items: center; }
+.strategy-workspace h3 { margin: 0; font-size: 22px; }
+.matrix-column { min-width: 0; }
+.harada-overview { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px; }
+.swingwell-app .harada-overview > * { min-height: 112px; padding: 10px !important; display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 650; overflow-wrap: anywhere; }
+.objective-cell { background: var(--dark) !important; color: #fff !important; border-radius: 8px; flex-direction: column; }
+.objective-cell strong { font-size: 32px; }
+.objective-cell span { font-size: 13px; margin-top: 6px; }
+.pillar-cell[aria-pressed="true"] { background: var(--accent-soft); border: 2px solid var(--accent); color: var(--dark); }
+.priority-legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.priority { display: inline-block; border-radius: 5px; font-size: 12px; padding: 4px 7px; font-weight: 650; white-space: nowrap; }
+.priority.active { color: #124b40; background: #d6eee5; }
+.priority.development { color: #714c09; background: #fff0cc; }
+.priority.maintenance { color: #384e68; background: #e8edf5; }
+.commitment-list { display: grid; gap: 8px; margin-top: 18px; }
+.commitment-choice { display: flex; justify-content: space-between; align-items: center; gap: 8px; text-align: left; }
+.commitment-choice strong,.commitment-choice small { display: block; }
+.commitment-choice small { font-size: 13px; font-weight: 400; color: #566171; margin-top: 4px; }
+.matrix-scroll { overflow-x: auto; padding: 4px; }
+.full-matrix { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; min-width: 980px; }
+.matrix-block { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 8px; }
+.swingwell-app .matrix-cell { min-height: 86px; font-size: 12px; padding: 7px; overflow-wrap: anywhere; border-radius: 4px; }
+.matrix-cell.active { border-bottom: 4px solid #176b5b; }
+.matrix-cell.development { border-bottom: 4px solid #b88728; }
+.matrix-cell.maintenance { border-bottom: 4px solid #627b9d; }
+.central-block { background: var(--accent-soft); }
+.commitment-detail { background: #f4f8f6; scroll-margin-top: 88px; }
+.commitment-detail > h3 { font-size: 28px; margin: 12px 0; }
+.commitment-detail h4, .flight-card h4 { font-size: 16px; margin: 20px 0 8px; }
+.commitment-detail .stat-grid { max-width: 660px; }
+.commitment-detail .stat-grid dt { font-size: 14px; }
+.commitment-detail .stat-grid dd { font-size: 26px; }
+.next-action { border-left: 3px solid var(--accent); padding: 12px 16px; background: white; }
+.shot-chart { width: 100%; max-width: 660px; display: block; background: white; border: 1px solid var(--line); border-radius: 8px; }
+.shot-chart circle { fill: var(--accent); }
+.shot-chart text { fill: var(--ink); font-size: 14px; }
+.empty-state { border: 1px dashed var(--line); padding: 20px; border-radius: 8px; }
+.swingwell-app .text-button { text-align: left; border: 0; padding-left: 0; color: var(--accent); text-decoration: underline; background: transparent; }
+.swingwell-app .primary-button { background: var(--dark); color: white; border-color: var(--dark); }
+.swingwell-app .primary-button:hover { background: var(--accent); }
+.archive-link { display: inline-block; color: var(--accent); padding: 10px 0; margin-right: 16px; }
+.plan-date { font-weight: 650; }
+.flight-card { scroll-margin-top: 88px; }
+.practice-block { border-top: 1px solid var(--line); margin-top: 18px; }
+.practice-block p { margin-top: 6px; }
+.copy-status { font-size: 14px; color: var(--accent); min-height: 22px; }
+.copy-fallback label { display: block; font-weight: 650; margin-bottom: 8px; }
+.copy-fallback textarea { width: 100%; font: inherit; line-height: 1.5; padding: 12px; border: 1px solid var(--line); border-radius: 8px; }
+.session-link { margin-right: 8px; }
+.swingwell-app .eyebrow { font-size: 13px; }
+.swingwell-app .data-note { font-size: 14px; }
+#app-content { min-width: 0; }
+@media (max-width: 960px) { .strategy-workspace { grid-template-columns: 1fr; } .harada-overview { max-width: 660px; } }
+@media (max-width: 560px) {
+ .view-nav { padding: 8px 12px; gap: 4px; }
+ .view-nav a { padding: 10px 6px; font-size: 14px; }
+ .goal-summary { grid-template-columns: 1fr; gap: 14px; }
+ .goal-main { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 10px; }
+ .goal-main .eyebrow { width: 100%; }
+ .goal-number { font-size: 48px; }
+ .harada-overview { gap: 5px; }
+ .swingwell-app .harada-overview > * { min-height: 100px; font-size: 14px; padding: 7px !important; }
+ .objective-cell span { font-size: 12px; }
+ .strategy-workspace .section-heading { align-items: flex-start; }
+ .commitment-choice { flex-wrap: wrap; }
+ .commitment-detail .stat-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; }
+ .commitment-detail .stat-grid dd { font-size: 20px; }
+ .commitment-detail .stat-grid dt { font-size: 12px; }
+ .flight-card { padding: 16px; }
+ .updated { white-space: normal; }
+}
+
+.strategy-workspace.matrix-expanded { grid-template-columns: 1fr; }
+.strategy-workspace.matrix-expanded .harada-overview { max-width: 660px; }
+
+@media (max-width: 560px) {
+ .swingwell-app header { padding: 16px 20px; gap: 8px; }
+ .swingwell-app header h1 { font-size: 24px; margin: 0; }
+ .swingwell-app header .eyebrow, .swingwell-app header h1 + p { display: none; }
+ .strategy-intro { padding-top: 18px; padding-bottom: 18px; }
+ .strategy-intro h2 { font-size: 24px; margin-bottom: 12px; }
+ .strategy-intro > .eyebrow { display: none; }
+ .strategy-intro .prototype-notice { margin: 0; padding: 8px 12px; }
+ .goal-summary { margin-top: 16px; gap: 6px; }
+ .goal-main .eyebrow { display: none; }
+ .goal-progress .helper { font-size: 13px; }
+}
+
+/* Approved commitments retain their complete wording, including in the expanded matrix. */
+.priority.unassigned { color: #4c5560; background: #edf0f2; }
+.swingwell-app .matrix-cell { font-size: 14px; line-height: 1.4; }
+.full-matrix { min-width: 1380px; }
+.priority { font-size: 14px; }
+.verified-performance { padding: 16px; background: var(--accent-soft); border-left: 3px solid var(--accent); }
+.verified-performance p { margin-bottom: 0; }
+
+.evidence-observation { padding: 16px 0; border-top: 1px solid var(--line); margin-top: 24px; }
+.evidence-table { width: 100%; max-width: 660px; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+.evidence-table caption { text-align: left; font-weight: 600; margin-bottom: 8px; }
+.evidence-table th, .evidence-table td { padding: 8px; border-bottom: 1px solid var(--line); text-align: left; white-space: normal; }
+.latest-evidence { border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-top: 18px; }
