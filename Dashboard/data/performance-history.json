@@ -1,13 +1,169 @@
 {
-  "source": "Canonical round data, 2026-06-21 diary correction, and 2026-06-27 scorecard/manual GIR note",
+  "source": "Canonical round data, 2026-06-21 diary correction, and 2026-06-27 scorecard/manual GIR note; GHIN Revision Scores screenshot supplied 2026-11-22 (posted scores only); four Golfshot scorecard screenshots supplied 2026-11-22; GHIN date/score precedence confirmed by Ian",
   "series": [
-    { "date": "2026-01-09", "label": "01/09", "course": "Indian Wells", "fairways_pct": 31, "gir_pct": 17 },
-    { "date": "2026-02-05", "label": "02/05", "course": "Indian Wells Players", "fairways_pct": 83, "gir_pct": 33 },
-    { "date": "2026-03-11", "label": "03/11", "course": "Golf Center Palm Desert", "fairways_pct": 75, "gir_pct": 22 },
-    { "date": "2026-03-15", "label": "03/15", "course": "Golf Center par-3", "fairways_pct": null, "gir_pct": 44 },
-    { "date": "2026-04-11", "label": "04/11", "course": "Indian Springs", "fairways_pct": 57, "gir_pct": 17 },
-    { "date": "2026-04-16", "label": "04/16", "course": "Indian Wells Celebrity", "fairways_pct": 75, "gir_pct": 11 },
-    { "date": "2026-06-21", "label": "06/21", "course": "Shadow Mountain", "fairways_pct": 86, "gir_pct": 33 },
-    { "date": "2026-06-27", "label": "06/27", "course": "Indian Wells", "fairways_pct": 100, "gir_pct": 11 }
+    {
+      "date": "2026-01-09",
+      "label": "01/09",
+      "course": "Indian Wells",
+      "fairways_pct": 31,
+      "gir_pct": 17
+    },
+    {
+      "date": "2026-02-05",
+      "label": "02/05",
+      "course": "Indian Wells Players",
+      "fairways_pct": 83,
+      "gir_pct": 33
+    },
+    {
+      "date": "2026-03-11",
+      "label": "03/11",
+      "course": "Golf Center Palm Desert",
+      "fairways_pct": 75,
+      "gir_pct": 22
+    },
+    {
+      "date": "2026-03-15",
+      "label": "03/15",
+      "course": "Golf Center par-3",
+      "fairways_pct": null,
+      "gir_pct": 44
+    },
+    {
+      "date": "2026-04-11",
+      "label": "04/11",
+      "course": "Indian Springs",
+      "fairways_pct": 57,
+      "gir_pct": 17
+    },
+    {
+      "date": "2026-04-16",
+      "label": "04/16",
+      "course": "Indian Wells Celebrity",
+      "fairways_pct": 75,
+      "gir_pct": 11
+    },
+    {
+      "date": "2026-06-21",
+      "label": "06/21",
+      "course": "Shadow Mountain",
+      "fairways_pct": 86,
+      "gir_pct": 33
+    },
+    {
+      "date": "2026-06-27",
+      "label": "06/27",
+      "course": "Indian Wells",
+      "fairways_pct": 100,
+      "gir_pct": 11
+    },
+    {
+      "date": "2026-09-06",
+      "label": "09/06",
+      "course": "Indian Wells Golf Resort — Celebrity",
+      "score_display": "* 48₍₁₀₎A",
+      "fairways_pct": 89,
+      "gir_pct": 10,
+      "source": "GHIN Revision Scores screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.24.33.png)",
+      "observation_type": "posted-score-with-scorecard",
+      "note": "GHIN is authoritative for date and posted score (Ian confirmed 2026-11-22). Golfshot supplies supporting statistics; partial rounds remain partial rounds.",
+      "scorecard": {
+        "source": "Golfshot scorecard screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.26.34.png)",
+        "date_shown": "2026-09-06",
+        "score_shown": 48,
+        "holes_recorded": 10,
+        "par_for_recorded_holes": 40,
+        "fairways_pct_reported": 89,
+        "gir_pct_reported": 10,
+        "putts": 19,
+        "penalties": null,
+        "sand_shots": 1,
+        "missing_value_note": "A dash in the screenshot is retained as unrecorded, not converted to zero.",
+        "gir_status": "reported"
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "label": "09/20",
+      "course": "Indian Wells Golf Resort — Players",
+      "score_display": "* 58₍₁₃₎A",
+      "fairways_pct": 78,
+      "gir_pct": 92,
+      "source": "GHIN Revision Scores screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.24.33.png)",
+      "observation_type": "posted-score-with-scorecard",
+      "note": "GHIN is authoritative for date and posted score (Ian confirmed 2026-11-22). Golfshot supplies supporting statistics; partial rounds remain partial rounds.",
+      "scorecard": {
+        "source": "Golfshot scorecard screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.26.49.png)",
+        "date_shown": "2026-09-19",
+        "score_shown": 57,
+        "holes_recorded": 13,
+        "par_for_recorded_holes": 51,
+        "fairways_pct_reported": 78,
+        "gir_pct_reported": 92,
+        "putts": 26,
+        "penalties": 1,
+        "sand_shots": 2,
+        "missing_value_note": "A dash in the screenshot is retained as unrecorded, not converted to zero.",
+        "gir_status": "user-confirmed",
+        "reconciliation_note": "GHIN: September 20, 58 over 13 holes; Golfshot: September 19, 57. Use GHIN date and posted score per Ian. Use the marked greens (12/13; Golfshot displays 92% GIR) per Ian’s confirmation on November 22. The hole-score/putt discrepancy remains documented; no recalculation overrides the marked greens.",
+        "holes_recorded_note": "Golfshot records holes 1–12 and 18, not 13 consecutive holes.",
+        "gir_review_examples": [
+          "Hole 5: par 4, score 5, 2 putts, no penalty shown, marked GIR.",
+          "Hole 9: par 3, score 4, 2 putts, no penalty shown, marked GIR."
+        ],
+        "greens_hit": 12,
+        "gir_confirmation": "Ian instructed on 2026-11-22 to use the marked greens for the September Players round: 12 of 13, displayed by Golfshot as 92%."
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "label": "09/27",
+      "course": "Shadow Mountain Golf Club",
+      "score_display": "* 41N",
+      "fairways_pct": 50,
+      "gir_pct": 11,
+      "source": "GHIN Revision Scores screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.24.33.png)",
+      "observation_type": "posted-score-with-scorecard",
+      "note": "GHIN is authoritative for date and posted score (Ian confirmed 2026-11-22). Golfshot supplies supporting statistics; partial rounds remain partial rounds.",
+      "scorecard": {
+        "source": "Golfshot scorecard screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.27.06.png)",
+        "date_shown": "2026-09-27",
+        "score_shown": 41,
+        "holes_recorded": 9,
+        "par_for_recorded_holes": 34,
+        "fairways_pct_reported": 50,
+        "gir_pct_reported": 11,
+        "putts": 17,
+        "penalties": null,
+        "sand_shots": 4,
+        "missing_value_note": "A dash in the screenshot is retained as unrecorded, not converted to zero.",
+        "gir_status": "reported"
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "label": "10/31",
+      "course": "Indian Wells Golf Resort — Celebrity",
+      "score_display": "* 42N",
+      "fairways_pct": 62,
+      "gir_pct": 22,
+      "source": "GHIN Revision Scores screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.24.33.png)",
+      "observation_type": "posted-score-with-scorecard",
+      "note": "GHIN is authoritative for date and posted score (Ian confirmed 2026-11-22). Golfshot supplies supporting statistics; partial rounds remain partial rounds.",
+      "scorecard": {
+        "source": "Golfshot scorecard screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.27.21.png)",
+        "date_shown": "2026-10-31",
+        "score_shown": 42,
+        "holes_recorded": 9,
+        "par_for_recorded_holes": 36,
+        "fairways_pct_reported": 62,
+        "gir_pct_reported": 22,
+        "putts": 16,
+        "penalties": 1,
+        "sand_shots": null,
+        "missing_value_note": "A dash in the screenshot is retained as unrecorded, not converted to zero.",
+        "gir_status": "reported"
+      }
+    }
   ]
 }

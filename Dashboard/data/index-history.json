@@ -56,6 +56,41 @@
       "index": 19.5
     },
     {
+      "date": "2026-06-28",
+      "label": "06/28",
+      "index": 19.5,
+      "verified": true,
+      "source": "GHIN handicap history screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.25.09.png)"
+    },
+    {
+      "date": "2026-09-07",
+      "label": "09/07",
+      "index": 19.2,
+      "verified": true,
+      "source": "GHIN handicap history screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.25.09.png)"
+    },
+    {
+      "date": "2026-09-21",
+      "label": "09/21",
+      "index": 18.3,
+      "verified": true,
+      "source": "GHIN handicap history screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.25.09.png)"
+    },
+    {
+      "date": "2026-09-28",
+      "label": "09/28",
+      "index": 18.2,
+      "verified": true,
+      "source": "GHIN handicap history screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.25.09.png)"
+    },
+    {
+      "date": "2026-11-01",
+      "label": "11/01",
+      "index": 17.9,
+      "verified": true,
+      "source": "GHIN handicap history screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.25.09.png)"
+    },
+    {
       "date": "2026-12-31",
       "label": "Goal",
       "index": 13.0,
@@ -63,9 +98,11 @@
     }
   ],
   "current": {
-    "date": "2026-06-27",
-    "label": "06/27",
-    "index": 19.5
+    "date": "2026-11-01",
+    "label": "11/01",
+    "index": 17.9,
+    "verified": true,
+    "source": "GHIN handicap history screenshot supplied by Ian on 2026-11-22 (Screenshot 2026-11-22 at 15.25.09.png)"
   },
   "target": {
     "date": "2026-12-31",

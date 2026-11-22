@@ -51,7 +51,51 @@
         <section><p class="eyebrow">Take it to the range</p><h2 id="flight-title" tabindex="-1">Weekly flight plan</h2><div id="plan-heading"></div><div id="session-list" class="session-grid"></div></section>
       </div>
       <div id="performance" class="app-view" aria-labelledby="performance-title" hidden>
-        <section><p class="eyebrow">Evidence, over time</p><h2 id="performance-title" tabindex="-1">Performance</h2><div id="verified-performance" class="verified-performance"></div><article id="latest-evidence" class="latest-evidence" hidden></article><p class="historical-notice">Historical record through June 27, 2026. These observations and earlier coaching targets are not a current assessment.</p><a class="archive-link" href="diary.html">Search the diary archive</a></section>
+        <section><p class="eyebrow">Evidence, over time</p><h2 id="performance-title" tabindex="-1">Performance</h2><div id="verified-performance" class="verified-performance"></div><article id="latest-evidence" class="latest-evidence" hidden></article><div id="performance-coverage" class="coverage-note" role="status"><p>Checking the dates covered by recorded performance…</p></div><a class="archive-link" href="diary.html">Search the diary archive</a></section>
+      <section id="trend">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Handicap trajectory</p>
+            <h2>Index over time</h2>
+          </div>
+          <div class="index-summary">
+            <strong id="current-index">—</strong>
+            <span id="current-index-detail">Loading observations…</span>
+          </div>
+        </div>
+        <div class="mermaid-chart" id="index-chart" aria-label="Handicap index trend">
+          <p class="count">Loading index history…</p>
+        </div>
+        <p class="data-note">Dated observations only. The chart includes the verified Harada observation alongside the existing index history. Intermediate changes are unknown; checkpoints are evenly spaced, not a continuous time scale.</p>
+      </section>
+
+      <section id="combined-trend" class="comparison-section">
+        <article class="comparison-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Comparison experiment</p>
+              <h2>Index with Fairways and GIR superimposed</h2>
+              <p class="chart-subtitle">Index checkpoints are evenly spaced; round points snap to the nearest matching index column.</p>
+            </div>
+            <div class="chart-legend" aria-label="Combined chart legend">
+              <span><i class="legend-bar index-legend"></i>Index</span>
+              <span><i class="legend-line fairways-line"></i>Fairways trend</span>
+              <span><i class="legend-line gir-line"></i>GIR trend</span>
+            </div>
+          </div>
+          <div class="mermaid-chart combined-chart" id="combined-chart" aria-label="Date-aligned handicap index, Fairways, and GIR chart">
+            <p class="count">Loading combined timeline…</p>
+          </div>
+          <p class="data-note">Fairway and GIR lines stop at the last recorded round; a newer handicap observation does not supply missing round statistics. Historical round points snap to the nearest index checkpoint.</p>
+        </article>
+      </section>
+
+      <section id="posted-scores" hidden>
+        <p class="eyebrow">Additional round evidence</p><h2>Recent rounds · GHIN and Golfshot</h2>
+        <p class="data-note">Partial history supplied November 22, 2026. GHIN controls dates and posted scores; Golfshot provides supporting statistics. Partial rounds are not converted to 18-hole totals. “—” means unrecorded, not zero.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Recent round statistics; scroll horizontally if needed"><table><thead><tr><th>GHIN date</th><th>Course</th><th>Posted score</th><th>Holes recorded</th><th>Fairways</th><th>GIR</th><th>Putts</th><th>Penalties</th></tr></thead><tbody id="posted-score-rows"></tbody></table></div>
+        <div id="scorecard-notes" class="data-note"></div>
+      </section>
       <section id="overview" class="hero-section">
         <div class="section-heading">
           <div>
@@ -95,7 +139,7 @@
       <section id="latest">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Latest sessions</p>
+            <p class="eyebrow">Historical sessions · June 2026</p>
             <h2>Fatigue simulation is now part of the evidence</h2>
           </div>
         </div>
@@ -112,7 +156,7 @@
               <li><strong>Misses:</strong> GIR pattern concentrated short and right</li>
               <li><strong>Post-round:</strong> 25 approach shots from 105 yards; 2 pushes and 1 hook noted</li>
             </ul>
-            <a class="text-link" href="../Diary Entries/2026/2026-06/20260627 - SWINGWELL Golf Diary Entry.md">Open diary →</a>
+            <a class="text-link" href="diary.html?entry=Diary%20Entries%2F2026%2F2026-06%2F20260627%20-%20SWINGWELL%20Golf%20Diary%20Entry.md">Open diary →</a>
           </article>
 
           <article class="session-card">
@@ -125,7 +169,7 @@
               <li><strong>Driver:</strong> second group improved after swinging out to the right</li>
               <li><strong>Watch:</strong> high ascent angle and slight pull tendencies</li>
             </ul>
-            <a class="text-link" href="../Diary Entries/2026/2026-06/20260624 - SWINGWELL Golf Diary Entry.md">Open practice diary →</a>
+            <a class="text-link" href="diary.html?entry=Diary%20Entries%2F2026%2F2026-06%2F20260624%20-%20SWINGWELL%20Golf%20Diary%20Entry.md">Open practice diary →</a>
           </article>
 
           <article class="session-card compact-card">
@@ -138,7 +182,7 @@
               <li><strong>Miss:</strong> fuller 4h tended to pull left with left spin</li>
               <li><strong>Keep:</strong> relaxed 4h feel near centerline, then rebuild speed</li>
             </ul>
-            <a class="text-link" href="../Diary Entries/2026/2026-06/20260623 - SWINGWELL Golf Diary Entry.md">Open practice diary →</a>
+            <a class="text-link" href="diary.html?entry=Diary%20Entries%2F2026%2F2026-06%2F20260623%20-%20SWINGWELL%20Golf%20Diary%20Entry.md">Open practice diary →</a>
           </article>
 
           <article class="session-card round-card">
@@ -154,7 +198,7 @@
               <div><dt>Penalties</dt><dd>1</dd></div>
             </dl>
             <p class="callout"><strong>Constraint:</strong> fatigue arrived on the back nine; the two driver misses split one left and one right.</p>
-            <a class="text-link" href="../Diary Entries/2026/2026-06/20260621 - SWINGWELL Golf Diary Entry.md">Open round diary →</a>
+            <a class="text-link" href="diary.html?entry=Diary%20Entries%2F2026%2F2026-06%2F20260621%20-%20SWINGWELL%20Golf%20Diary%20Entry.md">Open round diary →</a>
           </article>
         </div>
       </section>
@@ -225,44 +269,6 @@
         <p class="data-note">Fairway and GIR cells use front/back splits when recorded. “Not split” means the round total exists, but the front/back breakdown was not captured.</p>
       </section>
 
-      <section id="trend">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Handicap trajectory</p>
-            <h2>Index over time</h2>
-          </div>
-          <div class="index-summary">
-            <strong id="current-index">19.5</strong>
-            <span id="current-index-detail">Recorded · Jun 27, 2026</span>
-          </div>
-        </div>
-        <div class="mermaid-chart" id="index-chart" aria-label="Handicap index trend">
-          <p class="count">Loading index history…</p>
-        </div>
-        <p class="data-note">The June 21 round moved the index from 19.9 immediately before posting to 19.2; the June 27 historical update is 19.5. The chart also preserves the earlier recorded checkpoints.</p>
-      </section>
-
-      <section id="combined-trend" class="comparison-section">
-        <article class="comparison-card">
-          <div class="section-heading">
-            <div>
-              <p class="eyebrow">Comparison experiment</p>
-              <h2>Index with Fairways and GIR superimposed</h2>
-              <p class="chart-subtitle">Index checkpoints are evenly spaced; round points snap to the nearest matching index column.</p>
-            </div>
-            <div class="chart-legend" aria-label="Combined chart legend">
-              <span><i class="legend-bar index-legend"></i>Index</span>
-              <span><i class="legend-line fairways-line"></i>Fairways trend</span>
-              <span><i class="legend-line gir-line"></i>GIR trend</span>
-            </div>
-          </div>
-          <div class="mermaid-chart combined-chart" id="combined-chart" aria-label="Date-aligned handicap index, Fairways, and GIR chart">
-            <p class="count">Loading combined timeline…</p>
-          </div>
-          <p class="data-note">This view prioritizes visual rhythm: index columns are uniform, and performance points snap to the nearest index checkpoint so dots and columns line up cleanly.</p>
-        </article>
-      </section>
-
       <section id="priorities">
         <div class="section-heading">
           <div>
@@ -281,6 +287,7 @@
     </div>
   </main>
 
+  <script src="assets/performance-data.js"></script>
   <script>
     fetch('data/round-metrics.json?v=20260629')
       .then((response) => response.json())
@@ -363,7 +370,7 @@
       const padding = { top: 38, right: 62, bottom: 58, left: 62 };
       const plotWidth = width - padding.left - padding.right;
       const plotHeight = height - padding.top - padding.bottom;
-      const indexX = (index) => padding.left + (index / (indexSeries.length - 1)) * plotWidth;
+      const indexX = (index) => padding.left + (index / Math.max(1, indexSeries.length - 1)) * plotWidth;
       const nearestIndexX = (date) => {
         const time = new Date(`${date}T12:00:00`).getTime();
         const nearest = indexSeries.reduce((best, item, index) => {
@@ -415,27 +422,62 @@
       </svg>`;
     }
 
-    fetch('data/index-history.json?v=20260629')
-      .then((response) => response.json())
-      .then((payload) => {
-        renderIndexChart(payload);
-        if (payload.current) {
-          document.querySelector('#current-index').textContent = payload.current.index.toFixed(1);
-          document.querySelector('#current-index-detail').textContent = `Recorded · ${payload.current.date}`;
-        }
-      })
-      .catch(() => {
-        document.querySelector('#index-chart').innerHTML = '<p class="count">Index history unavailable.</p>';
-      });
+    const readPerformance = async path => {
+      const response = await fetch(path, { cache: 'no-cache' });
+      if (!response.ok) throw new Error('Data unavailable');
+      return response.json();
+    };
+    const historyRequest = readPerformance('data/index-history.json');
+    const matrixRequest = readPerformance('data/harada.json');
+    const roundsRequest = readPerformance('data/performance-history.json');
+    const indexRequest = Promise.allSettled([historyRequest, matrixRequest]).then(([history, matrix]) => {
+      const payload = SwingwellPerformance.indexHistory(history.value, matrix.value?.objective);
+      if (!payload.history.length) throw new Error('Index unavailable');
+      renderIndexChart(payload);
+      document.querySelector('#current-index').textContent = payload.current.index.toFixed(1);
+      document.querySelector('#current-index-detail').textContent = `${payload.current.verified ? 'Verified' : 'Recorded'} · ${payload.current.date}`;
+      return payload;
+    });
+    indexRequest.catch(() => {
+      document.querySelector('#index-chart').innerHTML = '<p class="count">Index history unavailable.</p>';
+      document.querySelector('#current-index-detail').textContent = 'Observation unavailable';
+    });
+    Promise.all([indexRequest, roundsRequest])
+      .then(([index, rounds]) => renderCombinedChart(index, rounds))
+      .catch(() => { document.querySelector('#combined-chart').innerHTML = '<p class="count">Combined timeline unavailable.</p>'; });
 
-    Promise.all([
-      fetch('data/index-history.json?v=20260629').then((response) => response.json()),
-      fetch('data/performance-history.json?v=20260629').then((response) => response.json())
-    ])
-      .then(([indexPayload, performancePayload]) => renderCombinedChart(indexPayload, performancePayload))
-      .catch(() => {
-        document.querySelector('#combined-chart').innerHTML = '<p class="count">Combined timeline unavailable.</p>';
-      });
+    Promise.allSettled([indexRequest, roundsRequest, historyRequest]).then(([index, rounds, history]) => {
+      const box = document.querySelector('#performance-coverage'); box.replaceChildren();
+      const add = text => { const p = document.createElement('p'); p.textContent = text; box.append(p); };
+      const heading = document.createElement('h3'); heading.textContent = 'What the evidence covers'; box.append(heading);
+      const label = date => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+      const current = index.value?.current;
+      const series = rounds.value?.series || [];
+      const lastRound = series.filter(item => Number.isFinite(item.fairways_pct) || Number.isFinite(item.gir_pct)).map(item => item.date).sort().at(-1);
+      const posted = series.filter(item => item.score_display).sort((a, b) => b.date.localeCompare(a.date));
+      if (posted.length) {
+        document.querySelector('#posted-scores').hidden = false;
+        const body = document.querySelector('#posted-score-rows'); body.replaceChildren();
+        posted.forEach(item => {
+          const row = document.createElement('tr');
+            const card = item.scorecard || {};
+            const percent = value => Number.isFinite(value) ? `${value}%` : '—';
+            [label(item.date), item.course, item.score_display, card.holes_recorded ?? '—', percent(item.fairways_pct), card.gir_status === 'needs-review' ? `${card.gir_pct_reported}% · under review` : percent(item.gir_pct), card.putts ?? '—', card.penalties ?? '—'].forEach(text => { const td = document.createElement('td'); td.textContent = text; row.append(td); });
+          body.append(row);
+            if (card.reconciliation_note) { const note = document.createElement('p'); note.textContent = card.reconciliation_note; document.querySelector('#scorecard-notes').append(note); }
+        });
+        add(`Posted scores: ${posted.length} additional entries through ${label(posted[0].date)}, from the supplied GHIN screenshot. This is a partial list, not a complete playing history.`);
+      }
+      if (current) add(`Handicap: ${current.index.toFixed(1)}, ${current.verified ? 'verified' : 'recorded'} ${label(current.date)}. This does not establish the dates or results of intervening rounds.`);
+      else add('Handicap observations could not be loaded. No current value is assumed.');
+      if (lastRound) {
+        add(`Round statistics: available through ${label(lastRound)}, with gaps. Recent putts and penalties appear in the round table. The June snapshot below remains historical.`);
+        const next = new Date(`${lastRound}T12:00:00Z`); next.setUTCDate(next.getUTCDate() + 1);
+        add(`Still needed: any rounds missing from the displayed history, and new scorecards from ${label(next.toISOString().slice(0, 10))} onward. Share them in SWINGWELL ChatGPT with fairways, GIR, putts and penalties where available. No manual dashboard entry is needed.`);
+      } else add('Round history is unavailable. Share a GHIN history or golf-app scorecards in SWINGWELL ChatGPT to reconcile the missing evidence.');
+      if (history.status === 'rejected') add('The historical handicap file could not be loaded; the chart shows only the available verified observation.');
+      add('Simulator practice is shown separately above and is not treated as an outdoor round. Missing statistics remain unrecorded.');
+    });
   </script>
   <script src="assets/harada.js" defer></script>
 </body>
