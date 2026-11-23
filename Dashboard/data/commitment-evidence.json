@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "matrix_version": "1.1",
+  "matrix_version": "1.2",
   "updated": "2026-11-22",
   "note": "Evidence transcribed from the November 22 diary. Full Swing only. No missing shots, counts, lateral deviations or causal findings have been invented. Simulator results are not outdoor round statistics.",
   "observations": {
@@ -495,6 +495,22 @@
         {
           "label": "November 22 diary — Full Swing calibration, two simulated holes and reflection",
           "path": "../Diary Entries/2026/2026-11/SWINGWELL-Golf-Diary-2026-11-22.md"
+        }
+      ]
+    },
+    "MG-02": {
+      "status": "approved_practice_routine",
+      "approved_on": "2026-11-22",
+      "facts": [],
+      "hypotheses": [],
+      "performance_objectives": [
+        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
+      ],
+      "next_action": "Before practice or a round, use this two-minute arrival routine within the existing warm-up.\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”",
+      "references": [
+        {
+          "label": "Approved MG-02 routine and priority decision — Harada v1.2",
+          "path": "../Plan/SWINGWELL-Harada-v1.2.md"
         }
       ]
     }
