@@ -738,7 +738,15 @@ progress { width: 100%; height: 12px; accent-color: var(--accent); }
 .objective-cell { background: var(--dark) !important; color: #fff !important; border-radius: 8px; flex-direction: column; }
 .objective-cell strong { font-size: 32px; }
 .objective-cell span { font-size: 13px; margin-top: 6px; }
-.pillar-cell[aria-pressed="true"] { background: var(--accent-soft); border: 2px solid var(--accent); color: var(--dark); }
+/* Pillar attention stays visible independently of selection and keyboard focus. */
+.swingwell-app .pillar-cell { display: flex; flex-direction: column; justify-content: center; gap: 8px; border-bottom: 3px solid var(--focus-color, var(--line)); }
+.swingwell-app .pillar-cell:hover { background: #f6f7f7; border-color: var(--line); border-bottom-color: var(--focus-color, var(--line)); }
+.swingwell-app .pillar-cell[aria-pressed="true"] { background: #fff; border-color: var(--ink); border-bottom-color: var(--focus-color, var(--line)); box-shadow: inset 0 0 0 1px var(--ink); }
+.pillar-focus { font-size: 0.875rem; font-weight: 400; color: var(--focus-color, #566171); line-height: 1.4; }
+.focus-active { --focus-color: #176b5b; }
+.focus-development { --focus-color: #805c17; }
+.focus-maintenance { --focus-color: #526b89; }
+.focus-future { --focus-color: #626973; }
 .priority-legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
 .priority { display: inline-block; border-radius: 5px; font-size: 12px; padding: 4px 7px; font-weight: 650; white-space: nowrap; }
 .priority.active { color: #124b40; background: #d6eee5; }
@@ -831,3 +839,10 @@ progress { width: 100%; height: 12px; accent-color: var(--accent); }
 .evidence-table caption { text-align: left; font-weight: 600; margin-bottom: 8px; }
 .evidence-table th, .evidence-table td { padding: 8px; border-bottom: 1px solid var(--line); text-align: left; white-space: normal; }
 .latest-evidence { border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin-top: 18px; }
+
+/* Keep the focus words intact on the narrowest phone layouts. */
+@media (max-width: 360px) {
+ .strategy-workspace { padding-left: 12px; padding-right: 12px; }
+ .swingwell-app .harada-overview > * { padding-left: 2px !important; padding-right: 2px !important; }
+ .harada-overview .pillar-focus { white-space: nowrap; }
+}

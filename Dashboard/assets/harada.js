@@ -4,6 +4,7 @@
   const $ = (selector) => document.querySelector(selector);
   const positions = [0, 1, 2, 3, 5, 6, 7, 8];
   const priorities = { unassigned: 'Not assigned', active: 'Active focus', development: 'Development', maintenance: 'Maintenance' };
+  const pillarFocus = { active: 'Active', development: 'Development', maintenance: 'Maintenance', future: 'Future' };
   let matrix, evidence, plan;
   const commitments = new Map();
   const el = (tag, text, cls) => {
@@ -63,6 +64,7 @@
     const ids = new Set(), used = new Set();
     for (const pillar of data.pillars) {
       if (!pillar.id || !pillar.title || ids.has(pillar.id) || !positions.includes(pillar.position) || used.has(pillar.position) || pillar.commitments?.length !== 8) throw new Error('Invalid pillar structure');
+      if (pillar.focus !== undefined && !Object.hasOwn(pillarFocus, pillar.focus)) throw new Error('Invalid pillar focus');
       ids.add(pillar.id); used.add(pillar.position);
       const cells = new Set();
       for (const c of pillar.commitments) {
@@ -93,8 +95,11 @@
     }
   }
   function pillarButton(pillar, cls = '') {
-    const b = button(pillar.title, () => selectPillar(pillar.id, true), `pillar-cell ${cls}`);
-    b.dataset.pillar = pillar.id; b.setAttribute('aria-label', `${pillar.title}: view eight commitments`); return b;
+    const label = pillarFocus[pillar.focus] || 'Not assigned';
+    const b = button('', () => selectPillar(pillar.id, true), `pillar-cell focus-${pillar.focus || 'unassigned'} ${cls}`);
+    b.append(el('span', pillar.title, 'pillar-name'), el('span', label, 'pillar-focus'));
+    b.dataset.pillar = pillar.id; b.setAttribute('aria-pressed', 'false');
+    b.setAttribute('aria-label', `${pillar.title}: ${label} focus. View eight commitments`); return b;
   }
   function renderMatrix() {
     const overview = $('#harada-overview'); overview.replaceChildren();
@@ -128,6 +133,7 @@
     const pane = $('#pillar-detail'); pane.replaceChildren();
     pane.append(el('p', matrix.status === 'illustrative' ? 'Illustrative pillar · wording to confirm' : 'Strategic pillar', 'eyebrow'));
     const h = el('h3', pillar.title); h.tabIndex = -1; pane.append(h);
+    pane.append(el('p', `Pillar focus: ${pillarFocus[pillar.focus] || 'Not assigned'} · Individual commitments have their own priorities.`, 'helper'));
     pane.append(el('p', pillar.outcome));
     const objectives = pillar.performance_guidance ? [pillar.performance_guidance] : [];
     if (objectives.length) pane.append(el('h4', 'Performance guidance · goals, not measured results'), list(objectives));

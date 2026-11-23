@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "matrix_version": "1.2",
+  "matrix_version": "1.3",
   "status": "approved",
   "approved_on": "2026-11-22",
   "objective": {
@@ -56,7 +56,8 @@
           "text": "Reduce costly thin, fat and other contact errors during rounds."
         }
       ],
-      "performance_guidance": "Initial practice benchmark: at least 8 of 10 acceptable contacts in a randomized iron set; define acceptable contact before testing."
+      "performance_guidance": "Initial practice benchmark: at least 8 of 10 acceptable contacts in a randomized iron set; define acceptable contact before testing.",
+      "focus": "active"
     },
     {
       "id": "AP",
@@ -101,7 +102,8 @@
           "text": "Improve on-course greens in regulation, particularly from 150–180 yards."
         }
       ],
-      "performance_guidance": "Initial GIR benchmark: 3 per 9 holes. Long-approach calibration: 7 of 10 within agreed carry and lateral windows; define windows by distance/club. Track 5i, 6i, 7i, 8i, 4H, 3W and future fairway woods as supporting evidence, not separate commitments."
+      "performance_guidance": "Initial GIR benchmark: 3 per 9 holes. Long-approach calibration: 7 of 10 within agreed carry and lateral windows; define windows by distance/club. Track 5i, 6i, 7i, 8i, 4H, 3W and future fairway woods as supporting evidence, not separate commitments.",
+      "focus": "active"
     },
     {
       "id": "DR",
@@ -141,7 +143,8 @@
           "text": "Reduce penalties, recovery shots and costly execution errors from driver tee shots."
         }
       ],
-      "performance_guidance": "Development goals: 240–250 yards total, 95+ mph controlled speed; at least 80% playable driver tee shots; zero driver penalties per nine holes. Do not impose driver usage quota. Alternative tee-club selection belongs in Course Management."
+      "performance_guidance": "Development goals: 240–250 yards total, 95+ mph controlled speed; at least 80% playable driver tee shots; zero driver penalties per nine holes. Do not impose driver usage quota. Alternative tee-club selection belongs in Course Management.",
+      "focus": "development"
     },
     {
       "id": "SG",
@@ -181,7 +184,8 @@
           "text": "Improve scrambling performance and eliminate costly short-game execution errors."
         }
       ],
-      "performance_guidance": "Initial development benchmarks: scrambling at least 30%; 7 of 10 basic chips inside 6 feet from a defined lie; 9 of 10 bunker escapes safely onto green; at most one costly short-game mishit per nine holes. Bunker and non-bunker difficult lies are distinct."
+      "performance_guidance": "Initial development benchmarks: scrambling at least 30%; 7 of 10 basic chips inside 6 feet from a defined lie; 9 of 10 bunker escapes safely onto green; at most one costly short-game mishit per nine holes. Bunker and non-bunker difficult lies are distinct.",
+      "focus": "development"
     },
     {
       "id": "PU",
@@ -223,7 +227,8 @@
           "text": "Transfer putting performance to the course and minimize three-putts."
         }
       ],
-      "performance_guidance": "Baseline first, no premature conversion percentages. Use established clock routine, long-lag test and sloped shelf. Aim for zero three-putts per nine; record first-putt leave and second-putt conversion. Flat green for calibration; slopes and random holes for transfer."
+      "performance_guidance": "Baseline first, no premature conversion percentages. Use established clock routine, long-lag test and sloped shelf. Aim for zero three-putts per nine; record first-putt leave and second-putt conversion. Flat green for calibration; slopes and random holes for transfer.",
+      "focus": "maintenance"
     },
     {
       "id": "CM",
@@ -265,7 +270,8 @@
           "text": "Review costly scoring errors to distinguish poor decisions from poor execution."
         }
       ],
-      "performance_guidance": "Initial goals: zero penalty strokes per nine; at most one costly execution error per nine across all clubs; zero compounded errors. Baseline decision quality separately from execution. Decision evaluation uses information available before shot. Mental commitment mechanics belong to P7."
+      "performance_guidance": "Initial goals: zero penalty strokes per nine; at most one costly execution error per nine across all clubs; zero compounded errors. Baseline decision quality separately from execution. Decision evaluation uses information available before shot. Mental commitment mechanics belong to P7.",
+      "focus": "development"
     },
     {
       "id": "MG",
@@ -310,7 +316,8 @@
           "text": "Reflect on each round with curiosity and gratitude, identifying lessons without self-criticism."
         }
       ],
-      "performance_guidance": "Mindfulness/meditation (Calm or other approach) as regular practice, not a fifth range session. Post-round gratitude → curiosity → learning. Do not demand perfect happiness or suppress normal emotions; practice responding constructively."
+      "performance_guidance": "Mindfulness/meditation (Calm or other approach) as regular practice, not a fifth range session. Post-round gratitude → curiosity → learning. Do not demand perfect happiness or suppress normal emotions; practice responding constructively.",
+      "focus": "active"
     },
     {
       "id": "PD",
@@ -350,7 +357,8 @@
           "text": "Complete the Monthly Matrix Update to keep commitments and priorities aligned with the handicap objective."
         }
       ],
-      "performance_guidance": "Four sessions are a planning baseline, not a quota. Record every completed practice and round, in brief when appropriate; no backlog or guilt. Saturday learn, Sunday prepare, monthly align."
+      "performance_guidance": "Four sessions are a planning baseline, not a quota. Record every completed practice and round, in brief when appropriate; no backlog or guilt. Saturday learn, Sunday prepare, monthly align.",
+      "focus": "maintenance"
     }
   ],
   "ceremonies": {
@@ -379,7 +387,7 @@
       ]
     }
   },
-  "review_ref": "../Plan/SWINGWELL-Harada-v1.2.md",
+  "review_ref": "../Plan/SWINGWELL-Harada-v1.3.md",
   "priority_review": {
     "approved_on": "2026-11-22",
     "focus_week_start": "2026-11-23",
@@ -387,5 +395,10 @@
     "review_on": "2026-11-28",
     "theme": "Reliable approaches with a committed swing.",
     "note": "Initial priorities approved by Ian. Review at the next Saturday Review; colors do not automatically expire or grade performance. The practice and review ceremonies remain standing operating commitments. MG-02 Development and a two-minute pre-practice/pre-round arrival routine were subsequently approved by Ian on November 22, 2026; the four active commitments are unchanged."
+  },
+  "pillar_focus_review": {
+    "approved_on": "2026-11-22",
+    "review_on": "2026-11-28",
+    "note": "Approved pillar attention levels. Review alongside Saturday findings; revise strategic priorities only through an explicit decision. Selection, planned practice and measured performance do not automatically change focus. No pillar is currently deferred to Future."
   }
 }
