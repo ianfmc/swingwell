@@ -3,7 +3,7 @@
   "week_start": "2026-11-23",
   "week_end": "2026-11-29",
   "status": "proposed_pending_sunday_review",
-  "matrix_version": "1.1",
+  "matrix_version": "1.2",
   "note": "Four flexible practice sessions; reschedule or replace with a round as needed. This is a provisional plan until Saturday review evidence and availability are confirmed.",
   "sessions": [
     {
@@ -17,13 +17,14 @@
         "BS-07",
         "AP-02",
         "AP-03",
-        "AP-04"
+        "AP-04",
+        "MG-02"
       ],
       "blocks": [
         {
           "minutes": 5,
-          "name": "Warm-up",
-          "instructions": "Easy wedges and 8i; find balanced rhythm."
+          "name": "Warm-up + arrival",
+          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Easy wedges and 8i; find balanced rhythm."
         },
         {
           "minutes": 10,
@@ -49,7 +50,8 @@
       "success_criteria": [
         "Record at least 10 long-approach shots with carry and lateral deviation",
         "Log contact quality for a 10-shot randomized iron sample",
-        "Record GIR and decision/execution notes for three simulated holes"
+        "Record GIR and decision/execution notes for three simulated holes",
+        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
       ],
       "process_commitment": "Choose the target, commit, and swing without steering."
     },
@@ -65,13 +67,14 @@
         "PU-05",
         "PU-06",
         "PU-07",
-        "PU-08"
+        "PU-08",
+        "MG-02"
       ],
       "blocks": [
         {
           "minutes": 5,
-          "name": "Warm-up",
-          "instructions": "Roll easy putts to establish green speed."
+          "name": "Warm-up + arrival",
+          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Roll easy putts to establish green speed."
         },
         {
           "minutes": 15,
@@ -97,7 +100,8 @@
       "success_criteria": [
         "Record make/attempt counts by tested distance",
         "Complete nine-hole putting course and count three-putts",
-        "Record at least three shelf putts with leave distances"
+        "Record at least three shelf putts with leave distances",
+        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
       ],
       "process_commitment": "Treat every putt as information; finish each hole."
     },
@@ -114,13 +118,14 @@
         "CM-01",
         "CM-04",
         "CM-08",
-        "MG-03"
+        "MG-03",
+        "MG-02"
       ],
       "blocks": [
         {
           "minutes": 7,
-          "name": "Warm-up",
-          "instructions": "Wedges and mid irons, then a few relaxed driver swings."
+          "name": "Warm-up + arrival",
+          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 5 minutes — physical warm-up: Wedges and mid irons, then a few relaxed driver swings."
         },
         {
           "minutes": 18,
@@ -141,7 +146,8 @@
       "success_criteria": [
         "Record 12 driver outcomes and playable corridor definition",
         "Evaluate at least five consequential decisions before judging outcomes",
-        "Separate decision errors from execution errors"
+        "Separate decision errors from execution errors",
+        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
       ],
       "process_commitment": "Decide first, then trust the swing."
     },
@@ -158,13 +164,14 @@
         "SG-07",
         "MG-05",
         "MG-07",
-        "PD-05"
+        "PD-05",
+        "MG-02"
       ],
       "blocks": [
         {
           "minutes": 5,
-          "name": "Warm-up",
-          "instructions": "Easy chips to establish contact and landing spots."
+          "name": "Warm-up + arrival",
+          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Easy chips to establish contact and landing spots."
         },
         {
           "minutes": 12,
@@ -190,7 +197,8 @@
       "success_criteria": [
         "Record 10 chip outcomes with a defined starting lie",
         "Record bunker or difficult-lie results without conflating them",
-        "Complete nine up-and-down attempts and count successes"
+        "Complete nine up-and-down attempts and count successes",
+        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
       ],
       "process_commitment": "A miss is a new problem to solve, not a reason to be frustrated."
     }

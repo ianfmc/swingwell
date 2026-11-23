@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "matrix_version": "1.1",
+  "matrix_version": "1.2",
   "status": "approved",
   "approved_on": "2026-11-22",
   "objective": {
@@ -279,7 +279,8 @@
         },
         {
           "id": "MG-02",
-          "text": "Maintain a regular mindfulness practice that develops awareness, perspective and emotional flexibility."
+          "text": "Maintain a regular mindfulness practice that develops awareness, perspective and emotional flexibility.",
+          "priority": "development"
         },
         {
           "id": "MG-03",
@@ -378,13 +379,13 @@
       ]
     }
   },
-  "review_ref": "../Plan/SWINGWELL-Harada-v1.1.md",
+  "review_ref": "../Plan/SWINGWELL-Harada-v1.2.md",
   "priority_review": {
     "approved_on": "2026-11-22",
     "focus_week_start": "2026-11-23",
     "focus_week_end": "2026-11-29",
     "review_on": "2026-11-28",
     "theme": "Reliable approaches with a committed swing.",
-    "note": "Initial priorities approved by Ian. Review at the next Saturday Review; colors do not automatically expire or grade performance. The practice and review ceremonies remain standing operating commitments."
+    "note": "Initial priorities approved by Ian. Review at the next Saturday Review; colors do not automatically expire or grade performance. The practice and review ceremonies remain standing operating commitments. MG-02 Development and a two-minute pre-practice/pre-round arrival routine were subsequently approved by Ian on November 22, 2026; the four active commitments are unchanged."
   }
 }
