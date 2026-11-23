@@ -4,7 +4,7 @@
   "week_end": "2026-11-29",
   "status": "confirmed",
   "matrix_version": "1.3",
-  "note": "Approved November 23, 2026. Tuesday, November 24: round at Escena Golf Club. Four flexible practice sessions remain available; reschedule or replace one with the round. Tees and tee time are not yet recorded.",
+  "note": "Approved November 23, 2026. Tuesday, November 24: round at Escena Golf Club from the Middle tees. Four flexible practice sessions remain available; reschedule or replace one with the round. Tee time is not yet recorded.",
   "sessions": [
     {
       "id": "2026-W48-S1",
@@ -209,7 +209,7 @@
       "date": "2026-11-24",
       "course": "Escena Golf Club",
       "scorecard_url": "https://escenagolf.com/wp-content/uploads/2026/09/EGC-Scorecard-2026.pdf",
-      "tees": null,
+      "tees": "Middle",
       "tee_time": null,
       "status": "planned"
     }
