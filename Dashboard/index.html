@@ -34,12 +34,17 @@
         <section class="strategy-workspace" aria-label="Harada strategy">
           <div class="matrix-column">
             <div class="section-heading"><h3>Your Harada matrix</h3><button id="expand-matrix" type="button" aria-expanded="false" aria-controls="full-matrix-panel">Full 81-cell matrix</button></div>
-            <p class="helper">Choose a pillar, then a commitment.</p>
+            <p class="helper">Where your attention goes. Choose a pillar, then a commitment.</p>
             <div id="harada-overview" class="harada-overview" aria-label="Nine-cell Harada overview"></div>
-            <p class="helper">Colors show commitment priorities in the pillar details and full matrix—not performance grades. Not assigned means not yet prioritized, not unimportant or mastered.</p>
-            <div class="priority-legend" aria-label="Commitment priority legend"><span class="priority active">Active focus</span><span class="priority development">Development</span><span class="priority maintenance">Maintenance</span><span class="priority unassigned">Not assigned</span></div>
+            <p class="helper">Focus labels show priorities. The dark outline shows your selection.</p>
+            <details class="focus-guide">
+              <summary>What do the focus levels mean?</summary>
+              <p class="helper">Active: a main priority now. Development: building steadily. Maintenance: retaining a skill or habit. Future: deliberately deferred.</p>
+              <p class="helper">These describe attention, not performance grades. A pillar and its commitments can have different priorities. Not assigned means not yet prioritized; it does not mean Future or mastered.</p>
+            </details>
             <div id="full-matrix-panel" hidden>
-              <p class="helper">Scroll across on smaller screens. Every cell is keyboard accessible.</p>
+              <p class="helper">Scroll across on smaller screens. Every cell is keyboard accessible. Colors on commitment cells show their individual priorities.</p>
+              <div class="priority-legend" aria-label="Commitment priority legend"><span class="priority active">Active focus</span><span class="priority development">Development</span><span class="priority maintenance">Maintenance</span><span class="priority unassigned">Not assigned</span></div>
               <div class="matrix-scroll" tabindex="0" role="region" aria-label="Complete 81-cell Harada matrix"><div id="full-matrix" class="full-matrix"></div></div>
             </div>
           </div>
