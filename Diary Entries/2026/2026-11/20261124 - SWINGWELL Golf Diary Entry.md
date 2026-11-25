@@ -20,7 +20,7 @@ kpis:
 
 # SWINGWELL - Golf Diary Entry - 2026-11-24
 
-**Draft reconciled with Ian:** Hole 3 score is 3; total putts are 39. Original handwritten summary differences are documented below.
+**Reconciled with Ian:** Hole 3 score is 3; total putts are 39. Original handwritten summary differences are documented below.
 
 ## Session Metadata
 
@@ -115,14 +115,63 @@ X is interpreted as a hit from its consistency with the written FIR/GIR totals. 
 
 Ian confirmed hole 3 was a 3, not the initially transcribed 4. Corrected scores sum to 44 front, 44 back, 88 total. Ian also confirmed the row-summed putting total: 20 front, 19 back, 39 total. This supersedes the handwritten 21/19/40 putting summary. Three three-putts and fifteen two-putts reconcile to 39; no one-putts.
 
-The putting tracker has not been used to infer make rates by distance.
+The putting tracker is analyzed provisionally below; its marks total 40 attempts versus the confirmed 39 putts.
 
 Driver notes retain all 11 driver shots, including 150 and both 180-yard outcomes. Holes 9 and 16 used 3W and are kept separate. Carry versus total is not explicitly labeled; no comparison to simulator carry baselines is made.
 
+### Approach progress
+
+Ian's assessment: “I think the approach work paid off. 50% GIR is well above my average.” Nine greens in regulation is evidence consistent with practice transferring to the course, not proof of causation from one round. Retain approach work to consolidate progress; the left-miss pattern is an observation to monitor rather than a reason to rebuild the swing. The available history includes mixed round lengths and incomplete coverage, so no precise historical GIR average is claimed.
+
+## Putting analysis and practice implications
+
+**Milestone, self-reported by Ian:** First round below 90. Ian felt there was room for a better score and reports his usual putting average is below two per hole; that historical average has not been independently recalculated here.
+
+### First-putt distance context
+
+Across 18 holes, the recorded first-putt distances total 581 feet: **32.3 feet on average**. Calculations use the provisional 25-foot reading on hole 7.
+
+| First-putt distance | Holes | Two-putts | Three-putts |
+| --- | ---: | ---: | ---: |
+| 15 feet or less | 4 | 4 | 0 |
+| 16–30 feet | 6 | 5 | 1 |
+| Over 30 feet | 8 | 6 | 2 |
+| Total | 18 | 15 | 3 |
+
+Three-putts began at 54 feet (#1), 25 feet (#7), and 57 feet (#13). Two-putts from 69 feet twice, plus 39, 35, 35, 33 and 30 feet, show successful long-putt sequences as well. The 25-foot three-putt is a shorter-distance opportunity; missing second-putt distances prevent attribution to pace versus conversion.
+
+Only one first putt began inside ten feet: six feet on #15. The other closest starts were 14, 15 and 15 feet. No one-putts therefore reflects both putting outcomes and limited short first-putt opportunities.
+
+### Make/miss tracker — provisional transcription
+
+| Distance | Makes | Misses | Make rate |
+| --- | ---: | ---: | ---: |
+| Inside 5 feet | 12 | 0 | 100% |
+| 5–10 feet | 5 | 7 | 41.7% |
+| 10–15 feet | 1 | 5 | 16.7% |
+| Over 15 feet | 0 | 10 | 0% |
+
+**These shaded boxes total 40 attempts, not the confirmed 39.** The distribution is provisional and must not overwrite the reconciled round total or be used as a verified baseline. Broadly, it suggests reliable finishing inside five feet and more difficulty outside five feet. The tracker does not identify which attempts were initial putts versus second or third putts. Rates alone do not establish a read, pace or starting-line problem.
+
+### Connection to approach and recovery proximity
+
+| Green outcome | Holes | Average first putt | Putts |
+| --- | ---: | ---: | ---: |
+| GIR | 9 | 37.0 feet | 21 |
+| Missed green | 9 | 27.6 feet | 18 |
+
+After missed greens, the average first putt remained almost 28 feet away. This is consistent with Ian's account of short chips and repeated pitches, but it does not prove every long recovery leave came from a short chip. Bunkers and other recovery situations are included. First-putt distances after missed greens are not approach proximity.
+
+**Interpretation:** Compare putts per hole with starting distance and GIR context before concluding putting deteriorated versus the usual below-two average.
+
+**Arithmetic scenario, not a forecast or entitlement:** Replacing the three three-putts with two-putts, with all other strokes unchanged, gives 85. It illustrates opportunity without asserting those strokes should have been saved.
+
+**Practice decision:** Prioritize chip landing spot/rollout and finish distance, lag putting from 30–60 feet with second-putt leave recorded, and conversion from 5–10 feet. Retain contact/approach work to observe the left pattern without assuming a mechanical cause. Escena replaces this week's driver session; practice is not an extra quota.
+
 ## Source Media
 
-Eight Journal 18 photographs supplied by Ian in this conversation: pre-round page, front nine, back nine, approach plot, drive plot, putting tracker, post-round review, post-round interview. Original images remain in the conversation; no image binaries are included in this draft.
+Eight Journal 18 photographs supplied by Ian in this conversation: pre-round page, front nine, back nine, approach plot, drive plot, putting tracker, post-round review, post-round interview. Original images remain in the conversation; no image binaries are included in this entry.
 
 ## Update scope
 
-Diary reconciled with Ian. Dashboard and Harada data are outside this diary update.
+Diary and November 23–29 Flight Plan updated from the round evidence. Provisional tracker rates remain separate from confirmed round KPIs.
