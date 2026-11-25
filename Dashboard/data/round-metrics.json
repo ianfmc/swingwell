@@ -1,47 +1,47 @@
 {
-  "source": "Analysis/SWINGWELL Dashboard v3 - GIR Projection.xlsx",
+  "source": "Analysis/SWINGWELL Dashboard v3 - GIR Projection.xlsx; November 24 Escena canonical diary",
   "rounds": [
     {
       "date": "2026-01-09",
       "course": "Indian Wells Golf Resort",
       "holes": 18,
-      "penalties": 4.0
+      "penalties": 4
     },
     {
       "date": "2026-01-22",
       "course": "Indian Wells Golf Resort",
       "holes": 9,
-      "penalties": 2.0
+      "penalties": 2
     },
     {
       "date": "2026-02-05",
       "course": "Indian Wells Golf Resort (Players)",
       "holes": 9,
-      "penalties": 2.0
+      "penalties": 2
     },
     {
       "date": "2026-03-11",
       "course": "The Golf Center at Palm Desert",
       "holes": 9,
-      "penalties": 0.0
+      "penalties": 0
     },
     {
       "date": "2026-03-15",
       "course": "Golf Center Palm Desert (par-3 course)",
       "holes": 9,
-      "penalties": 0.0
+      "penalties": 0
     },
     {
       "date": "2026-04-11",
       "course": "Indian Springs G&CC (Blue tees)",
       "holes": 18,
-      "penalties": 0.0
+      "penalties": 0
     },
     {
       "date": "2026-04-16",
       "course": "Indian Wells Celebrity Course (Yellow)",
       "holes": 9,
-      "penalties": 0.0
+      "penalties": 0
     },
     {
       "date": "2026-06-21",
@@ -58,16 +58,34 @@
       "gir": 6,
       "putts": 34,
       "three_putts": 2,
-      "penalties": 1.0,
+      "penalties": 1,
       "handicap_index": 19.2,
       "index_movement": -0.7
+    },
+    {
+      "date": "2026-11-24",
+      "course": "Escena — Middle",
+      "holes": 18,
+      "score": 88,
+      "par": 72,
+      "front_score": 44,
+      "front_par": 35,
+      "back_score": 44,
+      "back_par": 37,
+      "fairways_hit": 11,
+      "fairway_opportunities": 13,
+      "gir": 9,
+      "putts": 39,
+      "three_putts": 3,
+      "penalties": 0,
+      "source": "Diary Entries/2026/2026-11/20261124 - SWINGWELL Golf Diary Entry.md"
     }
   ],
   "penalties": {
-    "goal_per_round": 0.0,
+    "goal_per_round": 0,
     "recent_per_round": 0.2,
-    "all_per_round": 1.125,
+    "all_per_round": 1,
     "recent_round_count": 5,
-    "round_count": 8
+    "round_count": 9
   }
 }

@@ -1,9 +1,9 @@
 {
-  "practice_count": 40,
-  "round_count": 10,
+  "practice_count": 41,
+  "round_count": 12,
   "excluded_count": 1,
-  "ratio": 4.0,
-  "target_ratio": 3.0,
-  "label": "40:10",
+  "ratio": 3.4166666666666665,
+  "target_ratio": 3,
+  "label": "41:12",
   "status": "on_target"
 }

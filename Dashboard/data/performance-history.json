@@ -1,5 +1,5 @@
 {
-  "source": "Canonical round data, 2026-06-21 diary correction, and 2026-06-27 scorecard/manual GIR note; GHIN Revision Scores screenshot supplied 2026-11-22 (posted scores only); four Golfshot scorecard screenshots supplied 2026-11-22; GHIN date/score precedence confirmed by Ian",
+  "source": "Canonical round data, 2026-06-21 diary correction, and 2026-06-27 scorecard/manual GIR note; GHIN Revision Scores screenshot supplied 2026-11-22 (posted scores only); four Golfshot scorecard screenshots supplied 2026-11-22; GHIN date/score precedence confirmed by Ian; November 24 Escena Journal 18 and Ian's confirmed corrections",
   "series": [
     {
       "date": "2026-01-09",
@@ -163,6 +163,37 @@
         "sand_shots": null,
         "missing_value_note": "A dash in the screenshot is retained as unrecorded, not converted to zero.",
         "gir_status": "reported"
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "label": "11/24",
+      "course": "Escena — Middle",
+      "score_display": "88 (+16) · journal",
+      "fairways_pct": 84.6,
+      "gir_pct": 50,
+      "source": "Diary Entries/2026/2026-11/20261124 - SWINGWELL Golf Diary Entry.md",
+      "observation_type": "journal-scorecard",
+      "note": "Ian confirmed hole 3 score 3 and total putts 39. GHIN posting not supplied.",
+      "scorecard": {
+        "source": "Diary Entries/2026/2026-11/20261124 - SWINGWELL Golf Diary Entry.md",
+        "date_shown": "2026-11-24",
+        "score_shown": 88,
+        "holes_recorded": 18,
+        "par_for_recorded_holes": 72,
+        "fairways_hit": 11,
+        "fairway_opportunities": 13,
+        "greens_hit": 9,
+        "gir_status": "user-confirmed",
+        "putts": 39,
+        "three_putts": 3,
+        "penalties": 0,
+        "sand_shots": null,
+        "front_score": 44,
+        "back_score": 44,
+        "front_putts": 20,
+        "back_putts": 19,
+        "reconciliation_note": "Escena November 24: journal score 88, 39 putts confirmed by Ian; not identified as a GHIN-posted score. Putting-distribution boxes remain provisional at 40 attempts."
       }
     }
   ]

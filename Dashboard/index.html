@@ -80,7 +80,7 @@
             <div>
               <p class="eyebrow">Comparison experiment</p>
               <h2>Index with Fairways and GIR superimposed</h2>
-              <p class="chart-subtitle">Index checkpoints are evenly spaced; round points snap to the nearest matching index column.</p>
+              <p class="chart-subtitle">Recorded dates are evenly spaced; each round appears at its own date. Lines show trailing three-observation averages.</p>
             </div>
             <div class="chart-legend" aria-label="Combined chart legend">
               <span><i class="legend-bar index-legend"></i>Index</span>
@@ -91,53 +91,53 @@
           <div class="mermaid-chart combined-chart" id="combined-chart" aria-label="Date-aligned handicap index, Fairways, and GIR chart">
             <p class="count">Loading combined timeline…</p>
           </div>
-          <p class="data-note">Fairway and GIR lines stop at the last recorded round; a newer handicap observation does not supply missing round statistics. Historical round points snap to the nearest index checkpoint.</p>
+          <p class="data-note">Fairway and GIR lines stop at the last recorded round; a newer handicap observation does not supply missing round statistics. Round dates do not create new handicap observations. The series includes partial rounds; averages are per observation, not weighted by holes.</p>
         </article>
       </section>
 
       <section id="posted-scores" hidden>
-        <p class="eyebrow">Additional round evidence</p><h2>Recent rounds · GHIN and Golfshot</h2>
-        <p class="data-note">Partial history supplied November 22, 2026. GHIN controls dates and posted scores; Golfshot provides supporting statistics. Partial rounds are not converted to 18-hole totals. “—” means unrecorded, not zero.</p>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Recent round statistics; scroll horizontally if needed"><table><thead><tr><th>GHIN date</th><th>Course</th><th>Posted score</th><th>Holes recorded</th><th>Fairways</th><th>GIR</th><th>Putts</th><th>Penalties</th></tr></thead><tbody id="posted-score-rows"></tbody></table></div>
+        <p class="eyebrow">Additional round evidence</p><h2>Recent rounds · scorecards and journals</h2>
+        <p class="data-note">Partial history from GHIN, Golfshot and Journal 18. GHIN controls posted scores where supplied; journal rounds are labeled separately. Partial rounds are not converted to 18-hole totals. “—” means unrecorded, not zero.</p>
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Recent round statistics; scroll horizontally if needed"><table><thead><tr><th>Round date</th><th>Course</th><th>Recorded score</th><th>Holes recorded</th><th>Fairways</th><th>GIR</th><th>Putts</th><th>Penalties</th></tr></thead><tbody id="posted-score-rows"></tbody></table></div>
         <div id="scorecard-notes" class="data-note"></div>
       </section>
       <section id="overview" class="hero-section">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Historical snapshot · June 21, 2026</p>
-            <h2>Round performance is catching the practice</h2>
+            <p class="eyebrow">Latest round · November 24, 2026</p>
+            <h2>Escena: 50% GIR and 88 strokes</h2>
           </div>
-          <span class="status-pill">Assessment recorded June 2026</span>
+          <span class="status-pill">Journal totals confirmed</span>
         </div>
 
         <div class="kpis">
           <article class="kpi">
             <div class="label">Recorded 18-hole round</div>
-            <div class="value">83 <small>+13</small></div>
-            <div class="detail">Shadow Mountain · Jun 21</div>
+            <div class="value">88 <small>+16</small></div>
+            <div class="detail">Escena · Middle tees · Nov 24</div>
           </article>
           <article class="kpi">
             <div class="label">Greens in Regulation</div>
-            <div class="value">33%</div>
-            <div class="detail">6/18 · approaching the 35–40% target band</div>
+            <div class="value">50%</div>
+            <div class="detail">9/18 · above Ian’s reported usual level</div>
           </article>
           <article class="kpi">
             <div class="label">Fairways</div>
-            <div class="value">86%</div>
-            <div class="detail">12/14 · corrected from the written note</div>
+            <div class="value">84.6%</div>
+            <div class="detail">11/13 fairways · zero penalties</div>
           </article>
           <article class="kpi">
             <div class="label">Putts / Hole</div>
-            <div class="value">1.89</div>
-            <div class="detail">34 total · two 3-putts</div>
+            <div class="value">2.17</div>
+            <div class="detail">39 total · three 3-putts; first putt averaged 32.3 ft</div>
           </article>
         </div>
 
         <div class="signal-strip">
-          <div><strong>19.5</strong><span>Historical index · Jun 27, 2026</span></div>
-          <div><strong id="practice-round-ratio">4.0</strong><span>Historical practice ratio · count review pending</span></div>
-          <div><strong id="penalty-rate">0.2</strong><span>Historical penalty rate · incomplete series</span></div>
-          <div><strong>+4 vs +9</strong><span>Front vs back · stamina remains visible</span></div>
+          <div><strong>44 / 44</strong><span>Front / back score</span></div>
+          <div><strong id="practice-round-ratio">—</strong><span>Indexed practice-to-round ratio</span></div>
+          <div><strong id="penalty-rate">—</strong><span>Penalties per round · last five available records</span></div>
+          <div><strong>0</strong><span>Penalties at Escena</span></div>
         </div>
       </section>
 
@@ -268,6 +268,7 @@
                 <td>22%</td>
                 <td>16</td>
               </tr>
+            <tr><td><strong>Nov 24</strong><span>Escena · Middle</span></td><td>44</td><td>83.3% (5/6)</td><td>55.6% (5/9)</td><td>20</td><td>44</td><td>85.7% (6/7)</td><td>44.4% (4/9)</td><td>19</td></tr>
             </tbody>
           </table>
         </div>
@@ -294,7 +295,7 @@
 
   <script src="assets/performance-data.js"></script>
   <script>
-    fetch('data/round-metrics.json?v=20260629')
+    fetch('data/round-metrics.json?v=20261124')
       .then((response) => response.json())
       .then((metrics) => {
         if (metrics?.penalties) {
@@ -302,7 +303,7 @@
         }
       });
 
-    fetch('data/practice-round-metrics.json?v=20260629')
+    fetch('data/practice-round-metrics.json?v=20261124')
       .then((response) => response.json())
       .then((metrics) => {
         document.querySelector('#practice-round-ratio').textContent = metrics.ratio.toFixed(1);
@@ -375,15 +376,10 @@
       const padding = { top: 38, right: 62, bottom: 58, left: 62 };
       const plotWidth = width - padding.left - padding.right;
       const plotHeight = height - padding.top - padding.bottom;
-      const indexX = (index) => padding.left + (index / Math.max(1, indexSeries.length - 1)) * plotWidth;
-      const nearestIndexX = (date) => {
-        const time = new Date(`${date}T12:00:00`).getTime();
-        const nearest = indexSeries.reduce((best, item, index) => {
-          const distance = Math.abs(new Date(`${item.date}T12:00:00`).getTime() - time);
-          return distance < best.distance ? { index, distance } : best;
-        }, { index: 0, distance: Infinity });
-        return indexX(nearest.index);
-      };
+      const chartDates = [...new Set([...indexSeries, ...performanceSeries].map(item => item.date))].sort();
+      const dateX = date => padding.left + chartDates.indexOf(date) / Math.max(1, chartDates.length - 1) * plotWidth;
+      const indexX = index => dateX(indexSeries[index].date);
+      const nearestIndexX = dateX;
 
       const indexValues = indexSeries.map((item) => item.index);
       const indexMin = Math.floor((Math.min(...indexValues) - 0.5) * 2) / 2;
@@ -399,9 +395,9 @@
         <text x="${width - padding.right + 11}" y="${yPercent(value) + 4}" text-anchor="start" class="axis-label">${value}%</text>
       </g>`).join('');
 
-      const dateGuides = indexSeries.map((item, index) => `<g>
-        <line x1="${indexX(index)}" y1="${padding.top}" x2="${indexX(index)}" y2="${height - padding.bottom}" class="date-guide"></line>
-        <text x="${indexX(index)}" y="${height - 22}" text-anchor="middle" class="axis-label">${item.label}</text>
+      const dateGuides = chartDates.map(date => ({date, label: date.slice(5).replace('-', '/')})).map((item) => `<g>
+        <line x1="${dateX(item.date)}" y1="${padding.top}" x2="${dateX(item.date)}" y2="${height - padding.bottom}" class="date-guide"></line>
+        <text x="${dateX(item.date)}" y="${height - 22}" text-anchor="middle" class="axis-label">${item.label}</text>
       </g>`).join('');
 
       const barWidth = 14;
@@ -422,6 +418,7 @@
         <text x="18" y="${height / 2}" text-anchor="middle" class="axis-title" transform="rotate(-90 18 ${height / 2})">HANDICAP INDEX</text>
         <text x="${width - 16}" y="${height / 2}" text-anchor="middle" class="axis-title" transform="rotate(90 ${width - 16} ${height / 2})">ROUND PERCENTAGE</text>
         ${indexBars}
+        ${performanceSeries.filter(item => Number.isFinite(item.gir_pct)).map(item => `<circle cx="${dateX(item.date)}" cy="${yPercent(item.gir_pct)}" r="4" fill="currentColor"><title>${item.date}: GIR ${item.gir_pct}%</title></circle>`).join('')}
         <path d="${linePath(fairwayAverage)}" class="performance-line fairways-series"></path>
         <path d="${linePath(girAverage)}" class="performance-line gir-series"></path>
       </svg>`;
@@ -471,12 +468,12 @@
           body.append(row);
             if (card.reconciliation_note) { const note = document.createElement('p'); note.textContent = card.reconciliation_note; document.querySelector('#scorecard-notes').append(note); }
         });
-        add(`Posted scores: ${posted.length} additional entries through ${label(posted[0].date)}, from the supplied GHIN screenshot. This is a partial list, not a complete playing history.`);
+        add(`Recorded scores: ${posted.length} entries through ${label(posted[0].date)}, from supplied GHIN, Golfshot and journal evidence. This is a partial list, not a complete playing history.`);
       }
       if (current) add(`Handicap: ${current.index.toFixed(1)}, ${current.verified ? 'verified' : 'recorded'} ${label(current.date)}. This does not establish the dates or results of intervening rounds.`);
       else add('Handicap observations could not be loaded. No current value is assumed.');
       if (lastRound) {
-        add(`Round statistics: available through ${label(lastRound)}, with gaps. Recent putts and penalties appear in the round table. The June snapshot below remains historical.`);
+        add(`Round statistics: available through ${label(lastRound)}, with gaps. Recent putts and penalties appear in the round table. The latest-round snapshot is shown below; June session cards remain historical.`);
         const next = new Date(`${lastRound}T12:00:00Z`); next.setUTCDate(next.getUTCDate() + 1);
         add(`Still needed: any rounds missing from the displayed history, and new scorecards from ${label(next.toISOString().slice(0, 10))} onward. Share them in SWINGWELL ChatGPT with fairways, GIR, putts and penalties where available. No manual dashboard entry is needed.`);
       } else add('Round history is unavailable. Share a GHIN history or golf-app scorecards in SWINGWELL ChatGPT to reconcile the missing evidence.');
