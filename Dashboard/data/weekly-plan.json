@@ -4,7 +4,7 @@
   "week_end": "2026-11-29",
   "status": "confirmed",
   "matrix_version": "1.3",
-  "note": "Thanksgiving revision: three practice sessions total—Nov 26 putting completed, combined chipping/short-game transfer remaining, and approach consolidation remaining. Escena on Nov 24 replaced driver practice and is not another practice card. Family time takes priority; adapt scope rather than rush. The 60-foot lag sample remains pending and is included in the combined session.",
+  "note": "Thanksgiving revision: three practice sessions total—putting and combined chipping/short-game transfer completed Nov 26; approach consolidation remains. Escena on Nov 24 replaced driver practice and is not another practice card. Family time takes priority; adapt scope rather than rush. Actual duration for the short-game session was not recorded.",
   "sessions": [
     {
       "id": "2026-W48-S2",
@@ -25,9 +25,9 @@
     },
     {
       "id": "2026-W48-S4",
-      "title": "Remaining: chipping distance and short-game transfer",
-      "duration_minutes": 50,
-      "purpose": "Combine unfinished chipping, 60-foot lag work and recovery holes with Short Game Transfer. Completed 5/7/10-foot and 30/45-foot samples do not need repeating.",
+      "title": "Completed Nov 26: chipping and short-game transfer",
+      "duration_minutes": null,
+      "purpose": "Combined chipping distance control, 60-foot lag putting, bunker practice and five 15-yard up-and-downs; actual duration was not recorded.",
       "commitment_ids": [
         "SG-01",
         "SG-04",
@@ -42,46 +42,10 @@
         "MG-05",
         "PD-05"
       ],
-      "blocks": [
-        {
-          "minutes": 5,
-          "name": "Warm-up + arrival",
-          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Easy chips to establish contact and landing spots."
-        },
-        {
-          "minutes": 15,
-          "name": "Chipping distance control",
-          "instructions": "Five balls from each of three positions with a familiar club. Choose landing spot; record lie, starting distance, finish distance and short/long for all 15. This replaces the separate 10-chip variability block."
-        },
-        {
-          "minutes": 8,
-          "name": "60-foot lag sample",
-          "instructions": "Six first putts from 60 feet. Record exact leave distance and direction; use the same fixed 3-foot success circle. Use the familiar 1-2-3-4 flow; note the pace cue without forcing a mechanical change. These are lag attempts, not holed-out holes."
-        },
-        {
-          "minutes": 7,
-          "name": "Bunker or difficult lie",
-          "instructions": "Up to five greenside bunker escapes; record attempts, escapes and finish distance. If unavailable, use a difficult non-bunker lie and label it separately. Do not rush to reach five."
-        },
-        {
-          "minutes": 12,
-          "name": "Five recovery holes",
-          "instructions": "Five varied chip-and-putt holes, one ball, hole out. Record first-putt distance, total strokes, repeated chips, up-and-downs and three-putts. These five holes replace both prior transfer blocks; not five plus nine. Log actual completed holes if time expires."
-        },
-        {
-          "minutes": 3,
-          "name": "Reflection",
-          "instructions": "Record actual work, one observation, one hypothesis and one thing appreciated."
-        }
-      ],
-      "success_criteria": [
-        "Record actual chip outcomes with lie, distance and short/long; target 15",
-        "Record six 60-ft lag outcomes against a fixed 3-ft criterion, with exact leaves",
-        "Keep bunker and non-bunker outcomes separate",
-        "Record actual recovery holes completed, first-putt distance and strokes; target five"
-      ],
-      "process_commitment": "A miss is a new problem to solve, not a reason to be frustrated.",
-      "stop_rule": "If time is short, keep arrival, chipping and recovery transfer; omit bunker/difficult-lie work first, then defer the 60-foot sample. Record actual work. No catch-up quota."
+      "status": "completed",
+      "completed_on": "2026-11-26",
+      "summary": "Three chip sets: 20 yd uphill from first cut (15: 6 within 6 ft, 7 within 6–15 ft, 2 beyond 15 ft); 15 yd downhill from rough (15: 2 short of green, 1 within 6 ft, 3 within 6–15 ft, 9 on green beyond 15 ft); 30 yd over obstacle from even first cut (19: 3 within 6 ft, 10 within 15 ft, 4 fat, 2 thin; proximity categories retained as reported). At 60 ft, 9 leaves within 10 ft and 9 within 6 ft; attempt total not recorded. Bunker: 20 balls, 4 did not escape, 0 thinned (16 escapes inferred). Five 15-yd up-and-downs finished at 4, 9, 2, 4 and 5 ft; 5/5. Ian felt comfortable by the end of bunker work.",
+      "diary_path": "../Diary Entries/2026/2026-11/20261126 - SWINGWELL Short Game Diary Entry.md"
     },
     {
       "id": "2026-W48-S1",
