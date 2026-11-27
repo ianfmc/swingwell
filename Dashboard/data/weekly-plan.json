@@ -4,58 +4,84 @@
   "week_end": "2026-11-29",
   "status": "confirmed",
   "matrix_version": "1.3",
-  "note": "Updated after Escena, November 24: first sub-90 round, 88 strokes and 39 putts. Next priority: chipping and putting, then contact/approaches; short-game transfer is flexible if time permits. Escena replaces the driver session—its retained card is deferred, not another obligation. Four original slots remain for continuity; no fifth session is added.",
+  "note": "Thanksgiving revision: three practice sessions total—Nov 26 putting completed, combined chipping/short-game transfer remaining, and approach consolidation remaining. Escena on Nov 24 replaced driver practice and is not another practice card. Family time takes priority; adapt scope rather than rush. The 60-foot lag sample remains pending and is included in the combined session.",
   "sessions": [
     {
       "id": "2026-W48-S2",
-      "title": "Priority: chipping distance and putting",
+      "title": "Completed Nov 26: putting conversion and lag pace",
+      "status": "completed",
+      "completed_on": "2026-11-26",
+      "duration_minutes": null,
+      "purpose": "Putting completed within limited Thanksgiving family time; actual duration unrecorded.",
+      "commitment_ids": [
+        "PU-02",
+        "PU-03",
+        "PU-04",
+        "PU-05",
+        "PU-06"
+      ],
+      "summary": "GREEN. 5 ft: 21/27 (77.8%), consecutive 8; 7 ft: 10/25 (40%), consecutive 2; 10 ft: 7/24 (29.2%), consecutive 2. Lags: 9/12 within 3 ft at both 30 and 45 ft (75% each). Fixed 3-ft criterion; 24-attempt conversion baseline extended to end an active streak. Used 1-2-3-4 flow. Chipping, 60-ft lags and recovery holes moved to the combined session.",
+      "diary_path": "../Diary Entries/2026/2026-11/20261126 - SWINGWELL Golf Diary Entry.md"
+    },
+    {
+      "id": "2026-W48-S4",
+      "title": "Remaining: chipping distance and short-game transfer",
       "duration_minutes": 50,
-      "purpose": "Create shorter first putts after recovery and distinguish long-putt leave quality from 5–10-foot conversion.",
+      "purpose": "Combine unfinished chipping, 60-foot lag work and recovery holes with Short Game Transfer. Completed 5/7/10-foot and 30/45-foot samples do not need repeating.",
       "commitment_ids": [
         "SG-01",
         "SG-04",
         "SG-05",
+        "SG-03",
+        "SG-06",
         "SG-07",
         "PU-02",
-        "PU-04",
         "PU-06",
         "PU-08",
-        "MG-02"
+        "MG-02",
+        "MG-05",
+        "PD-05"
       ],
       "blocks": [
         {
           "minutes": 5,
           "name": "Warm-up + arrival",
-          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Roll easy putts to establish green speed."
+          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Easy chips to establish contact and landing spots."
         },
         {
           "minutes": 15,
           "name": "Chipping distance control",
-          "instructions": "Five balls each from three positions with a familiar club. Record starting distance and lie; choose a landing spot, then measure finish distance and short/long for all 15. Keep all outcomes."
-        },
-        {
-          "minutes": 12,
-          "name": "Long-putt pace",
-          "instructions": "12 first putts alternating 30, 45 and 60 feet. Record each leave distance and direction; count finishes within three feet. This is a lag sample, not a hole-out total."
+          "instructions": "Five balls from each of three positions with a familiar club. Choose landing spot; record lie, starting distance, finish distance and short/long for all 15. This replaces the separate 10-chip variability block."
         },
         {
           "minutes": 8,
-          "name": "5–10-foot conversion",
-          "instructions": "12 putts: four each from 5, 7 and 10 feet, varying position. Record makes/attempts separately by distance; use your established routine."
+          "name": "60-foot lag sample",
+          "instructions": "Six first putts from 60 feet. Record exact leave distance and direction; use the same fixed 3-foot success circle. Use the familiar 1-2-3-4 flow; note the pace cue without forcing a mechanical change. These are lag attempts, not holed-out holes."
         },
         {
-          "minutes": 10,
+          "minutes": 7,
+          "name": "Bunker or difficult lie",
+          "instructions": "Up to five greenside bunker escapes; record attempts, escapes and finish distance. If unavailable, use a difficult non-bunker lie and label it separately. Do not rush to reach five."
+        },
+        {
+          "minutes": 12,
           "name": "Five recovery holes",
-          "instructions": "Five varied chip-and-putt holes, one ball each; hole out. Record total strokes, first-putt distance, repeated chips, up-and-downs and three-putts. If time expires, record actual attempts rather than rushing."
+          "instructions": "Five varied chip-and-putt holes, one ball, hole out. Record first-putt distance, total strokes, repeated chips, up-and-downs and three-putts. These five holes replace both prior transfer blocks; not five plus nine. Log actual completed holes if time expires."
+        },
+        {
+          "minutes": 3,
+          "name": "Reflection",
+          "instructions": "Record actual work, one observation, one hypothesis and one thing appreciated."
         }
       ],
       "success_criteria": [
-        "Record 15 chip finish distances and short/long outcomes with starting lie and distance",
-        "Record 12 lag leave distances",
-        "Record conversion attempts/makes at 5, 7 and 10 feet",
-        "Record actual recovery holes completed, first-putt distance and strokes; no required success percentage"
+        "Record actual chip outcomes with lie, distance and short/long; target 15",
+        "Record six 60-ft lag outcomes against a fixed 3-ft criterion, with exact leaves",
+        "Keep bunker and non-bunker outcomes separate",
+        "Record actual recovery holes completed, first-putt distance and strokes; target five"
       ],
-      "process_commitment": "Choose the landing spot or pace, commit, then accept the information."
+      "process_commitment": "A miss is a new problem to solve, not a reason to be frustrated.",
+      "stop_rule": "If time is short, keep arrival, chipping and recovery transfer; omit bunker/difficult-lie work first, then defer the 60-foot sample. Record actual work. No catch-up quota."
     },
     {
       "id": "2026-W48-S1",
@@ -105,107 +131,7 @@
         "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
       ],
       "process_commitment": "Choose the target, commit, and swing without steering."
-    },
-    {
-      "id": "2026-W48-S4",
-      "title": "If time permits: short-game transfer",
-      "duration_minutes": 50,
-      "purpose": "Consolidate the dedicated session through varied lies and hole-out practice. Flexible third practice, not a quota.",
-      "commitment_ids": [
-        "SG-01",
-        "SG-02",
-        "SG-03",
-        "SG-06",
-        "SG-07",
-        "MG-05",
-        "MG-07",
-        "PD-05",
-        "MG-02"
-      ],
-      "blocks": [
-        {
-          "minutes": 5,
-          "name": "Warm-up + arrival",
-          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 3 minutes — physical warm-up: Easy chips to establish contact and landing spots."
-        },
-        {
-          "minutes": 12,
-          "name": "Chip and pitch variability",
-          "instructions": "Record 10 chips from varied defined lies. Choose landing spot before each; record starting distance, finish distance and short/long. Compare patterns with the first dedicated session."
-        },
-        {
-          "minutes": 10,
-          "name": "Bunker / difficult lie",
-          "instructions": "If bunker available, attempt 10 greenside escapes; otherwise use rough/tight/uneven lies and mark bunker baseline pending."
-        },
-        {
-          "minutes": 18,
-          "name": "Nine-ball up-and-down challenge",
-          "instructions": "Nine varied recovery positions, one ball each, hole out. Record first-putt distance, second-putt leave when applicable, total strokes and up-and-downs. Log actual holes completed if time is limited."
-        },
-        {
-          "minutes": 5,
-          "name": "Diary and gratitude",
-          "instructions": "Record proximity, escapes, up-and-downs, one lesson and one thing appreciated."
-        }
-      ],
-      "success_criteria": [
-        "Record 10 chip outcomes with a defined starting lie",
-        "Record bunker or difficult-lie results without conflating them",
-        "Complete nine up-and-down attempts and count successes",
-        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
-      ],
-      "process_commitment": "A miss is a new problem to solve, not a reason to be frustrated."
-    },
-    {
-      "id": "2026-W48-S3",
-      "title": "Deferred: driver session replaced by Escena",
-      "duration_minutes": 55,
-      "purpose": "Completed Escena round on November 24 occupies this weekly slot: 88 strokes, 11/13 fairways, zero penalties. The 55-minute practice below is retained for future use only; it is not the round duration or work due this week.",
-      "commitment_ids": [
-        "DR-02",
-        "DR-03",
-        "DR-04",
-        "DR-07",
-        "CM-01",
-        "CM-04",
-        "CM-08",
-        "MG-03",
-        "MG-02"
-      ],
-      "blocks": [
-        {
-          "minutes": 7,
-          "name": "Warm-up + arrival",
-          "instructions": "First 2 minutes — arrival routine:\n30 seconds: Feel your feet; notice tension and your GREEN/YELLOW/RED state without judging it.\n60 seconds: Breathe naturally. When expectations show up, acknowledge them and return attention to breathing.\n30 seconds: Set the intention: “Some shots will miss. Choose, commit, then give the next shot my attention.”\nRemaining 5 minutes — physical warm-up: Wedges and mid irons, then a few relaxed driver swings."
-        },
-        {
-          "minutes": 18,
-          "name": "Driver corridor",
-          "instructions": "Hit 12 drivers to a realistic landing corridor. Record playable/not, carry/total if available, starting direction and major miss."
-        },
-        {
-          "minutes": 25,
-          "name": "Simulator decision challenge",
-          "instructions": "Play 4–5 holes. Before each consequential shot choose club, target and safe miss. No mulligans. Record decision quality separately from execution."
-        },
-        {
-          "minutes": 5,
-          "name": "Diary",
-          "instructions": "Record playable-drive rate, penalties, decision notes and next priority."
-        }
-      ],
-      "success_criteria": [
-        "Record 12 driver outcomes and playable corridor definition",
-        "Evaluate at least five consequential decisions before judging outcomes",
-        "Separate decision errors from execution errors",
-        "Take the two-minute arrival pause and choose the intention. Success does not require feeling calm or hitting the first ball perfectly."
-      ],
-      "process_commitment": "Decide first, then trust the swing.",
-      "status": "replaced_by_round",
-      "replacement_date": "2026-11-24",
-      "stop_rule": "Do not add this driver practice this week. Escena already replaced it."
     }
   ],
-  "prepared_on": "2026-11-24"
+  "prepared_on": "2026-11-27"
 }

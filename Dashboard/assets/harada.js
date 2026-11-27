@@ -186,7 +186,7 @@
       }
     }
     evidenceSection(pane, 'Pillar performance guidance · not measured evidence', [entry.pillar.performance_guidance]);
-    const linked = plan?.sessions?.filter(s => s.commitment_ids.includes(id)) || [];
+    const linked = plan?.sessions?.filter(s => s.status !== 'completed' && s.commitment_ids.includes(id)) || [];
     if (linked.length) {
       pane.append(el('h4', plan.status === 'confirmed' ? 'Next practice · confirmed flight plan' : 'Proposed next practice · provisional flight plan'));
       linked.forEach(s => pane.append(button(s.title, () => { showView('flight-plan'); location.hash = 'flight-plan'; requestAnimationFrame(() => { const card = document.getElementById(s.id); card.scrollIntoView({ block: 'start' }); card.focus({ preventScroll: true }); }); }, 'session-link')));
@@ -233,17 +233,22 @@
     pane.append(el('p', `Carry by shot (${shots.unit}): ${values.join(', ')}. Range is maximum minus minimum; it is not lateral dispersion.`, 'helper'));
   }
   function validatePlan(data) {
-    if (data.matrix_version !== matrix.version || !Array.isArray(data.sessions) || data.sessions.length !== 4) throw new Error('Four sessions linked to this matrix version required');
+    if (data.matrix_version !== matrix.version || !Array.isArray(data.sessions) || data.sessions.length < 1 || data.sessions.length > 4) throw new Error('One to four sessions linked to this matrix version required');
     const dates = [data.week_start, data.week_end];
     if (dates.some(d => !/^\d{4}-\d{2}-\d{2}$/.test(d)) || data.week_end < data.week_start) throw new Error('Invalid plan dates');
     localDate(data.timezone);
     const ids=new Set();
     data.sessions.forEach(s => {
+      if (s.status === 'completed') {
+        if (!/^[A-Za-z0-9-]+$/.test(s.id) || ids.has(s.id) || !s.title || !s.purpose || !s.summary || !/^\d{4}-\d{2}-\d{2}$/.test(s.completed_on) || !s.commitment_ids?.length || s.commitment_ids.some(id => !commitments.has(id))) throw new Error('Invalid completed session');
+        ids.add(s.id); return;
+      }
       if (!/^[A-Za-z0-9-]+$/.test(s.id) || ids.has(s.id) || !s.title || !s.purpose || !s.blocks?.length || !s.success_criteria?.length || !s.commitment_ids?.length || s.commitment_ids.some(id => !commitments.has(id)) || s.blocks.some(b => !b.title || !b.instructions || !Number.isFinite(b.minutes) || b.minutes <= 0) || s.blocks.reduce((a,b)=>a+b.minutes,0) !== s.duration_minutes) throw new Error('Incomplete session or invalid commitment link');
       ids.add(s.id);
     });
   }
   function sessionText(session) {
+    if (session.status === 'completed') return ['SWINGWELL — ' + session.title, 'COMPLETED · ' + session.completed_on, 'Actual duration: not recorded', session.summary].join('\n');
     const names = session.commitment_ids.map(id => { const c=commitments.get(id); return `${id} — ${c.pillar.title}: ${c.commitment.title}`; });
     return [ 'SWINGWELL — ' + session.title, ...(plan.status !== 'confirmed' ? ['PROVISIONAL — awaiting Sunday Plan confirmation'] : ['CONFIRMED FLIGHT PLAN']), ...(localDate(plan.timezone) > plan.week_end ? ['PAST PLAN — not the current week'] : []), ...(plan.note ? [plan.note] : []), `Week: ${dateLabel(plan.week_start)} – ${dateLabel(plan.week_end)}`, `Duration: approximately ${session.duration_minutes} minutes`, '', 'PURPOSE', session.purpose, '', 'HARADA COMMITMENTS', ...names, '', 'PRACTICE BLOCKS', ...session.blocks.flatMap((b,i) => [`${i+1}. ${b.title} — approximately ${b.minutes} min`, b.instructions, '']), 'SUCCESS CRITERIA', ...session.success_criteria.map(x => '• ' + x), '', ...(session.process_commitment ? ['PROCESS COMMITMENT', session.process_commitment, ''] : []), ...(session.stop_rule ? ['STOP RULE',session.stop_rule,''] : []), 'AFTER PRACTICE', 'Record completed work and observations in your existing SWINGWELL Markdown diary.' ].join('\n');
   }
@@ -274,6 +279,11 @@
     const container = $('#session-list'); container.replaceChildren();
     plan.sessions.forEach((s,i) => {
       const card = el('article',undefined,'session-card flight-card'); card.id=s.id; card.tabIndex=-1;
+      if (s.status === 'completed') {
+        card.append(el('p', 'Completed · ' + dateLabel(s.completed_on), 'eyebrow'), el('h3', s.title), el('p', s.summary), el('p', 'Actual duration not recorded.', 'helper'));
+        if (s.diary_path?.startsWith('../Diary Entries/') && !s.diary_path.includes('/../')) { const a=el('a', 'Read practice diary', 'archive-link'); a.href=diaryLink(s.diary_path); card.append(a); }
+        container.append(card); return;
+      }
       card.append(el('p', `Session ${i+1} · approximately ${s.duration_minutes} min`, 'eyebrow'),el('h3',s.title),el('p',s.purpose));
       const links=el('div',undefined,'commitment-links');
       s.commitment_ids.forEach(id => { const item=commitments.get(id); links.append(button(`${id} · ${item.commitment.title}`,()=>{ location.hash='harada'; showView('harada'); selectCommitment(id); },'text-button')); }); card.append(links);
@@ -311,7 +321,7 @@
       try {
         if(results[1].status!=='fulfilled') throw new Error('Plan unavailable');
         const candidate=normalizePlan(results[1].value);validatePlan(candidate);plan=candidate;renderPlan();
-      } catch { $('#plan-heading').replaceChildren(el('p','No valid four-session plan is available for this matrix version. Awaiting the Sunday Plan.','empty-state')); }
+      } catch { $('#plan-heading').replaceChildren(el('p','No valid practice plan is available for this matrix version. Awaiting the Sunday Plan.','empty-state')); }
     } catch {
       $('#prototype-notice').textContent='The Harada data is unavailable or incomplete. Performance and the diary archive remain accessible.';
       $('#plan-heading').textContent='The flight plan needs a valid Harada matrix before commitment links can be displayed.';
