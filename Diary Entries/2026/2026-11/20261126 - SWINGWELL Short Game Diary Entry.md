@@ -39,15 +39,15 @@ kpis:
 ## DURING - Awareness
 
 - **Chipping conditions:** Worked from three lies/trajectories: 20 yards uphill from the first cut with mostly green between lie and cup; 15 yards downhill from rough; and 30 yards over an obstacle from even first cut.
-- **Bunker:** Hit 20 balls. No thinned shots were reported. Correction to the initial count: four did not get out; assuming one escape attempt per ball, 16 of 20 escaped. Ian felt comfortable by the end of the set.
-- **Lag putting:** From 60 feet, reported nine leaves within 10 feet and nine within 6 feet. Total attempts were not recorded, and these are nested distance thresholds rather than an attempt total.
+- **Bunker:** Hit 20 balls. Sixteen escaped; four did not get out. None were thinned. All 16 escapes finished within an estimated 15 feet of the pin; exact leave distances were not measured. The pin was 10–15 yards away, and Ian moved closer to the lip to practice that shot. Ian felt comfortable by the end of the set.
+- **Lag putting:** Hit 18 putts from 60 feet using the 1-2-3-4 approach. Nine finished within 10 feet and nine within 6 feet. The thresholds overlap; the counts are not separate groups.
 - **Recovery transfer:** From 15 yards, five up-and-downs finished at 4, 9, 2, 4 and 5 feet; reported result was 5/5.
 
 ## POST - Reflection, No Judgment
 
-- **What actually mattered today:** Tested distance and lie changes across three chip shots, practiced bunker escapes, and completed five successful up-and-downs.
-- **Evidence, observable and countable:** Chip outcome counts are retained below. The bunker report indicates four failed escapes out of 20 balls, with no thinned shots. All five reported 15-yard up-and-downs were successful.
-- **One takeaway for next session:** Keep practicing distance control across lies and trajectories; the 15-yard up-and-down results provide a useful transfer sample. The 60-foot lag sample needs its attempt count recorded next time.
+- **What actually mattered today:** Tested distance and lie changes across three chip shots, practiced bunker escapes, completed five successful up-and-downs, and used the 1-2-3-4 approach on all 18 60-foot lag putts.
+- **Evidence, observable and countable:** Chip outcome counts are retained below. Sixteen of 20 bunker shots escaped; all 16 were reported within an estimated 15 feet of the pin, and none were thinned. All five reported 15-yard up-and-downs were successful. Nine of 18 lag putts finished within 10 feet and nine within 6 feet.
+- **One takeaway for next session:** Keep the arms straight on the chip. Continue using the 1-2-3-4 approach for lag putts; the 15-yard up-and-down results provide a useful transfer sample.
 - **Mental state at finish / enjoyment:** Comfortable by the end of the bunker set, as reported.
 
 ## Hard Data Snapshot
@@ -64,19 +64,19 @@ For the 30-yard set, the 19 reported category counts add to 19. The wording does
 
 ### 60-foot lag putting
 
-| Starting distance | Reported leave counts | Attempt total |
+| Starting distance | Attempts | Within 10 ft | Within 6 ft |
 | --- | --- | --- |
-| 60 ft | 9 within 10 ft; 9 within 6 ft | Not recorded |
+| 60 ft | 18 | 9 (50%) | 9 (50%) |
 
-The two leave counts are cumulative thresholds: a leave within 6 feet is also within 10 feet. Without the total number of putts, a success rate cannot be calculated.
+The two leave counts are cumulative thresholds: a leave within 6 feet is also within 10 feet. Each threshold captures 9 of 18 putts (50%); the counts should not be added as separate groups. The 1-2-3-4 approach was used.
 
 ### Bunker
 
 | Balls | Escaped | Did not escape | Thinned |
 | ---: | ---: | ---: | ---: |
-| 20 | 16* | 4 | 0 |
+| 20 | 16 | 4 | 0 |
 
-\*Inferred from the correction that four of 20 balls did not get out, assuming one escape attempt per ball.
+All 16 escapes finished within an estimated 15 feet of the pin; exact leave distances were not measured. The pin was 10–15 yards away, and Ian moved closer to the lip to practice the shot.
 
 ### 15-yard up-and-down transfer
 
@@ -86,7 +86,7 @@ The two leave counts are cumulative thresholds: a leave within 6 feet is also wi
 
 ## Observations and hypotheses
 
-**Observed:** The 20-yard uphill first-cut set had six of 15 chips finish within 6 feet and seven more between 6 and 15 feet. The downhill rough set had nine chips on the green beyond 15 feet and two that finished short of the green. The 30-yard obstacle set included four fat and two thin outcomes. No bunker shots were thinned, and Ian reported increasing comfort during the set. All five 15-yard up-and-downs were completed successfully.
+**Observed:** Keep the arms straight on the chip. The 20-yard uphill first-cut set had six of 15 chips finish within 6 feet and seven more between 6 and 15 feet. The downhill rough set had nine chips on the green beyond 15 feet and two that finished short of the green. The 30-yard obstacle set included four fat and two thin outcomes. No bunker shots were thinned, and Ian reported increasing comfort during the set. All five 15-yard up-and-downs were completed successfully.
 
 **Hypothesis to test:** Lie and trajectory may be affecting distance control differently: the downhill rough set produced more long finishes, while the uphill first-cut set had more close finishes. Repeat comparable setups before treating this as a pattern.
 
@@ -95,8 +95,8 @@ The two leave counts are cumulative thresholds: a leave within 6 feet is also wi
 | Planned component | Actual evidence / disposition |
 | --- | --- |
 | Chipping distance control | Completed from 20, 15 and 30 yd; recorded outcome categories and lie/trajectory |
-| 60-ft lag sample | Completed; leave counts reported, attempt total not recorded |
-| Bunker or difficult lie | 20 bunker balls; four did not escape; zero thinned |
+| 60-ft lag sample | Completed: 18 putts using the 1-2-3-4 approach; 9 within 10 ft and 9 within 6 ft (50% at each overlapping threshold) |
+| Bunker or difficult lie | 20 bunker balls; 16 escaped and 4 did not; zero thinned. All 16 escapes were estimated within 15 ft of the pin; exact leaves were not measured. Pin 10–15 yd away; Ian moved closer to the lip. |
 | Five recovery holes | Completed as five 15-yard up-and-downs; chip finish distances recorded; 5/5 |
 
 ## Source Media
