@@ -32,7 +32,7 @@ sand_shots:
 
 | Measure | Recorded value |
 | --- | ---: |
-| Score | 42 through 9 holes |
+| Score | 42 through 9 holes (GHIN displays 42N) |
 | Par | 36 |
 | Fairways | 62% |
 | Greens in regulation | 22% |
@@ -40,7 +40,7 @@ sand_shots:
 | Penalties | 1 |
 | Sand shots | Not recorded |
 
-GHIN is the source for the posted score and date. Golfshot provides the supporting scorecard statistics. A dash in the scorecard is retained as unrecorded, not treated as zero.
+GHIN is the source for the posted score and date; its 42N display is retained without interpreting the suffix. Golfshot provides the supporting scorecard statistics. A dash in the scorecard is retained as unrecorded, not treated as zero.
 
 ## Reflection
 
