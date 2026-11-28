@@ -4,7 +4,7 @@ entry_id: 20261126-short-game
 date: 2026-11-26
 title: Thanksgiving short-game transfer — chips, bunker, lag and recovery
 session_type: Practice
-location:
+location: The Golf Center at Palm Desert
 mental_state:
 source_file: Ian's session report in SWINGWELL working conversation, November 27, 2026
 assets: []
