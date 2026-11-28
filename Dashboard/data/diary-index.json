@@ -478,20 +478,47 @@
   },
   {
     "date": "2026-11-26",
-    "title": "Thanksgiving putting — conversion and lag pace",
+    "title": "Thanksgiving putting and short-game transfer",
     "path": "Diary Entries/2026/2026-11/20261126 - SWINGWELL Golf Diary Entry.md",
     "source": "Ian's November 27 session report",
     "session_type": "Practice",
-    "location": "",
+    "location": "The Golf Center at Palm Desert",
     "mental_state": "GREEN"
   },
   {
-    "date": "2026-11-26",
-    "title": "Thanksgiving short-game transfer — chips, bunker, lag and recovery",
-    "path": "Diary Entries/2026/2026-11/20261126 - SWINGWELL Short Game Diary Entry.md",
-    "source": "Ian's session report in SWINGWELL working conversation, November 27, 2026",
-    "session_type": "Practice",
-    "location": "The Golf Center at Palm Desert",
+    "date": "2026-09-06",
+    "title": "Indian Wells Celebrity — 10-hole round",
+    "path": "Diary Entries/2026/2026-09/20260906 - SWINGWELL Round Diary Entry.md",
+    "source": "GHIN Revision Scores and Golfshot scorecard screenshots, supplied 2026-11-22",
+    "session_type": "Round",
+    "location": "Indian Wells Golf Resort — Celebrity",
+    "mental_state": ""
+  },
+  {
+    "date": "2026-09-20",
+    "title": "Indian Wells Players — 13-hole round",
+    "path": "Diary Entries/2026/2026-09/20260920 - SWINGWELL Round Diary Entry.md",
+    "source": "GHIN Revision Scores and Golfshot scorecard screenshots, supplied 2026-11-22",
+    "session_type": "Round",
+    "location": "Indian Wells Golf Resort — Players",
+    "mental_state": ""
+  },
+  {
+    "date": "2026-09-27",
+    "title": "Shadow Mountain — 9-hole round",
+    "path": "Diary Entries/2026/2026-09/20260927 - SWINGWELL Round Diary Entry.md",
+    "source": "GHIN Revision Scores and Golfshot scorecard screenshots, supplied 2026-11-22",
+    "session_type": "Round",
+    "location": "Shadow Mountain Golf Club",
+    "mental_state": ""
+  },
+  {
+    "date": "2026-10-31",
+    "title": "Indian Wells Celebrity — 9-hole round",
+    "path": "Diary Entries/2026/2026-10/20261031 - SWINGWELL Round Diary Entry.md",
+    "source": "GHIN Revision Scores and Golfshot scorecard screenshots, supplied 2026-11-22",
+    "session_type": "Round",
+    "location": "Indian Wells Golf Resort — Celebrity",
     "mental_state": ""
   }
 ]
