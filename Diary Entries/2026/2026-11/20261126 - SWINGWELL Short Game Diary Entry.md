@@ -23,7 +23,7 @@ kpis:
 ## Session Metadata
 
 - **Date:** Thursday, November 26, 2026.
-- **Location / Course / Facility:** Not recorded.
+- **Location / Course / Facility:** The Golf Center at Palm Desert.
 - **Session Type:** Practice — chipping, bunker, lag putting and up-and-down transfer.
 - **Duration:** Not recorded. The planned session was approximately 50 minutes.
 - **Conditions:** First-cut uphill chip, rough downhill chip, and even first-cut chip over an obstacle; other conditions not recorded.
